@@ -1,0 +1,222 @@
+\begin{thebibliography}{10}
+
+\bibitem{kumar_how_2024}
+N.~Kumar, ``How many {IoT} devices are there (2025-2030 data).''
+
+\bibitem{computer_security_division_post-quantum_2017}
+I.~T.~L. Computer Security~Division, ``Post-quantum cryptography {\textbar}
+  {CSRC} {\textbar} {CSRC}.''
+
+\bibitem{fernandez-carames_pre-quantum_2020}
+T.~M. Fernandez-Carames, ``From pre-quantum to post-quantum {IoT} security: A
+  survey on quantum-resistant cryptosystems for the internet of things,''
+  vol.~7, no.~7, pp.~6457--6480.
+
+\bibitem{noauthor_hamming_nodate}
+``Hamming quasi-cyclic ({HQC}) fourth round version updated version
+  01/10/2022,''
+
+\bibitem{noauthor_classic_nodate}
+``Classic {McEliece}: Intro.''
+
+\bibitem{aragon_bike_nodate}
+N.~Aragon, ``{BIKE}: Bit flipping key encapsulation,''
+
+\bibitem{noauthor_hqc_nodate-1}
+``{HQC}.''
+
+\bibitem{kuznetsov_trade-offs_nodate}
+O.~Kuznetsov, S.~Kandiy, E.~Frontoni, and O.~Smirnov, ``Trade-offs in
+  post-quantum cryptography: A comparative assessment of {BIKE}, {HQC}, and
+  classic {McEliece},''
+
+\bibitem{vaudenay_classical_2006}
+S.~Vaudenay, {\em A classical introduction to cryptography: applications for
+  communications security}.
+\newblock Springer.
+
+\bibitem{nieles_introduction_2017}
+M.~Nieles, K.~Dempsey, and V.~Y. Pillitteri, ``An introduction to information
+  security.''
+
+\bibitem{paar_understanding_2010}
+C.~Paar and J.~Pelzl, {\em Understanding Cryptography: A Textbook for Students
+  and Practitioners}.
+\newblock Springer Berlin Heidelberg.
+
+\bibitem{boldyreva_holistic_2023}
+M.~Krausz, G.~Land, J.~Richter-Brockmann, and T.~Güneysu, ``A holistic
+  approach towards side-channel secure fixed-weight polynomial sampling,'' in
+  {\em Public-Key Cryptography – {PKC} 2023} (A.~Boldyreva and V.~Kolesnikov,
+  eds.), vol.~13941, pp.~94--124, Springer Nature Switzerland.
+\newblock Series Title: Lecture Notes in Computer Science.
+
+\bibitem{carlet_fast_2024}
+S.~Deshpande, C.~Xu, M.~Nawan, K.~Nawaz, and J.~Szefer, ``Fast and efficient
+  hardware implementation of {HQC},'' in {\em Selected Areas in Cryptography
+  – {SAC} 2023} (C.~Carlet, K.~Mandal, and V.~Rijmen, eds.), vol.~14201,
+  pp.~297--321, Springer Nature Switzerland.
+\newblock Series Title: Lecture Notes in Computer Science.
+
+\bibitem{noauthor_hqc_nodate}
+``{HQC}: Hamming quasi-cyclic an {IND}-{CCA}2 code-based public key encryption
+  scheme,''
+
+\bibitem{deneuville_towards_2023}
+C.~Aguilar-Melchor, J.-C. Deneuville, A.~Dion, J.~Howe, R.~Malmain,
+  V.~Migliore, M.~Nawan, and K.~Nawaz, ``Towards automating cryptographic
+  hardware implementations: A case study of {HQC},'' in {\em Code-Based
+  Cryptography} (J.-C. Deneuville, ed.), vol.~13839, pp.~62--76, Springer
+  Nature Switzerland.
+\newblock Series Title: Lecture Notes in Computer Science.
+
+\bibitem{septien-hernandez_comparative_2022}
+J.-A. Septien-Hernandez, M.~Arellano-Vazquez, M.~A. Contreras-Cruz, and J.-P.
+  Ramirez-Paredes, ``A comparative study of post-quantum cryptosystems for
+  internet-of-things applications,'' vol.~22, no.~2, p.~489.
+
+\bibitem{p_c_analysis_2022}
+S.~P~C, K.~Jain, and P.~Krishnan, ``Analysis of post-quantum cryptography for
+  internet of things,'' in {\em 2022 6th International Conference on
+  Intelligent Computing and Control Systems ({ICICCS})}, pp.~387--394, {IEEE}.
+
+\bibitem{schoffel_code-based_2022}
+M.~Schöffel, J.~Feldmann, and N.~Wehn, ``Code-based cryptography in {IoT}: A
+  {HW}/{SW} co-design of {HQC},'' in {\em 2022 {IEEE} 8th World Forum on
+  Internet of Things ({WF}-{IoT})}, pp.~1--7, {IEEE}.
+
+\bibitem{liu_post-quantum_2024}
+T.~Liu, G.~Ramachandran, and R.~Jurdak, ``Post-quantum cryptography for
+  internet of things: A survey on performance and optimization.''
+
+\bibitem{maurya_quantum_2024}
+S.~Maurya, S.~Kasture, and A.~Shukla, ``Quantum cryptography for secure
+  communications in industrial mechatronics and embedded systems,'' in {\em
+  2024 20th {IEEE}/{ASME} International Conference on Mechatronic and Embedded
+  Systems and Applications ({MESA})}, pp.~1--8, {IEEE}.
+
+\bibitem{aragon_5th_nodate}
+N.~Aragon, P.~L. Barreto, S.~Bettaieb, L.~Bidoux, O.~Blazy, J.-C. Deneuville,
+  P.~Gaborit, S.~Ghosh, S.~Gueron, T.~Güneysu, C.~A. Melchor, R.~Misoczki,
+  E.~Persichetti, J.~Richter-Brockmann, N.~Sendrier, J.-P. Tillich, V.~Vasseur,
+  and G.~Zémor, ``5th {NIST} {PQC} standardization workshop april 10th,
+  2024,''
+
+\bibitem{demange_provably_2024}
+L.~Demange and M.~Rossi, ``A provably masked implementation of {BIKE} key
+  encapsulation mechanism,'' pp.~cc1--1--57.
+
+\bibitem{chen_optimizing_2021}
+M.-S. Chen, T.~Chou, and M.~Krausz, ``Optimizing {BIKE} for the intel haswell
+  and {ARM} cortex-m4,'' pp.~97--124.
+
+\bibitem{richter-brockmann_racing_2021}
+J.~Richter-Brockmann, M.-S. Chen, S.~Ghosh, and T.~Güneysu, ``Racing {BIKE}:
+  Improved polynomial multiplication and inversion in hardware,'' pp.~557--588.
+
+\bibitem{urian_classic_nodate}
+R.~Urian, ``Classic {McEliece} key generation on {RAM} constrained devices,''
+
+\bibitem{chen_classic_2021}
+M.-S. Chen and T.~Chou, ``Classic {McEliece} on the {ARM} cortex-m4,''
+  pp.~125--148.
+
+\bibitem{cheon_how_2022}
+T.~Hemmert, A.~May, J.~Mittmann, and C.~R.~T. Schneider, ``How to backdoor
+  (classic) {McEliece} and how to guard against backdoors,'' in {\em
+  Post-Quantum Cryptography} (J.~H. Cheon and T.~Johansson, eds.), vol.~13512,
+  pp.~24--44, Springer International Publishing.
+\newblock Series Title: Lecture Notes in Computer Science.
+
+\bibitem{samandari_mceliece_nodate}
+J.~Samandari and D.~C. Gritti, ``{McEliece} post quantum cryptography for
+  {IoT},''
+
+\bibitem{perez-pacheco_mceliece_2023}
+P.~Pérez-Pacheco and P.~Caballero-Gil, ``{McEliece} cryptosystem: Reducing the
+  key size with {QC}-{LDPC} codes,'' in {\em 2023 19th International Conference
+  on the Design of Reliable Communication Networks ({DRCN})}, pp.~1--6, {IEEE}.
+
+\bibitem{chen_complete_2022}
+P.-J. Chen, T.~Chou, S.~Deshpande, N.~Lahr, R.~Niederhagen, J.~Szefer, and
+  W.~Wang, ``Complete and improved {FPGA} implementation of classic
+  {McEliece},'' pp.~71--113.
+
+\bibitem{ivanov_lightweight_2019}
+F.~Ivanov, E.~Krouk, and A.~Kreshchuk, ``On the lightweight {McEliece}
+  cryptosystem for low-power devices,'' in {\em 2019 {XVI} International
+  Symposium "Problems of Redundancy in Information and Control Systems"
+  ({REDUNDANCY})}, pp.~133--138, {IEEE}.
+
+\bibitem{sim_optimized_nodate}
+M.~Sim, S.~Eum, H.~Kwon, H.~Kim, and H.~Seo, ``Optimized implementation of
+  encapsulation and decapsulation of classic {McEliece} on {ARMv}8,''
+
+\bibitem{kuznetsov_performance_2021}
+A.~Kuznetsov, M.~Lutsenko, M.~Bagmut, and V.~Zhora, ``Performance evaluation of
+  the classic {McEliece} key encapsulation algorithm,'' in {\em 2021 11th
+  {IEEE} International Conference on Intelligent Data Acquisition and Advanced
+  Computing Systems: Technology and Applications ({IDAACS})}, pp.~755--760,
+  {IEEE}.
+
+\bibitem{bindal_secure_2024}
+E.~Bindal and A.~K. Singh, ``Secure and compact: A new variant of {McEliece}
+  cryptosystem,'' vol.~12, pp.~35586--35596.
+
+\bibitem{wakasugi_security_nodate}
+A.~Wakasugi and M.~Tada, ``Security analysis for {BIKE}, classic {McEliece} and
+  {HQC} against the quantum {ISD} algorithms,''
+
+\bibitem{li_security_2023}
+Y.~Li and L.-P. Wang, ``Security analysis of the classic {McEliece}, {HQC} and
+  {BIKE} schemes in low memory,'' vol.~79, p.~103651.
+
+\bibitem{avanzi_side-channel_2011}
+R.~Avanzi, S.~Hoerder, D.~Page, and M.~Tunstall, ``Side-channel attacks on the
+  {McEliece} and niederreiter public-key cryptosystems,'' vol.~1, no.~4,
+  pp.~271--281.
+
+\bibitem{stallings_cryptography_nodate}
+W.~Stallings, ``Cryptography and network security: Principles and practice,''
+
+\bibitem{european_union_agency_for_cybersecurity_post-quantum_2021}
+{European Union Agency for Cybersecurity.}, {\em Post-quantum cryptography:
+  current state and quantum mitigation.}
+\newblock Publications Office.
+
+\bibitem{hu_security_nodate}
+F.~Hu, ``Security and privacy in internet of things ({IoTs}): Models,
+  algorithms, and implementations,''
+
+\bibitem{saeed_security_2019}
+H.~Aldowah, S.~Ul~Rehman, and I.~Umar, ``Security in internet of things:
+  Issues, challenges and solutions,'' in {\em Recent Trends in Data Science and
+  Soft Computing} (F.~Saeed, N.~Gazem, F.~Mohammed, and A.~Busalim, eds.),
+  vol.~843, pp.~396--405, Springer International Publishing.
+\newblock Series Title: Advances in Intelligent Systems and Computing.
+
+\bibitem{kurose_computer_2017}
+J.~F. Kurose and K.~W. Ross, {\em Computer networking: a top-down approach}.
+\newblock Pearson Education, 7. edition~ed.
+
+\bibitem{rappaport_wireless_2009}
+T.~S. Rappaport, {\em Wireless communications: principles and practice}.
+\newblock Prentice Hall communications engineering and emerging technologies
+  series, Prentice Hall, 2. ed., 18. printing~ed.
+
+\bibitem{white_making_2012}
+E.~White, {\em Making embedded systems: design patterns for great software}.
+\newblock O'Reilly.
+
+\bibitem{bernstein_code-based_2009}
+R.~Overbeck and N.~Sendrier, ``Code-based cryptography,'' in {\em Post-Quantum
+  Cryptography} (D.~J. Bernstein, J.~Buchmann, and E.~Dahmen, eds.),
+  pp.~95--145, Springer Berlin Heidelberg.
+
+\bibitem{hernandez-ramos_security_2021}
+J.~L. Hernandez-Ramos, J.~A. Martinez, V.~Savarino, M.~Angelini, V.~Napolitano,
+  A.~F. Skarmeta, and G.~Baldini, ``Security and privacy in internet of
+  things-enabled smart cities: Challenges and future directions,'' vol.~19,
+  no.~1, pp.~12--23.
+
+\end{thebibliography}

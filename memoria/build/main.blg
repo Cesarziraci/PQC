@@ -1,0 +1,137 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: cuerpo/chapter1.aux
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: cuerpo/chapter2.aux
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: cuerpo/chapter3.aux
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: cuerpo/chapter4.aux
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: cuerpo/chapter5.aux
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: cuerpo/chapter6.aux
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+The style file: ieeetr.bst
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: cuerpo/x-Anexos.aux
+Database file #1: TFM.bib
+Warning--entry type for "kumar_how_2024" isn't style-file defined
+--line 923 of file TFM.bib
+Warning--entry type for "computer_security_division_post-quantum_2017" isn't style-file defined
+--line 947 of file TFM.bib
+Warning--entry type for "noauthor_classic_nodate" isn't style-file defined
+--line 967 of file TFM.bib
+Warning--entry type for "noauthor_hqc_nodate-1" isn't style-file defined
+--line 981 of file TFM.bib
+Warning--entry type for "nieles_introduction_2017" isn't style-file defined
+--line 1301 of file TFM.bib
+Warning--empty journal in fernandez-carames_pre-quantum_2020
+Warning--empty year in fernandez-carames_pre-quantum_2020
+Warning--empty author in noauthor_hamming_nodate
+Warning--empty journal in noauthor_hamming_nodate
+Warning--empty year in noauthor_hamming_nodate
+Warning--empty journal in aragon_bike_nodate
+Warning--empty year in aragon_bike_nodate
+Warning--empty journal in kuznetsov_trade-offs_nodate
+Warning--empty year in kuznetsov_trade-offs_nodate
+Warning--empty year in vaudenay_classical_2006
+Warning--empty year in paar_understanding_2010
+Warning--empty year in boldyreva_holistic_2023
+Warning--empty year in carlet_fast_2024
+Warning--empty author in noauthor_hqc_nodate
+Warning--empty journal in noauthor_hqc_nodate
+Warning--empty year in noauthor_hqc_nodate
+Warning--empty year in deneuville_towards_2023
+Warning--empty journal in septien-hernandez_comparative_2022
+Warning--empty year in septien-hernandez_comparative_2022
+Warning--empty year in p_c_analysis_2022
+Warning--empty year in schoffel_code-based_2022
+Warning--empty year in maurya_quantum_2024
+Warning--empty journal in aragon_5th_nodate
+Warning--empty year in aragon_5th_nodate
+Warning--empty journal in demange_provably_2024
+Warning--empty year in demange_provably_2024
+Warning--empty journal in chen_optimizing_2021
+Warning--empty year in chen_optimizing_2021
+Warning--empty journal in richter-brockmann_racing_2021
+Warning--empty year in richter-brockmann_racing_2021
+Warning--empty journal in urian_classic_nodate
+Warning--empty year in urian_classic_nodate
+Warning--empty journal in chen_classic_2021
+Warning--empty year in chen_classic_2021
+Warning--empty year in cheon_how_2022
+Warning--empty journal in samandari_mceliece_nodate
+Warning--empty year in samandari_mceliece_nodate
+Warning--empty year in perez-pacheco_mceliece_2023
+Warning--empty journal in chen_complete_2022
+Warning--empty year in chen_complete_2022
+Warning--empty year in ivanov_lightweight_2019
+Warning--empty journal in sim_optimized_nodate
+Warning--empty year in sim_optimized_nodate
+Warning--empty year in kuznetsov_performance_2021
+Warning--empty journal in bindal_secure_2024
+Warning--empty year in bindal_secure_2024
+Warning--empty journal in wakasugi_security_nodate
+Warning--empty year in wakasugi_security_nodate
+Warning--empty journal in li_security_2023
+Warning--empty year in li_security_2023
+Warning--empty journal in avanzi_side-channel_2011
+Warning--empty year in avanzi_side-channel_2011
+Warning--empty journal in stallings_cryptography_nodate
+Warning--empty year in stallings_cryptography_nodate
+Warning--empty year in european_union_agency_for_cybersecurity_post-quantum_2021
+Warning--empty journal in hu_security_nodate
+Warning--empty year in hu_security_nodate
+Warning--empty year in saeed_security_2019
+Warning--empty year in kurose_computer_2017
+Warning--empty year in rappaport_wireless_2009
+Warning--empty year in white_making_2012
+Warning--empty year in bernstein_code-based_2009
+Warning--empty journal in hernandez-ramos_security_2021
+Warning--empty year in hernandez-ramos_security_2021
+You've used 46 entries,
+            1876 wiz_defined-function locations,
+            687 strings with 12137 characters,
+and the built_in function-call counts, 11602 in all, are:
+= -- 1002
+> -- 532
+< -- 0
++ -- 194
+- -- 148
+* -- 883
+:= -- 1587
+add.period$ -- 40
+call.type$ -- 46
+change.case$ -- 42
+chr.to.int$ -- 0
+cite$ -- 110
+duplicate$ -- 587
+empty$ -- 1168
+format.name$ -- 148
+if$ -- 2749
+int.to.chr$ -- 0
+int.to.str$ -- 46
+missing$ -- 46
+newline$ -- 152
+num.names$ -- 54
+pop$ -- 275
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 392
+stack$ -- 0
+substring$ -- 629
+swap$ -- 184
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 64
+while$ -- 114
+width$ -- 48
+write$ -- 361
+(There were 69 warnings)
