@@ -29,8 +29,6 @@ CFLAGS += -I$(METRICS_SRC)
 CFLAGS += -I$(HQC_DIR)
 CFLAGS += -I$(HQC_FIPS202_DIR)
 CFLAGS += -I$(AES_DIR)
-CFLAGS += -Wno-error=array-bounds
-CFLAGS += -Wno-array-bounds
 CFLAGS += -DSL_STACK_SIZE=65536
 CFLAGS += -DSL_HEAP_SIZE=16384
 
