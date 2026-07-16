@@ -1,0 +1,115 @@
+
+% CREDITS:
+% This template is based and basically an adaptation of UPM_thesis_template_en template:
+% https://www.overleaf.com/latex/templates/upm-thesis-template-en/nzjnspqsxfmm
+% All credits for the template to the author: MAría Blanco (UPM)
+% --------------------------
+% --------------------------
+% Document class
+% --------------------------
+\documentclass[
+A4paper,                % Tamaño del papel A4
+twoside,                % A una columna o a dos
+openright,              % Los capítulos y secciones empiezan siempre a la derecha
+chapterprefix=true,     % Añade un prefijo a los títulos
+12pt,                   % Tamaño de fuente
+headings=normal,        % Tamaño de las cabeceras
+titlepage=on            % Separa las páginas con título
+]{book}
+
+% **************************************************
+% THESIS details
+% **************************************************
+
+\newcommand{\University}{\protect{Universidad Polit\'ecnica de Madrid}}
+\newcommand{\UNIVERSITY}{\protect{UNIVERSIDAD POLIT\'ECNICA DE MADRID}}
+
+\input{thesisDetails}
+
+% **************************************************
+% Settings
+% **************************************************
+
+\input{settings}
+
+% **************************************************
+% Begin document
+% **************************************************
+\begin{document}
+
+% --------------------------
+% Cover and front matter
+% --------------------------
+\frontmatter
+\pagestyle{empty}				    % no header nor footer
+\input{preliminares/1_cubierta}
+\newpage
+
+\input{preliminares/2_portada}
+\newpage
+
+\pagenumbering{roman}			    % roman page numbering 
+\pagestyle{plain}				    % empty header, just page number in footer
+\input{preliminares/3_dedicatoria}
+\cleardoublepage
+
+\input{preliminares/4_agradecimientos_y_financiacion}   % dedication & cknowledgement (optional)
+\cleardoublepage
+
+\input{preliminares/5_resumen}  % abstract (in English and Spanish)
+\newpage
+
+
+
+\selectlanguage{spanish}
+
+\setcounter{tocdepth}{3}		% define depth of toc
+\tableofcontents				% display table of contents
+
+
+\addcontentsline{toc}{section}{Índice de figuras}
+\listoffigures
+
+
+\addcontentsline{toc}{section}{Índice de tablas}
+\listoftables
+\newpage
+
+%\input{preliminares/6_acronimos}
+%\cleardoublepage
+
+% --------------------------
+% Main matter
+% --------------------------
+\mainmatter
+\pagenumbering{arabic}			% arabic page numbering
+\setcounter{page}{1}			% set page counter
+\pagestyle{fancy} 	            % fancy header and footer
+\parskip=7pt                    % space after each paragraph
+\parindent=0pt                  % suppress indentation of paragraphs
+
+\include{cuerpo/chapter1}
+\include{cuerpo/chapter2}
+\include{cuerpo/chapter3}
+\include{cuerpo/chapter4}
+\include{cuerpo/chapter5}
+\include{cuerpo/chapter6}
+
+\cleardoublepage
+
+% --------------------------
+% Back matter
+% --------------------------
+\backmatter
+\bibliographystyle{ieeetr}
+\bibliography{TFM} 
+\nocite{*}
+
+\appendix
+\include{cuerpo/x-Anexos}
+
+
+% **************************************************
+% End of document
+% **************************************************
+\end{document}

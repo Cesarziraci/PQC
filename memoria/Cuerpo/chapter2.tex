@@ -1,0 +1,114 @@
+% called by main.tex
+%
+\chapter{Estado del arte}
+\label{ch::chapter2}
+
+El desarrollo de este trabajo se enmarca en los esfuerzos impulsados por \textbf{NIST} 
+para estandarizar algoritmos criptográficos resistentes a ataques cuánticos. En una primera instancia, 
+se realizó un estudio comparativo de las distintas propuestas presentadas al organismo, con el objetivo de identificar aquellas con 
+mayor potencial de aplicación en sistemas embebidos e IoT.
+
+De este análisis surgió la selección del esquema \textbf{Hamming Quasi-Cyclic (HQC)}, que, posteriormente, fue designado oficialmente por 
+\textbf{NIST} como uno de los algoritmos recomendados para la estandarización, reforzando así la elección realizada. 
+
+Este capítulo presenta, en primer lugar, los fundamentos teóricos que sustentan la investigación, abarcando tanto los principios de la 
+criptografía clásica como la criptografía post-cuántica  y su relación con los sistemas embebidos e IoT. A continuación, 
+se revisan los trabajos relacionados que recogen los avances más relevantes, así como implementaciones y evaluaciones de 
+esquemas post-cuánticos en sistemas de bajo consumo. Finalmente, se formulan los objetivos que guían el desarrollo de este proyecto.  
+
+\section{Marco Teórico}
+
+    \subsection{Criptografía clásica y post-cuántica}
+        La criptografía comienza con la historia, con el origen de la escritura. Los egipcios eran capaces de comunicarse mediante mensajes escritos con jeroglíficos; este código era el secreto de los escribas. La comunicación con códigos secretos era comúnmente necesaria para la diplomacia, los gobiernos tenían que comunicarse con sus embajadas remotas en entornos sospechosos durante la guerra. Los cuarteles generales debían comunicarse en entornos hostiles. Sin embargo, durante la mayoría de la historia se utilizaba la criptografía de manera pedestre. La mayoría de los códigos secretos tenían una seguridad basada en la oscuridad, las personas que querían ocultar su mensaje debían elegir su propio código secreto. 
+
+        El punto de inflexión en la historia de la criptografía ocurrió en la segunda guerra mundial, con el uso de la maquina \textbf{Enigma}, la cual fue empleada para cifrar y descifrar comunicaciones. Su ruptura por parte del matemático  \textbf{Alan Turing}, marcó el inicio en la criptografía, donde el análisis matemático y la computación juegan un papel fundamental \cite{vaudenay_classical_2006}.
+
+        Con el paso del tiempo, la criptografía dejó de ser un conjunto de técnicas empíricas basadas en la ocultación, para convertirse en una disciplina científica con fundamentos matemáticos sólidos.
+    
+        Con este contexto, la criptografía se puede definir como la ciencia que se encarga de la seguridad de la información y las comunicaciones, a través de mecanismos como la autenticación y el cifrado. \textbf{NIST Computer Security Handbook} define el término de  \textbf{seguridad informática}, como la protección otorgada a un sistema de información automatizado para alcanzar objetivos de preservar la integridad, disponibilidad y confidencialidad de los recursos del sistema de información \cite{nieles_introduction_2017}. 
+
+        Estas propiedades conforman la triada de la seguridad, la cual establece principios esenciales para proteger los sistemas informáticos:
+        
+        \begin{itemize}
+            \item \textbf{Confidencialidad}: 
+                Garantiza que la información privada no se ponga en disposición de personas no autorizadas. Asegura que las personas que controlan en qué información relacionada con ellos puede ser recopilada y almacenada y por quién y a quién puede ser revelada esa información.  
+            \item \textbf{Integridad}: 
+                Asegura que la información y los programas se cambien solo de una manera especificada y autorizada.
+                Garantiza que los sistemas se comporten de la manera en la que fueron pensados de manera intacta, y libre de manipulaciones no autorizadas. 
+            \item \textbf{Disponibilidad}:
+                Garantiza que el sistema trabaje de manera correcta y no se deniega el servicio a los usuarios autorizados.
+        \end{itemize}
+
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=0.5\linewidth]{figures/Triada_Seguridad.png}
+            \caption{Triada de la seguridad}
+            \label{fig:Triada-Seguridad}
+        \end{figure}
+
+        El \textbf{criptoanálisis} es la ciencia  —y en ocasiones, el arte—, de descifrar criptosistemas sin conocer previamente la clave. El criptoanálisis es de vital importancia para los criptosistemas modernos, ya que sin el análisis constante por parte de expertos que intenten vulnerarlos, no sería posible determinar si dichos métodos son verdaderamente seguros \cite{paar_understanding_2010}.
+            
+        La \textbf{criptografía clásica} -también conocida como criptografía precuántica- se basa en algoritmos cuya seguridad radica en problemas matemáticos considerados intratables para los ordenadores convencionales. Estos algoritmos han resistido con éxito numerosos intentos de criptoanálisis a lo largo del tiempo. Entre los más representativos se encuentran:
+            \begin{itemize}
+                \item \textbf{RSA}, basado en la factorizacion de numeros enteros muy grandes.
+                \item \textbf{Elliptic Curve Cryptography (ECC)}, que utiliza el logaritmo discreto en curvas elípticas.
+            \end{itemize}
+            
+        La criptografía se divide, a su vez, en tres ramas principales: 
+            \begin{itemize}
+                \item Algoritmos simétricos, utilizan una misma clave para cifrar y descifrar la información. Fueron el enfoque predominante desde los orígenes de la criptografía. Entre ellos, destaca AES por su eficiencia y robustez.
+                    
+                \item Algoritmos asimétricos, introducidos en 1976 por \textbf{Whitfield Diffie}, \textbf{Martin Hellman} y \textbf{Ralph Merkle}, emplean un par de claves: una pública (que se puede compartir) y una privada (que debe mantenerse secreta). Ejemplos clave son RSA y ECC.
+                
+                \item Protocolos criptográficos, combinan estos algoritmos para lograr funciones como el intercambio seguro de claves, la autenticación o la firma digital, siendo componentes esenciales en aplicaciones como VPNs, correo cifrado o blockchain.
+                
+            \end{itemize}
+
+            El cifrado simétrico habilita una comunicación segura sobre un canal de transmisión inseguro, asumiendo que la clave secreta se comparte sobre un canal seguro. 
+
+            \begin{figure}[h]
+                \centering
+                \includegraphics[width=1\linewidth]{figures/Simetric.png}
+                \caption{Cifrado Simétrico}
+                \label{fig:cifrado-Simétrico}
+            \end{figure}
+
+            En la Figura~\ref{fig:cifrado-Simétrico} se observa cómo la clave secreta se transmite del receptor al transmisor de una manera confidencial, mientras que el atacante intenta obtener la información cifrada. 
+
+            El \textbf{estándar avanzado de cifrado (AES, por sus siglas en inglés)} es uno de los algoritmos de cifrado simétrico más utilizados en la actualidad. Se ha convertido en un componente esencial de numerosos sistemas y protocolos de seguridad ampliamente desplegados, tales como IPsec, TLS, SSH, y el cifrado de redes Wi-Fi mediante el estándar IEEE 802.11i. Hasta la fecha, no se ha descubierto ningún ataque criptográfico práctico más eficiente que la fuerza bruta, lo que lo convierte en una opción robusta y confiable para proteger información confidencial \cite{paar_understanding_2010}. AES soporta bloques de datos de 128 bits y admite claves de 128, 192 o 256 bits. Gracias a esta solidez, AES sigue siendo a día de hoy el estándar predominante para el cifrado simétrico en la mayoría de los sistemas modernos.
+
+            Por otro lado, los cifrados asimétricos -también conocido como criptosistemas de clave publica- está definido por tres algoritmos, un generador de claves pseudoaleatorios, que produce un par de claves (publica $K_p$, y una privada $K_S$); un algoritmo de cifrado, que puede ser probabilístico y produce un cifrado $Y$ a partir del mensaje $X$ y la clave publica; y un algoritmo de descifrado, que es determinista y recupera el mensaje original $X$ a partir del cifrado $Y$ y la clave secreta.
+
+            \begin{figure}[h]
+                \centering
+                \includegraphics[width=1\linewidth]{figures/Asimetric.png}
+                \caption{Cifrado Asimétrico}
+                \label{fig:Cifrado-Asimetrico}
+            \end{figure}
+
+            Figura~\ref{fig:Cifrado-Asimetrico} se muestra un modelo de sistema asimétrico en el que el texto plano se encripta con una clave publica y descifrada con la llave secreta. Es importante destacar, que aun con el acceso a la clave publica, debe ser computacionalmente intratable recuperar el mensaje sin consultar la llave privada. 
+
+            Aunque los algoritmos clásicos, han demostrado ser eficientes durante décadas, el desarrollo de la computación cuántica plantea nuevas amenazas que comprometen su seguridad. Lo que ha impulsado las investigaciones en nuevos esquemas resistentes a ataques cuánticos.  
+
+    \subsection{Esquema HQC y su relevancia dentro de la criptografía post-cuántica}
+    
+    \subsection{Sistemas embebidos e IoT}
+    
+    \subsection{Seguridad en IoT y aplicación de criptografía post-cuántica}
+    
+    
+\section{Trabajos Relacionados}
+    \subsection{Trabajo\_1}
+    \subsection{Trabajo\_2}
+
+\section{Objetivos}
+
+El presente trabajo estudia la implementación de esquemas de seguridad post-cuánticos en sistemas embebidos para IoT, con el fin de evaluar su rendimiento en esta clase de entornos. Es por ello que se plantean una serie de objetivos que permiten estructurar el desarrollo de este proyecto. 
+
+\begin{enumerate}
+    \item Analizar el funcionamiento interno del esquema \textbf{HQC}
+    \item Implementar el esquema \textbf{HQC} en un entorno IoT
+    \item Evaluar el rendimiento del esquema HQC en terminos de ejecucion, consumo de memoria, y tamaño de clave/cifrado en el sistema elegido.
+    \item Identificar posibles limitaciones y oportunidades de mejora para aplicaciones reales en dispositivos de bajo consumo
+    \item Evaluar la sobrecarga que introduce el uso del esquema HQC en las comunicaciones, en comparación con un sistema sin cifrado post-cuántico.
+\end{enumerate}
