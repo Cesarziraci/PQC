@@ -13,6 +13,8 @@ Reallocating 'name_of_file' (item size: 1) to 20 items.
 A level-1 auxiliary file: cuerpo/chapter5.aux
 Reallocating 'name_of_file' (item size: 1) to 20 items.
 A level-1 auxiliary file: cuerpo/chapter6.aux
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: cuerpo/chapter7.aux
 Reallocating 'name_of_file' (item size: 1) to 7 items.
 The style file: ieeetr.bst
 Reallocating 'name_of_file' (item size: 1) to 4 items.
@@ -29,17 +31,19 @@ Warning--entry type for "noauthor_hqc_nodate-1" isn't style-file defined
 --line 981 of file TFM.bib
 Warning--entry type for "nieles_introduction_2017" isn't style-file defined
 --line 1301 of file TFM.bib
+Warning--I didn't find a database entry for "SHOR"
+Warning--I didn't find a database entry for "grover"
 Warning--empty journal in fernandez-carames_pre-quantum_2020
 Warning--empty year in fernandez-carames_pre-quantum_2020
-Warning--empty author in noauthor_hamming_nodate
-Warning--empty journal in noauthor_hamming_nodate
-Warning--empty year in noauthor_hamming_nodate
-Warning--empty journal in aragon_bike_nodate
-Warning--empty year in aragon_bike_nodate
 Warning--empty journal in kuznetsov_trade-offs_nodate
 Warning--empty year in kuznetsov_trade-offs_nodate
 Warning--empty year in vaudenay_classical_2006
 Warning--empty year in paar_understanding_2010
+Warning--empty year in european_union_agency_for_cybersecurity_post-quantum_2021
+Warning--empty year in schoffel_code-based_2022
+Warning--empty author in noauthor_hamming_nodate
+Warning--empty journal in noauthor_hamming_nodate
+Warning--empty year in noauthor_hamming_nodate
 Warning--empty year in boldyreva_holistic_2023
 Warning--empty year in carlet_fast_2024
 Warning--empty author in noauthor_hqc_nodate
@@ -49,12 +53,13 @@ Warning--empty year in deneuville_towards_2023
 Warning--empty journal in septien-hernandez_comparative_2022
 Warning--empty year in septien-hernandez_comparative_2022
 Warning--empty year in p_c_analysis_2022
-Warning--empty year in schoffel_code-based_2022
 Warning--empty year in maurya_quantum_2024
 Warning--empty journal in aragon_5th_nodate
 Warning--empty year in aragon_5th_nodate
 Warning--empty journal in demange_provably_2024
 Warning--empty year in demange_provably_2024
+Warning--empty journal in aragon_bike_nodate
+Warning--empty year in aragon_bike_nodate
 Warning--empty journal in chen_optimizing_2021
 Warning--empty year in chen_optimizing_2021
 Warning--empty journal in richter-brockmann_racing_2021
@@ -83,7 +88,6 @@ Warning--empty journal in avanzi_side-channel_2011
 Warning--empty year in avanzi_side-channel_2011
 Warning--empty journal in stallings_cryptography_nodate
 Warning--empty year in stallings_cryptography_nodate
-Warning--empty year in european_union_agency_for_cybersecurity_post-quantum_2021
 Warning--empty journal in hu_security_nodate
 Warning--empty year in hu_security_nodate
 Warning--empty year in saeed_security_2019
@@ -95,7 +99,7 @@ Warning--empty journal in hernandez-ramos_security_2021
 Warning--empty year in hernandez-ramos_security_2021
 You've used 46 entries,
             1876 wiz_defined-function locations,
-            687 strings with 12137 characters,
+            691 strings with 12170 characters,
 and the built_in function-call counts, 11602 in all, are:
 = -- 1002
 > -- 532
@@ -134,4 +138,4 @@ warning$ -- 64
 while$ -- 114
 width$ -- 48
 write$ -- 361
-(There were 69 warnings)
+(There were 71 warnings)

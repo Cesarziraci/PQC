@@ -12,16 +12,6 @@ T.~M. Fernandez-Carames, ``From pre-quantum to post-quantum {IoT} security: A
   survey on quantum-resistant cryptosystems for the internet of things,''
   vol.~7, no.~7, pp.~6457--6480.
 
-\bibitem{noauthor_hamming_nodate}
-``Hamming quasi-cyclic ({HQC}) fourth round version updated version
-  01/10/2022,''
-
-\bibitem{noauthor_classic_nodate}
-``Classic {McEliece}: Intro.''
-
-\bibitem{aragon_bike_nodate}
-N.~Aragon, ``{BIKE}: Bit flipping key encapsulation,''
-
 \bibitem{noauthor_hqc_nodate-1}
 ``{HQC}.''
 
@@ -43,6 +33,20 @@ M.~Nieles, K.~Dempsey, and V.~Y. Pillitteri, ``An introduction to information
 C.~Paar and J.~Pelzl, {\em Understanding Cryptography: A Textbook for Students
   and Practitioners}.
 \newblock Springer Berlin Heidelberg.
+
+\bibitem{european_union_agency_for_cybersecurity_post-quantum_2021}
+{European Union Agency for Cybersecurity.}, {\em Post-quantum cryptography:
+  current state and quantum mitigation.}
+\newblock Publications Office.
+
+\bibitem{schoffel_code-based_2022}
+M.~Schöffel, J.~Feldmann, and N.~Wehn, ``Code-based cryptography in {IoT}: A
+  {HW}/{SW} co-design of {HQC},'' in {\em 2022 {IEEE} 8th World Forum on
+  Internet of Things ({WF}-{IoT})}, pp.~1--7, {IEEE}.
+
+\bibitem{noauthor_hamming_nodate}
+``Hamming quasi-cyclic ({HQC}) fourth round version updated version
+  01/10/2022,''
 
 \bibitem{boldyreva_holistic_2023}
 M.~Krausz, G.~Land, J.~Richter-Brockmann, and T.~Güneysu, ``A holistic
@@ -80,11 +84,6 @@ S.~P~C, K.~Jain, and P.~Krishnan, ``Analysis of post-quantum cryptography for
   internet of things,'' in {\em 2022 6th International Conference on
   Intelligent Computing and Control Systems ({ICICCS})}, pp.~387--394, {IEEE}.
 
-\bibitem{schoffel_code-based_2022}
-M.~Schöffel, J.~Feldmann, and N.~Wehn, ``Code-based cryptography in {IoT}: A
-  {HW}/{SW} co-design of {HQC},'' in {\em 2022 {IEEE} 8th World Forum on
-  Internet of Things ({WF}-{IoT})}, pp.~1--7, {IEEE}.
-
 \bibitem{liu_post-quantum_2024}
 T.~Liu, G.~Ramachandran, and R.~Jurdak, ``Post-quantum cryptography for
   internet of things: A survey on performance and optimization.''
@@ -105,6 +104,9 @@ N.~Aragon, P.~L. Barreto, S.~Bettaieb, L.~Bidoux, O.~Blazy, J.-C. Deneuville,
 \bibitem{demange_provably_2024}
 L.~Demange and M.~Rossi, ``A provably masked implementation of {BIKE} key
   encapsulation mechanism,'' pp.~cc1--1--57.
+
+\bibitem{aragon_bike_nodate}
+N.~Aragon, ``{BIKE}: Bit flipping key encapsulation,''
 
 \bibitem{chen_optimizing_2021}
 M.-S. Chen, T.~Chou, and M.~Krausz, ``Optimizing {BIKE} for the intel haswell
@@ -176,13 +178,11 @@ R.~Avanzi, S.~Hoerder, D.~Page, and M.~Tunstall, ``Side-channel attacks on the
   {McEliece} and niederreiter public-key cryptosystems,'' vol.~1, no.~4,
   pp.~271--281.
 
+\bibitem{noauthor_classic_nodate}
+``Classic {McEliece}: Intro.''
+
 \bibitem{stallings_cryptography_nodate}
 W.~Stallings, ``Cryptography and network security: Principles and practice,''
-
-\bibitem{european_union_agency_for_cybersecurity_post-quantum_2021}
-{European Union Agency for Cybersecurity.}, {\em Post-quantum cryptography:
-  current state and quantum mitigation.}
-\newblock Publications Office.
 
 \bibitem{hu_security_nodate}
 F.~Hu, ``Security and privacy in internet of things ({IoTs}): Models,
