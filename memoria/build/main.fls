@@ -583,6 +583,14 @@ INPUT C:\Users\cesar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr8.t
 INPUT C:\Users\cesar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr6.tfm
 INPUT C:\Users\cesar\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT C:\Users\cesar\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
+INPUT .\figures\Pila-osi-es.png
+INPUT .\figures\Pila-osi-es.png
+INPUT .\figures\Pila-osi-es.png
+INPUT .\figures\Pila-osi-es.png
+INPUT .\figures\Pila-osi-es.png
+INPUT .\figures\Pila-osi-es.png
+INPUT .\figures\Pila-osi-es.png
+INPUT C:\Users\cesar\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
 INPUT .\cuerpo\chapter3.tex
 INPUT .\cuerpo\chapter3.tex
 OUTPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo\chapter3.aux
@@ -659,6 +667,8 @@ INPUT C:\Users\cesar\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.
 INPUT C:\Users\cesar\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Users\cesar\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbxi10.pfb
 INPUT C:\Users\cesar\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbxi10.pfb
+INPUT C:\Users\cesar\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmex10.pfb
+INPUT C:\Users\cesar\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmex10.pfb
 INPUT C:\Users\cesar\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi12.pfb
 INPUT C:\Users\cesar\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi12.pfb
 INPUT C:\Users\cesar\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi6.pfb

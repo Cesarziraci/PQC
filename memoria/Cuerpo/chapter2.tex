@@ -288,17 +288,172 @@ esquemas post-cuánticos en dispositivos de recursos limitados.
     KeyGen, Encaps y Decaps, como se menciona en \textit{Optimized implementation of HQC on Cortex-M4} %\cite{Optimized implementation of HQC on Cortex-M4}.
 
     \subsection{Sistemas embebidos e IoT}
-    
 
+    El mundo esta dirigido por sistemas embebidos, cubren aplicaciones especificas de todos los dispositivos que usamos diariamente, 
+    desde pequeños termostatos, hasta marcapasos. Como se describe en \textit{Making Embedded Systems} \cite{white_making_2012}, es un sistema 
+    diseñado específicamente para una aplicación concreta. A diferencia de un ordenador de proposito general, la misión de un sistema embebido
+    es limitada a una tarea, por lo tanto, el hardware requerido siele estar ajustado a esa función. Esto implica
+    restricciones frecuentes de velocidad de CPU, cantidad de memoria, y que periféricos estan disponibles. 
+
+    La caracteristica principal de un sistema embebido, como se mencionó, es la limitacion de recursos:
+    \begin{itemize}
+        \item Memoria RAM
+        \item Espacio de código (memoria ROM)
+        \item Ciclos del procesador
+        \item Consumo energético
+        \item Periféricos disponibles
+    \end{itemize}
+
+    Estos recursos limitados se relacionan entre si, el aumento de espacio que ocupa el código puede, en determinados casos, permitir una reducción
+    del tiempo de ejecución, por lo que, existe un compromiso entre los recursos disponibles. Por lo que su correcta optimización, es un reto de diseño.
+
+    Para un correcto diseño de un sistema embebido, se debe considerar algunos principios como: modularidad, encapsulación, pruebas y 
+    documentación. Separar el sitemas en módulos poco acoplados puede facilitar la modificación de algunas partes
+    sin afectar al resto. 
+
+    Los sistemas embebidos estan estrechamente relacionados con los dispositivos IoT (\textit{Internet of Things}). Un dispositivo IoT, se puede definir como, 
+    cualquier objeto con sensores que pueda recopilar, enviar y recibir información a través de internet, sin que un humano intervenga. 
+
+    Arshdeep Bahga, en \textit{Internet Of Things: A Hands-On Approach} %\cite{arshdeep}
+    , lo define como, una infraestructura dinámica y global, 
+    basada en protocolos de comunicación interoperables, en los que los objetos físicos se integran en la red de información 
+    y pueden intercambiar datos. 
+
+    Las ``Cosas'' en IoT se suele referir a dispositivos (o sistemas embebidos), que pueden proveer capacidades de, teledetección, teleactuación y monitoreo. 
+    Esta información recolectada se puede tratar localmente, o enviarla a servidores basados en la nube, o realizar alguna tarea local con los datos obtenidos, 
+    por lo tanto, un dispositvo IoT consiste en diferentes interfaces de conexión con otros dispositivos, cableada o inalambricamente. 
+
+    En la mayoria de entornos IoT, las comunicaciónes inalambricas toman una mayor importancia, ya que permite desplegar una red de dispositivos sin la necesidad
+    de una gran infraestructura física de conexión. Sin embargo, el uso de medios inalambricos introduce restricciones como el alcance, ancho de banda, o consumo
+    energético. De estas limitaciones, nace la necesidad de estudiar los mecanismos empleados para transmitir dicha información. 
+
+    El modelo OSI (\textit{Open Systems Interconnection}) nos explica como funcionan las comunicaciones de los dispositivos:
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.45\textwidth]{figures/Pila-osi-es.png}
+        \caption{Modelo OSI.}
+        \label{fig:OSI}
+    \end{figure}
+
+    Como se muestra en la Figura~\ref{fig:OSI}, el modelo OSI organiza las comunicaciones 
+    por capas, cada una teniendo una tarea especifica, desde la transmisión fisica de los datos,
+    hasta los servicios utilizados por las aplicaciones. Aunque los dispositivos IoT no 
+    siempre iguen extrictamente las capas, el modelo nos resulta útil para descrribir la función 
+    de los distintos protocolos de comunicación. En este trabajo nos centraremos en las capas física
+    y de enlace, que son las encargadas de la transmisión inalámbrica; la capa de red, que es la responsable
+    del direccionamiento; la capa de transporte, donde se empleta UDP; la capa de aplicación es donde 
+    integramos los mensajes de HQC. 
+
+    %Wiereless coms 
+
+    La capa de enlace determina como se envia los datos fisicamente a traves de la red. Su ambito es la conexión de red local a la que está 
+    conectado el host. Los host se encuentran en el mismo enlace donde intercambian paquetes de datos. La capa de enlace determina como 
+    el dispositivo codifica y transmite los paquetes a través del medio al que esta conectado.
+
+    \begin{itemize}
+        \item 802.11 - WiFi: Es un conjunto de estándaers de comunicación para redes de area local inalámbricas (WLAN), describe detalladamente
+        la capa de enlace. Por ejemplo, el estándar 802.11a opera en la banda de 5Ghz.
+    \end{itemize}
+
+    La capa de red es la responsable del envío de datagramas IP (\textit{Internet Protocol}) desde el origen hasta el destinatario. Esta capa se encarga del direccionamiento 
+    del host y el enrutamiento de los paquetes. La identificacion de los host se realiza a través de esquemas jerárquicos de direccionamiento IP, como 
+    IPv4 o IPv6.
+
+    \begin{itemize}
+        \item IPv4: Es el protocolo de internet versión 4, es el más extendido que se usa para identificar dispositivos de una red mediante el esquema jerárquico, usando un
+        esquema de direcciones de 32 bits. 
+        \item IPv6: Es la versión 6 del protocolo de internet más reciente, utilizando un esquema jerárquico de 128 bits. 
+    \end{itemize}
+
+    La capa de transporte proporciona la capacidad de transferir los mensajes independientemente de la red subyacente, la capacidad de
+    transferir estos mensajes se puede configurar en las conexiones, ya sea mediante procedimientos de establecimiento de conexión (TCP)
+    o sin ellos, ni acuses de recibo (UDP). Esta capa proporciona funciones como el control de errores, fragmentacion, control de flujo y 
+    congestión.
+
+    \begin{itemize}
+        \item TCP: Protocolo de control de transmisión, es el protocolo más utilizado, TCP garantiza una transmisión fiable de paquetes en 
+        el orden correcto.
+        \item UDP: A diferencia de TCP que requiere una configuración inicial, UDP (\textit{User Datagram Protocol}) es un potocolo sin conexión.
+        Es útil para aplicaciones en las que el tiempo es crítico. UDP no garantiza la entrega ni el orden de los mensajes.
+    \end{itemize}
+
+    Es en este contexto donde intervienen las redes de sensores inalámbricos (WSN, por sus siglas en inglés), una red de sensores inalambricas consta 
+    de nodos finales, enrutadores, y coordinadores. Los nodos finales también pueden actuar como enrutadores, estos ultimos se encargan de distribuir 
+    los datos de los nodos finales hasta el coordinador. El coordinador recopila estos datos y actua sobre ellos, también tiene la capacidad de conectar
+    la WSN a internet. Algunos casos en los que se encuentran WSN son:
+
+    \begin{itemize}
+        \item Los sistemas de monitorización meteorológica utilizan WSN en la que los nodos recogen datos de temperatura, humedad y otros parámetros que luego son analizados.
+        \item Los sistemas de vigilancia también utilizan WSN para recopilar datos como los de movimiento. 
+    \end{itemize}
+
+    Sin embargo, debemos entender que el medio no es ideal, como lo explica Theodore S. en, 
+    \textit{Wireless communications: principles and practice} \cite{rappaport_wireless_2009}. Existen limitaciones en el rendimiento de las comunicaciones
+    inalámbricas, la trayectoria de transmisión entre el que transmite y el receptor puede variar de una línea de visión directa hasta una 
+    gravemente obstruida. 
+
+    El modelo de propagación en espacio libre se utiliza para predecir la intensidad de la señal cuando el transmisor 
+    y el receptor tienen una linea de visión directa, sin obstaculos. Al igual que la mayoria de modelos, este 
+    predice que la potencia recibida deace en función de la distancia que separa el transmisor del receptor, para una 
+    determinada potencia. 
+
+    La perdida de trayectoria, representa la atenuación de la señal como una magnitud positiva medida en dB, es la diferencia
+    entre la potencia efectiva transmitida y la potencia recibida, puede incluir o no la ganancia de las antenas. La pérdida de 
+    trayectoria para el modelo de espacio libre, incluyendo las ganancias de las antenas se define como:
+
+    \begin{equation}
+        PL(\text{dB}) = 10\log\frac{P_t}{P_r} = -10\log\left[ \frac{G_t G_r \lambda^2}{(4\pi)^2 d^2} \right]
+    \end{equation}
+
+    En un entorno real, como una WSN, se tienen diferentes mecanismos por los que se puede tener una peor comunicación. Estos mecanismos son la reflexión, difracción y dispersión.
+    La relexión se produce cuando una onda electromagnética incide sobre un objeto cuyas dimenciones son muy grandes en comparación con la longitud de onda propagada, esta se produce
+    sobre la superficie de la tierra, edificios, entre otros. La difracción se produce cuando la trayectoria de la onda de radio entre el transmisor y el receptor se obstruye por una 
+    superficie que presenta irregularidades. La dispersión se produce cuando el medio por el que viaja la onda está formado por objetos cuyas dimensiones son pequeñas, y cuando el número
+    de obstáculos por unidad de volumen es elevado. Se producen por superficies rugosas, objetos u otras irregularidades en el canal. Debido a estos mecanismos surge un fenomeno llamado \textbf{Multipath}.
+
+    La consecuencia directa del \textit{Multipath} es el desvanecimiento a pequeña escala. Existen tres efectos importantes: 
+    \begin{itemize}
+        \item Cambios rápidos en la intensidad de la señal en un intervalo reducido de tiempo.
+        \item Modularización aleatoria de la fracuencia debido al desplazamiento Doppler.
+        \item Dispersión temporal causada por el retardo introducido por el multipath.
+    \end{itemize}
+
+    Además de los efectos de propagación, en una red inalámbrica varios dispositivos pueden llegar a compartir el canal de comunicación, por lo que el acceso simultaneo puede introducir
+    ciertas esperas, colisiones y retransmisiones.
+
+    Por lo que se ha estudiado, las comunicaciones inalambricas estan lejos de ser perfectas, y se ha visto como los paquetes pueden verse afectados tanto como por el entorno, 
+    causando una atenuación y desvanecimiento de la señal, como por compartir el canal de comuncaciones con otros dispositivos puede introducir retrasos en los paquetes y retransmisiones no deseadas. 
 
 
     \subsection{Criptografía post-cuántica en sistemas embebidos e IoT}
     
-\section{Trabajos Relacionados}
+    Haciendo una revisión de ``Post-Quantum Cryptography for Internet of Things: A Survey on Performance and Optimization'', de Tao Liu, Gowri Ramachandran, y Raja Jurdak, 
+    se obtiene una conclusión clara: \textit{PQC puede ser una alternativa viable en dispositivos IoT con recursos limitados, pero falta una metodología estandarizada para evaluar
+    su coste} \cite{liu_post-quantum_2024}.
+
+    Como se ha revisado anteriormente, los dispositivos IoT y sistemas embebidos, son dispositivos de recursos limitados, CPU limitada, poca RAM, ancho de banda reducido. Los algoritmos
+    PQC suelen manejar mayor coste computacional, memoria, tamaño de transmisión y consumo energético para estos dispositivos. Es por ello que se concentran los esfuerzos en las optimizaciones 
+    de los algoritmos en este tipo de dispositivos.
+
+    Mayoritariamente, los analisis realizados sobre el rendimiento de los algoritmos PQC se centran en el tiempo de ejecución o el número de ciclos. Sin embargo, Liu et al. señalan que estas métricas
+    no son suficientes para caracterizar su impacto en redes IoT. Hay que destacar también la importancia del uso de memoria, el tamaño del codigo, y el tamaño de los datos transmitidos. 
+
+    Además de lo explicado en el paper anterior, se debe tener en cuenta que la incorporación de PQC introduce nuevas restricciones relacionadas con la comunicación. El mayor problema es el tamaño 
+    de las claves, mensajes cifrados y firmas, que incrementan el volumen de datos transmitidos. A pesar de estas limitaciones, los esquemas PQC pueden resultar viables en dispositivos IoT, siendo su 
+    mayor limitante el rendimiento, que depende tanto del algoritmo utilizado, como de la plataforma de ejecución. Como consecuencia, las propuestas actuales se centran en reducir el tiempo de ejecución y 
+    el uso de memoria.
+
+    \section{Trabajos Relacionados}
+
     \subsection{Code-based Cryptography in IoT: A HW/SW Co-Design of HQC}
+    texto
     \subsection{pqm4: Testing and Benchmarking NIST PQC on ARM Cortex-M4}
+    texto
     \subsection{Optimized Implementation of HQC on Cortex-M4}
+    
     \subsection{Post-Quantum Cryptography for Internet of Things: A Survey on Performance and Optimization}
+    
     \subsection{A Comparative Study of Post-Quantum Cryptosystems for Internet-of-Things Applications}
 
 

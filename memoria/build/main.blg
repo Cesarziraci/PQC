@@ -44,6 +44,8 @@ Warning--empty year in schoffel_code-based_2022
 Warning--empty author in noauthor_hamming_nodate
 Warning--empty journal in noauthor_hamming_nodate
 Warning--empty year in noauthor_hamming_nodate
+Warning--empty year in white_making_2012
+Warning--empty year in rappaport_wireless_2009
 Warning--empty year in boldyreva_holistic_2023
 Warning--empty year in carlet_fast_2024
 Warning--empty author in noauthor_hqc_nodate
@@ -92,8 +94,6 @@ Warning--empty journal in hu_security_nodate
 Warning--empty year in hu_security_nodate
 Warning--empty year in saeed_security_2019
 Warning--empty year in kurose_computer_2017
-Warning--empty year in rappaport_wireless_2009
-Warning--empty year in white_making_2012
 Warning--empty year in bernstein_code-based_2009
 Warning--empty journal in hernandez-ramos_security_2021
 Warning--empty year in hernandez-ramos_security_2021

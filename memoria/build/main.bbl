@@ -48,6 +48,19 @@ M.~Schöffel, J.~Feldmann, and N.~Wehn, ``Code-based cryptography in {IoT}: A
 ``Hamming quasi-cyclic ({HQC}) fourth round version updated version
   01/10/2022,''
 
+\bibitem{white_making_2012}
+E.~White, {\em Making embedded systems: design patterns for great software}.
+\newblock O'Reilly.
+
+\bibitem{rappaport_wireless_2009}
+T.~S. Rappaport, {\em Wireless communications: principles and practice}.
+\newblock Prentice Hall communications engineering and emerging technologies
+  series, Prentice Hall, 2. ed., 18. printing~ed.
+
+\bibitem{liu_post-quantum_2024}
+T.~Liu, G.~Ramachandran, and R.~Jurdak, ``Post-quantum cryptography for
+  internet of things: A survey on performance and optimization.''
+
 \bibitem{boldyreva_holistic_2023}
 M.~Krausz, G.~Land, J.~Richter-Brockmann, and T.~Güneysu, ``A holistic
   approach towards side-channel secure fixed-weight polynomial sampling,'' in
@@ -83,10 +96,6 @@ J.-A. Septien-Hernandez, M.~Arellano-Vazquez, M.~A. Contreras-Cruz, and J.-P.
 S.~P~C, K.~Jain, and P.~Krishnan, ``Analysis of post-quantum cryptography for
   internet of things,'' in {\em 2022 6th International Conference on
   Intelligent Computing and Control Systems ({ICICCS})}, pp.~387--394, {IEEE}.
-
-\bibitem{liu_post-quantum_2024}
-T.~Liu, G.~Ramachandran, and R.~Jurdak, ``Post-quantum cryptography for
-  internet of things: A survey on performance and optimization.''
 
 \bibitem{maurya_quantum_2024}
 S.~Maurya, S.~Kasture, and A.~Shukla, ``Quantum cryptography for secure
@@ -198,15 +207,6 @@ H.~Aldowah, S.~Ul~Rehman, and I.~Umar, ``Security in internet of things:
 \bibitem{kurose_computer_2017}
 J.~F. Kurose and K.~W. Ross, {\em Computer networking: a top-down approach}.
 \newblock Pearson Education, 7. edition~ed.
-
-\bibitem{rappaport_wireless_2009}
-T.~S. Rappaport, {\em Wireless communications: principles and practice}.
-\newblock Prentice Hall communications engineering and emerging technologies
-  series, Prentice Hall, 2. ed., 18. printing~ed.
-
-\bibitem{white_making_2012}
-E.~White, {\em Making embedded systems: design patterns for great software}.
-\newblock O'Reilly.
 
 \bibitem{bernstein_code-based_2009}
 R.~Overbeck and N.~Sendrier, ``Code-based cryptography,'' in {\em Post-Quantum
