@@ -447,14 +447,72 @@ esquemas post-cuánticos en dispositivos de recursos limitados.
     \section{Trabajos Relacionados}
 
     \subsection{Code-based Cryptography in IoT: A HW/SW Co-Design of HQC}
-    texto
-    \subsection{pqm4: Testing and Benchmarking NIST PQC on ARM Cortex-M4}
-    texto
+
+    En el trabajo de Schöffel et al. ``\textit{Code-based Cryptography in IoT: A HW/SW Co-Design of HQC}'', se parte del problema de que los algoritmos post-cuánticos, como HQC, suelen requerir
+    más computo y memoria. Es por ello, que las implementaciones en dispositivos IoT suelen ser menos estudiadas en este ambito.
+
+    Para empezar, los autores realizaron la implementacion del perfil de HQC-128 sobre un procesador RISC-V de 32 bits, con el objetivo de
+    cuales son las operaciones que más memoriua y ciclos consumen. Seguidamente, se decide que optimización es mejor para cada cuello de botella. 
+    
+    Muestran que los mayores costes de HQC aparecen principalmene en tres operaciones: 
+    \begin{itemize}
+        \item Operaciones aritméticas sobre polinomios.
+        \item Operaciones criptográficas de SHAKE/Keccak.
+        \item Operaciones de memoria. 
+    \end{itemize}
+
+    En la implementaciópn de referencia, las operaciones de memoria representan un 37\% del tiempo 
+    en KeyGen, 36.6\% en Encaps y 36\% en Decaps, mientras que SHAKE supone un 27\% y un 36\% y la aritmetica
+    polinómica alrededor de un 25\%. Por lo que se puede concluir que el coste de HQC no proviene únicamente
+    de ``hacer criptografía'', sino también de las gestiones de datos. 
+
+    En el paper se proponen varias optimizaciones, como el optimizado el código C eliminando 
+    copias innecesarias, trabajando con punteros y usando DMA para acelerar memcpy y memset. 
+
+    Las optimizaciones de software, junnto con el uso de DMA permiten reducir el tiempo de ejecución 
+    entre un 36\% y un 49\% respecto a la implementación de referencia. Al combinar las optimizaciones
+    de software y hardware, se consiguen unas reducciones cercanas al 99\% en el númeo de ciclos necesarias
+    para las operaciones de HQC. Estos resultados muestran que HQC es una alternativa viable para dispositivos
+    IoT de recursos limitados; también muestran que la implementación de referencia de HQC no es adecuada para 
+    este tipo de dispositivos, y que se requieren optimizaciones específicas para reducir el coste computacional y de memoria.
+
+
+    \subsection{PQM4: Testing and Benchmarking NIST PQC on ARM Cortex-M4}
+
+    El paper de Kannwischer et al. ``\textit{PQM4: Testing and Benchmarking NIST PQC on ARM Cortex-M4}'' \cite{kannwischer_pqm4_2020} Trata de construir 
+    una plataforma común de pruebas y benchmarking para comprobar que algoritmos PQC se pueden ejecutar en un microcontrolador. Su objetivo principal es evaluar la viabilidad de los candidatos del proceso de estandarización post-cuántica del NIST sobre un ARM Cortex-M4, utilizando
+    una placa de desarrollo STM32F4DISCOVERY, con 196 KiB de RAN y 1 MiB de memoria flash. 
+    
+    El framwork PQM4 proporciona distintas implementaciones de algoritmos PQC, asi como sus evaluaciones. Además, tienen diferentes distinciones 
+    segun el nivel de implementación: Código de referencia, implementaciones C optimizadas e implementaciones específicamente optimizadas
+    para Cortex-M4. 
+
+    Este trabajo mide principalmente: 
+    \begin{itemize}
+        \item Número de ciclos de CPU.
+        \item Consumo de memoria de pila.
+        \item Tamaño del código.
+        \item Tiempo empleado en Hashing. 
+        \item Corrección funcional de los KEM.
+    \end{itemize}
+
+    Para los KEM, se hace la distinción entre KeyGen, Encaps y Decaps. Se intenta homogeneizar la comparacion, haciendo 
+    que todos los algorritmos utilicen implementaciones como AES, SHA2, SHA3 y SHAKE. 
+
+    Los resultados son interesantes, mostrando que no todas las implementaciones de PQC son adecuados para dispositivos IoT y sistemas embebidos.
+    Es de especial relevancia que en algunos casos el problema era el tamaño de las claves, por ejemplo, Classic McEliece, tiene claves públicas
+    comprendidas entre 255 KiB y 1326 KiB, superiores a la memoria disponible en el microcontrolador. 
+
+    Los autores destacan que el rendimiento de los algoritmos depende considerablemente del grado de optimizaciópn de la implementación, es por ello 
+    que los resultados no deben interpretarse como comparación directa entre los algoritmos. 
+
+    En el caso de HQC, no fue posible realizar su evaluación, debido a que las implementaciones disponibles al momento dependían de 
+    bibliotecas externas dificultando su integración en la plataforma.
+
     \subsection{Optimized Implementation of HQC on Cortex-M4}
-    
-    \subsection{Post-Quantum Cryptography for Internet of Things: A Survey on Performance and Optimization}
-    
+
     \subsection{A Comparative Study of Post-Quantum Cryptosystems for Internet-of-Things Applications}
+
 
 
 \section{Objetivos}
