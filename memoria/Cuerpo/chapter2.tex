@@ -511,8 +511,58 @@ esquemas post-cuánticos en dispositivos de recursos limitados.
 
     \subsection{Optimized Implementation of HQC on Cortex-M4}
 
+    El artículo de DongCheon Kim et al. ``\textit{Optimized Implementation of HQC on Cortex-M4}'' NO OLVIDAR CITAR se parte de la 
+    premisa de que HQC tiene un coste importante en plataformas limitadas. Su objetivo es optimizar HQC para que pueda ser ejecutado 
+    de forma más eficiente en un microcontrolador ARM Cortex-M4. 
+
+    Para el momento de escritura de este artículo, ya existían optimizaciones para HQC en Cortex-M4, basadas en aprovechar el hecho de que 
+    algunos vectores secretos son spares; se almacenan en las posiciones de los bits a 1 y luego se realizan desplazamientos y XOR sobre ellas. 
+    Esto introduce un problema, ya que, las operaciones realizadas dependen del secreto, y el tiempo de ejecución puede variar, creando asi 
+    una potencial amenaza de canal lateral. 
+
+    Los autores investigan primero la implementación de PQClean incluida en PQM4, descubriendo que la multiplicación de polinomios binarios 
+    domina el tiempo de ejecución; En HQC\_256, vect\_mul representa el 97 \% del coste de Key Generation, en encapsulación representa el 98 \% y en desencapsulación 
+    representa el 96 \%. Es por ello que se enfocan en optimizar esta operación. 
+
+    Se proponen diferentes optimizaciones de algoritmos de multiplicación de polinomios, principalmente Karatsuba y Toom-Cook, seleccionando una configuración 
+    diferente según el nivel de seguridad de HQC. Además, se optimizan otras operaciones de bajo nivel teniendo en cuenta las características del Cortex-M4. 
+
+    Las evaluaciones se realizan utilizando el framework PQM4, sobre una placa NUCLEO-L4R5ZI, con un procesador ARM Cortex-M4 a 20MHz. Las metricas utilizadas 
+    son el número de ciclos de reloj y el uso de la memoria de pila. Los resultados muestran mejoras entre un 1042 \% y 1348 \% frente a la implementación
+    PQClean, dependiendo de la operación y el nivel de seguridad. Frente a la implementación de referencia, previamente optimizada, se obtienen mejoras 
+    comprendidas aproximadamente entre un 35 \% y un 46 \%.
+
+    Este artículo demuestra que el coste computacional de HQC se puede reducir significativamente mediante optimizaciones adaptadas a arquitecturas ARM Cortex-M4, 
+    manteniendo un uso de memoria de pila similar a la de la implementación de referencia. Sin embargo, los estudios se centran en el rendimiento computacional, 
+    sin llegar a medir su impacto derivado de su integración y transmisión. 
+
     \subsection{A Comparative Study of Post-Quantum Cryptosystems for Internet-of-Things Applications}
 
+    En el artículo de Septien-Hernandez et al. ``\textit{A Comparative Study of Post-Quantum Cryptosystems for Internet-of-Things Applications}'' NO OLVIDAR CITAR, se realiza un estudio comparativo de
+    se estudia la viabilidad de integrar algoritmos PQC eden dispositivos IoT con recursos limitados. Se parte de la premisa de que 
+    la criptografía post-cuántica afectara también este tipo de dispositivos, y debido a sus limitaciones, es necesario analizar que algoritmo es el más
+    adecuado. 
+
+    HQC aparece entre los candidatos considerados inicialmente dentro del proceso de estandarización del NIST. Sin embargo, los autores centran el estudio experimental en 
+    algoritmos basados en retículas, ya que, de acuerdo con la literatura considerada, estos presentan características más adecuadas para dispositivos con recursos limitados. 
+    Los algoritmos seleccionados para el análisis fueron LightSaber, Kyber512, NTRUhps2048509, NTRULPr653 y FrodoKEM640.
+
+    Los analisis se realizaron sobre una arquitectura IoT compuesta por una red inalámbrica de sensores, un \textit{getaway} y un servidor en la nube.
+    Los nodos sensores utilizan un Arduino Nano con un microcontrolador ATmega328P, un sensor DHT22 y un módulo de comunicación 
+    RFM69HCW. Como \textit{gateway} se utiliza una Raspberry Pi 3B+, mientras que a nivel software se emplean TLS 1.3, MQTT y una versión modificada 
+    de OpenSSL con soporte para algoritmos post-cuánticos.
+
+    Para analizar el rendimiento de los algoritmos se consideran principalmente tres métricas: uso de CPU, memoria RAM y tráfico de red. Para el tráfico de red
+    se considera el número de paquetes transmitidos, el número total de bytes y la duración de la conexión. 
+
+    Los resultados muestran diferencias importantes entre los diferentes mecanismos. En consumo de memoria LightSaber presenta el mejor resultado, con un máximo aproximado de 994 bytes, 
+    mientras que FrodoKEM640 alcanza aproximadamente 921 kB. En tiempo de ejecución Kyber512 obtiene el mejor comportamiento, con aproximadamente 204 ms para el conjunto de operaciones de 
+    generación de claves, encapsulación y decapsulación, seguido de LightSaber con unos 255 ms, En términos generales, las curvas elípticas requieren menos bytes transmitidos que los mecanismos post-cuánticos, aunque los resultados indican que estos últimos pueden integrarse en sistemas 
+    IoT actuales con un rendimiento razonable. 
+
+    Este trabajo resulta interesante, debido a que no limita la evaluación al coste computacional, sino que también considera 
+    el impacto sobre las comunicaciones. No obstante, HQC no forma parte de los algoritmos evaluados, por lo que queda abierta la necesidad de estudiar 
+    su comportamiento en escenarios IoT reales. 
 
 
 \section{Objetivos}
@@ -522,7 +572,6 @@ con el fin de evaluar su rendimiento en esta clase de entornos. Es por ello que 
 que permiten estructurar el desarrollo de este proyecto. 
 
 \begin{enumerate}
-    \item Analizar el funcionamiento interno del esquema \textbf{HQC}
     \item Implementar el esquema \textbf{HQC} en un entorno IoT
     \item Evaluar el rendimiento del esquema HQC en terminos de ejecucion, consumo de memoria, y tamaño de clave/cifrado en el sistema elegido.
     \item Identificar posibles limitaciones y oportunidades de mejora para aplicaciones reales en dispositivos de bajo consumo
