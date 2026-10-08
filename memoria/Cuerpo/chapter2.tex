@@ -22,6 +22,20 @@ Finalmente, se revisan los trabajos erlacionados relevantes sobre implementacion
 esquemas post-cuánticos en dispositivos de recursos limitados. 
 
 
+\section{Objetivos}
+
+El presente trabajo estudia la implementación de esquemas de seguridad post-cuánticos en sistemas embebidos para IoT, 
+con el fin de evaluar su rendimiento en esta clase de entornos. Es por ello que se plantean una serie de objetivos 
+que permiten estructurar el desarrollo de este proyecto. 
+
+\begin{enumerate}
+    \item Implementar el esquema \textbf{HQC} en un entorno IoT
+    \item Evaluar el rendimiento del esquema HQC en terminos de ejecucion, consumo de memoria, y tamaño de clave/cifrado en el sistema elegido.
+    \item Identificar posibles limitaciones y oportunidades de mejora para aplicaciones reales en dispositivos de bajo consumo
+    \item Evaluar la sobrecarga que introduce el uso del esquema HQC en las comunicaciones, en comparación con un sistema sin cifrado post-cuántico.
+\end{enumerate}
+
+
 \section{Marco Teórico}
 
     \subsection{Criptografía clásica y post-cuántica}
@@ -563,17 +577,3 @@ esquemas post-cuánticos en dispositivos de recursos limitados.
     Este trabajo resulta interesante, debido a que no limita la evaluación al coste computacional, sino que también considera 
     el impacto sobre las comunicaciones. No obstante, HQC no forma parte de los algoritmos evaluados, por lo que queda abierta la necesidad de estudiar 
     su comportamiento en escenarios IoT reales. 
-
-
-\section{Objetivos}
-
-El presente trabajo estudia la implementación de esquemas de seguridad post-cuánticos en sistemas embebidos para IoT, 
-con el fin de evaluar su rendimiento en esta clase de entornos. Es por ello que se plantean una serie de objetivos 
-que permiten estructurar el desarrollo de este proyecto. 
-
-\begin{enumerate}
-    \item Implementar el esquema \textbf{HQC} en un entorno IoT
-    \item Evaluar el rendimiento del esquema HQC en terminos de ejecucion, consumo de memoria, y tamaño de clave/cifrado en el sistema elegido.
-    \item Identificar posibles limitaciones y oportunidades de mejora para aplicaciones reales en dispositivos de bajo consumo
-    \item Evaluar la sobrecarga que introduce el uso del esquema HQC en las comunicaciones, en comparación con un sistema sin cifrado post-cuántico.
-\end{enumerate}

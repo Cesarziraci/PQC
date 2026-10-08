@@ -34,6 +34,8 @@ Warning--entry type for "nieles_introduction_2017" isn't style-file defined
 Warning--I didn't find a database entry for "SHOR"
 Warning--I didn't find a database entry for "grover"
 Warning--I didn't find a database entry for "kannwischer_pqm4_2020"
+Warning--I didn't find a database entry for "ref:EFR32MG21"
+Warning--I didn't find a database entry for "Si7021"
 Warning--empty journal in fernandez-carames_pre-quantum_2020
 Warning--empty year in fernandez-carames_pre-quantum_2020
 Warning--empty journal in kuznetsov_trade-offs_nodate
@@ -100,7 +102,7 @@ Warning--empty journal in hernandez-ramos_security_2021
 Warning--empty year in hernandez-ramos_security_2021
 You've used 46 entries,
             1876 wiz_defined-function locations,
-            692 strings with 12191 characters,
+            696 strings with 12229 characters,
 and the built_in function-call counts, 11602 in all, are:
 = -- 1002
 > -- 532
@@ -139,4 +141,4 @@ warning$ -- 64
 while$ -- 114
 width$ -- 48
 write$ -- 361
-(There were 72 warnings)
+(There were 74 warnings)
