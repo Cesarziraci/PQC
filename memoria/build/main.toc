@@ -28,17 +28,17 @@
 \contentsline {subsection}{\numberline {3.5.2}Proceso de diagnostico}{26}{subsection.3.5.2}%
 \contentsline {subsection}{\numberline {3.5.3}Modificacion del driver}{26}{subsection.3.5.3}%
 \contentsline {subsection}{\numberline {3.5.4}impacto sobre el trabajo}{26}{subsection.3.5.4}%
-\contentsline {chapter}{\numberline {4}Metodología experimental}{27}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Escenarios y topologías}{27}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Condiciones experimentales}{27}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Métricas evaluadas}{27}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Procedimiento experimental}{27}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Resultados}{29}{chapter.5}%
-\contentsline {section}{\numberline {5.1}P2P}{29}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Árbol}{29}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Linea}{29}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Estrella}{29}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Comparativa}{29}{section.5.5}%
-\contentsline {chapter}{\numberline {6}Discusión}{31}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusiones}{33}{chapter.7}%
-\contentsline {chapter}{Anexos}{39}{appendix*.16}%
+\contentsline {section}{\numberline {3.6}Diseño experimental}{26}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Escenarios y topologías}{26}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Condiciones experimentales}{26}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Métricas evaluadas}{26}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Procedimiento experimental}{26}{subsection.3.6.4}%
+\contentsline {chapter}{\numberline {4}Resultados}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}P2P}{27}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Árbol}{27}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Linea}{27}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Estrella}{27}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Comparativa}{27}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Discusión}{29}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{31}{chapter.6}%
+\contentsline {chapter}{Anexos}{37}{appendix*.16}%
