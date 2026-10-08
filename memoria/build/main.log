@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.13)  8 OCT 2026 18:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.13)  8 OCT 2026 19:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1448,7 +1448,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [15]
 
-Package natbib Warning: Citation `kannwischer_pqm4_2020' on page 16 undefined on input line 496.
+Package natbib Warning: Citation `kannwischer_pqm4_2020' on page 16 undefined on input line 497.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1458,8 +1462,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [16]
-LaTeX Info: Redefining \. on input line 540.
-LaTeX Info: Redefining \% on input line 540.
+LaTeX Info: Redefining \. on input line 537.
+LaTeX Info: Redefining \% on input line 537.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1586,6 +1590,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [24 <./figures/Arq_S.png> <./figures/Arq_C.png>])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 LaTeX Info: Redefining \. on input line 93.
 LaTeX Info: Redefining \% on input line 93.
 
@@ -1597,16 +1603,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [25 <./figures/Linea.png> <./figures/Estrella.png> <./figures/arbol.png> <./figures/P2P.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[26]
 \openout2 = `cuerpo/chapter4.aux'.
 
- (cuerpo/chapter4.tex [26
+ (cuerpo/chapter4.tex
+Cap\'{\i }tulo 4.
+) [27
 
 
 
 
 ]
-Cap\'{\i }tulo 4.
-) [27]
 \openout2 = `cuerpo/chapter5.aux'.
 
  (cuerpo/chapter5.tex [28
@@ -1713,7 +1727,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  107i,12n,120p,2551b,877s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on c:\Users\cesar\Documents\PQC\PQC\memoria\build\main.pdf (53 pages, 3328217 bytes).
+Output written on c:\Users\cesar\Documents\PQC\PQC\memoria\build\main.pdf (53 pages, 3329204 bytes).
 PDF statistics:
  688 PDF objects out of 1000 (max. 8388607)
  166 named destinations out of 1000 (max. 500000)

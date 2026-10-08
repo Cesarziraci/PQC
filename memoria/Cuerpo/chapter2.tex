@@ -433,8 +433,9 @@ que permiten estructurar el desarrollo de este proyecto.
         \item Dispersión temporal causada por el retardo introducido por el multipath.
     \end{itemize}
 
-    Además de los efectos de propagación, en una red inalámbrica varios dispositivos pueden llegar a compartir el canal de comunicación, por lo que el acceso simultaneo puede introducir
-    ciertas esperas, colisiones y retransmisiones.
+    En una red multi-hop, un paquete puede atravesar varios nodos intermedios antes de alcanzar su destino. Cada salto requiere una nueva transmisión sobre el medio inalámbrico, aumentando 
+    el uso del canal y pudiendo incrementar la latencia extremo a extremo. Asimismo, cuando varios flujos convergen sobre determinados nodos intermedios, puede producirse una mayor 
+    concentración de tráfico y aumentar la probabilidad de contención, colisiones o retransmisiones.
 
     Por lo que se ha estudiado, las comunicaciones inalambricas estan lejos de ser perfectas, y se ha visto como los paquetes pueden verse afectados tanto como por el entorno, 
     causando una atenuación y desvanecimiento de la señal, como por compartir el canal de comuncaciones con otros dispositivos puede introducir retrasos en los paquetes y retransmisiones no deseadas. 
