@@ -1,6 +1,6 @@
 % called by main.tex
 %
-\chapter{Introduction}
+\chapter{Introducción}
 \label{ch::chapter1}
 En los últimos años, los dispositivos IoT han ganado una importancia significativa tanto en la industria
 como en la vida cotidiana, impulsados por el crecimiento del número de usuarios de Internet. Se estima 
@@ -18,26 +18,32 @@ Ante esta amenaza, el \textbf{Instituto Nacional de Estándares y Tecnología (N
 inició un proceso de estandarización de algoritmos criptográficos resistentes a ataques cuánticos, 
 con el objetivo de garantizar la seguridad de la información en el futuro \cite{computer_security_division_post-quantum_2017}.
 
+%%
 La seguridad en los dispositivos IoT es un desafío crítico, ya que muchos de estos dispositivos dependen 
 de algoritmos criptográficos tradicionales que podrían volverse obsoletos. Esto representa un riesgo 
 significativo, especialmente en entornos donde los dispositivos embebidos operan con recursos computacionales 
 limitados y no siempre pueden ser actualizados fácilmente. En este contexto, la \textbf{criptografía post-cuántica (PQC, Post-Quantum Cryptography)} 
 se presenta como una solución necesaria para garantizar la seguridad a largo plazo, proporcionando 
 resistencia a ataques cuánticos sin requerir hardware extremadamente potente.
+%%
 
+%%
 Dentro de la criptografía post-cuántica, los algoritmos pueden clasificarse en varias categorías según 
 el problema matemático en el que basan su seguridad \cite{fernandez-carames_pre-quantum_2020}: Criptografía 
 basada en códigos, Criptografía basada en redes euclidianas, Criptografía basada en funciones hash, 
 Criptografía basada en isogenias de curvas elípticas, Criptografía basada en polinomios multivariantes.
-
+%%
 Durante el proceso de estandarización de criptografica post-cuántica del NIST, se evaluaron diferentes
 codigos candidatos, \textbf{HQC}, \textbf{BIKE} y \textbf{Classic McEliece}. Tras la cuarta ronda de 
 evaluación, en marzo de 2025 se selecciono \textbf{HQC} para su estandarización.
 
 Este trabajo se centrará en el algoritmo \textbf{HQC}, un esquema de encapsulación de claves basado 
 en códigos diseñado para proporcionar seguridad frente a ataques tanto de ordenadores clásicos como 
-cuánticos \cite{noauthor_hqc_nodate-1}. En comparación con los otros esquemas finalistas, \textbf{HQC} 
+cuánticos \cite{noauthor_hqc_nodate-1}. 
+
+%%
+En comparación con los otros esquemas finalistas, \textbf{HQC} 
 ofrece un equilibrio entre tamaño de clave, eficiencia en el cifrado/descifrado y requisitos computacionales, 
 lo que lo hace una alternativa interesante para dispositivos IoT. Según \cite{kuznetsov_trade-offs_nodate}, 
 \textbf{HQC} presenta un rendimiento adecuado para dispositivos con bajas prestaciones y consumo reducido, 
-características esenciales en muchas aplicaciones IoT.
+características esenciales en muchas aplicaciones IoT.%%

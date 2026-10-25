@@ -5,7 +5,7 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {section}{Índice de figuras}{viii}{chapter*.4}%
 \contentsline {section}{Índice de tablas}{ix}{chapter*.5}%
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Estado del arte}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Objetivos}{3}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Marco Teórico}{4}{section.2.2}%
@@ -35,10 +35,10 @@
 \contentsline {subsection}{\numberline {3.6.4}Procedimiento experimental}{26}{subsection.3.6.4}%
 \contentsline {chapter}{\numberline {4}Resultados}{27}{chapter.4}%
 \contentsline {section}{\numberline {4.1}P2P}{27}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Árbol}{27}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Linea}{27}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Estrella}{27}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Comparativa}{27}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Discusión}{29}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusiones}{31}{chapter.6}%
-\contentsline {chapter}{Anexos}{37}{appendix*.16}%
+\contentsline {section}{\numberline {4.2}Estrella}{29}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Linea}{29}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Ábol}{29}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Comparativa}{29}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Discusión}{31}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{33}{chapter.6}%
+\contentsline {chapter}{Anexos}{39}{appendix*.20}%

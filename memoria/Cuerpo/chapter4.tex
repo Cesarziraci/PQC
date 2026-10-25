@@ -13,14 +13,185 @@ con la configuración P2P, y continuando con Árbol, Linea y Estrella. Finalment
 comparación global entre las diferentes topologías, con el proposito de identificar las principales 
 diferencias observadas. 
 
+Para obtener los datos, se realizaron 3 pruebas por condición, y se realizo una media ponderada para cada
+condición de cada topologia.
+
 \section{P2P}
+Con el objetivo de evaluar el coste asociado al transporte de los mensajes del protocolo HQC en una comunicacion directa
+entre dos nodos, se emplea una topología punto a punto. Para ello se han utilizado dos nodos cookie, una actuando como 
+servidor y la otra como cliente. Para esta prueba, no se lleva a cabo la condicion 3, debido a que no se unen nuevos nodos 
+en esta configuración. 
 
+\begin{figure}[htbp]
+    \centering
+    % Primera fila
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/P2P/01_trafico_radio_total.png}
+        \caption{Tráfico radio total}
+        \label{fig:radio_total}
+    \end{subfigure}
+    \hfill % Espacio horizontal entre columnas
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/P2P/Presion_re.png}
+        \caption{Presión de red}
+        \label{fig:presion_red}
+    \end{subfigure}
+    
+    \vspace{0.5cm} % Espacio vertical entre filas
+    
+    % Segunda fila
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/P2P/Bytes_app.png}
+        \caption{Bytes por aplicación}
+        \label{fig:bytes_app}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/P2P/Tiempo_HQC.png}
+        \caption{Tiempo HQC}
+        \label{fig:tiempo_hqc}
+    \end{subfigure}
 
+    % Título general de la matriz
+    \caption{Análisis global del tráfico generado en escenarios P2P}
+    \label{fig:matriz_p2p_global} % Etiqueta principal de todo el bloque
+\end{figure}
 
-\section{Árbol}
+Al observar cada Figura se puede observar el impacto que tiene el transportar 
+las claves de HQC entre dos nodos, y el poco efecto que tienen en comparación 
+en una red segura ya establecida transportar datos cifrados. 
+
+La Figura~\ref{fig:radio_total} evidencia la clara presión que ejerce HQC sobre
+una red, alcanzando más de 30000 bytes transmitidos durante el establecimiento 
+de la red segura. 
+
+Como se muestra en la Figura~\ref{fig:bytes_app}, HQC puede llegar a transmitir 8KB
+
+\section{Estrella}
+
+\begin{figure}[htbp]
+    \centering
+    % Primera fila
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/STAR_HQC_SOBRECOSTE/Trafico.png}
+        \caption{Tráfico radio totalE}
+        \label{fig:radio_total}
+    \end{subfigure}
+    \hfill % Espacio horizontal entre columnas
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/STAR_HQC_SOBRECOSTE/Presion.png}
+        \caption{Presión de red}
+        \label{fig:presion_redE}
+    \end{subfigure}
+    
+    \vspace{0.5cm} % Espacio vertical entre filas
+    
+    % Segunda fila
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/STAR_HQC_SOBRECOSTE/Bytes.png}
+        \caption{Bytes por aplicación}
+        \label{fig:bytes_appE}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/STAR_HQC_SOBRECOSTE/Tiempo.png}
+        \caption{Tiempo HQC}
+        \label{fig:tiempo_hqcE}
+    \end{subfigure}
+
+    % Título general de la matriz
+    \caption{Análisis global del tráfico generado en la topologia Estrella}
+    \label{fig:matriz_E_global} % Etiqueta principal de todo el bloque
+\end{figure}
 
 \section{Linea}
 
-\section{Estrella}
+\begin{figure}[htbp]
+    \centering
+    % Primera fila
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/LINE_HQC_SOBRECOSTE/Trafico.png}
+        \caption{Tráfico radio total}
+        \label{fig:radio_totalL}
+    \end{subfigure}
+    \hfill % Espacio horizontal entre columnas
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/LINE_HQC_SOBRECOSTE/Prersion.png}
+        \caption{Presión de red}
+        \label{fig:presion_redL}
+    \end{subfigure}
+    
+    \vspace{0.5cm} % Espacio vertical entre filas
+    
+    % Segunda fila
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/LINE_HQC_SOBRECOSTE/Bytes.png}
+        \caption{Bytes por aplicación}
+        \label{fig:bytes_appL}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/LINE_HQC_SOBRECOSTE/Tiempo.png}
+        \caption{Tiempo HQC}
+        \label{fig:tiempo_hqcL}
+    \end{subfigure}
+
+    % Título general de la matriz
+    \caption{Análisis global del tráfico generado en la topologia Linea}
+    \label{fig:matriz_L_global} % Etiqueta principal de todo el bloque
+\end{figure}
+
+\section{Ábol}
+
+\begin{figure}[htbp]
+    \centering
+    % Primera fila
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/TREE_HQC_SOBRECOSTE/trafico.png}
+        \caption{Tráfico radio total}
+        \label{fig:radio_totalA}
+    \end{subfigure}
+    \hfill % Espacio horizontal entre columnas
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/TREE_HQC_SOBRECOSTE/presion.png}
+        \caption{Presión de red}
+        \label{fig:presion_redA}
+    \end{subfigure}
+    
+    \vspace{0.5cm} % Espacio vertical entre filas
+    
+    % Segunda fila
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/TREE_HQC_SOBRECOSTE/Bytes.png}
+        \caption{Bytes por aplicación}
+        \label{fig:bytes_appA}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/TREE_HQC_SOBRECOSTE/Tiempo.png}
+        \caption{Tiempo HQC}
+        \label{fig:tiempo_hqcA}
+    \end{subfigure}
+
+    % Título general de la matriz
+    \caption{Análisis global del tráfico generado en la topologia Árbol}
+    \label{fig:matriz_A_global} % Etiqueta principal de todo el bloque
+\end{figure}
 
 \section{Comparativa}

@@ -1,0 +1,912 @@
+﻿topologia,N,condicion,metrica,n,media,desv_estandar,minimo,maximo,objetivo_3,procedencias
+LINE,2,C0,app_bytes,5,758.0,0.0,758.0,758.0,OK,Original:LINE_N2_C0_R01:1 | Original:LINE_N2_C0_R01:2 | Original:LINE_N2_C0_R01:3 | Original:LINE_N2_C0_R01:4 | Original:LINE_N2_C0_R01:5
+LINE,2,C0,hqc_total_ticks_max,5,0.0,0.0,0.0,0.0,OK,Original:LINE_N2_C0_R01:1 | Original:LINE_N2_C0_R01:2 | Original:LINE_N2_C0_R01:3 | Original:LINE_N2_C0_R01:4 | Original:LINE_N2_C0_R01:5
+LINE,2,C0,mac_extra_attempts,5,0.0,0.0,0.0,0.0,OK,Original:LINE_N2_C0_R01:1 | Original:LINE_N2_C0_R01:2 | Original:LINE_N2_C0_R01:3 | Original:LINE_N2_C0_R01:4 | Original:LINE_N2_C0_R01:5
+LINE,2,C0,nack_retransmitted_fragments,5,0.0,0.0,0.0,0.0,OK,Original:LINE_N2_C0_R01:1 | Original:LINE_N2_C0_R01:2 | Original:LINE_N2_C0_R01:3 | Original:LINE_N2_C0_R01:4 | Original:LINE_N2_C0_R01:5
+LINE,2,C0,radio_bytes,5,1180.4,611.3262631361424,634.0,2229.0,OK,Original:LINE_N2_C0_R01:1 | Original:LINE_N2_C0_R01:2 | Original:LINE_N2_C0_R01:3 | Original:LINE_N2_C0_R01:4 | Original:LINE_N2_C0_R01:5
+LINE,2,C0,radio_listen_ticks,5,0.0,0.0,0.0,0.0,OK,Original:LINE_N2_C0_R01:1 | Original:LINE_N2_C0_R01:2 | Original:LINE_N2_C0_R01:3 | Original:LINE_N2_C0_R01:4 | Original:LINE_N2_C0_R01:5
+LINE,2,C0,radio_rx_bytes,5,623.2,288.9467078891885,452.0,1137.0,OK,Original:LINE_N2_C0_R01:1 | Original:LINE_N2_C0_R01:2 | Original:LINE_N2_C0_R01:3 | Original:LINE_N2_C0_R01:4 | Original:LINE_N2_C0_R01:5
+LINE,2,C0,radio_transmit_ticks,5,0.0,0.0,0.0,0.0,OK,Original:LINE_N2_C0_R01:1 | Original:LINE_N2_C0_R01:2 | Original:LINE_N2_C0_R01:3 | Original:LINE_N2_C0_R01:4 | Original:LINE_N2_C0_R01:5
+LINE,2,C0,radio_tx_bytes,5,557.2,331.9174596191047,182.0,1092.0,OK,Original:LINE_N2_C0_R01:1 | Original:LINE_N2_C0_R01:2 | Original:LINE_N2_C0_R01:3 | Original:LINE_N2_C0_R01:4 | Original:LINE_N2_C0_R01:5
+LINE,2,C0,retransmission_pressure,5,0.0,0.0,0.0,0.0,OK,Original:LINE_N2_C0_R01:1 | Original:LINE_N2_C0_R01:2 | Original:LINE_N2_C0_R01:3 | Original:LINE_N2_C0_R01:4 | Original:LINE_N2_C0_R01:5
+LINE,2,C0,retransmitted_bytes,5,0.0,0.0,0.0,0.0,OK,Original:LINE_N2_C0_R01:1 | Original:LINE_N2_C0_R01:2 | Original:LINE_N2_C0_R01:3 | Original:LINE_N2_C0_R01:4 | Original:LINE_N2_C0_R01:5
+LINE,2,C0,temp_tx,5,0.0,0.0,0.0,0.0,OK,Original:LINE_N2_C0_R01:1 | Original:LINE_N2_C0_R01:2 | Original:LINE_N2_C0_R01:3 | Original:LINE_N2_C0_R01:4 | Original:LINE_N2_C0_R01:5
+LINE,2,C2,app_bytes,4,7147.0,1825.1666590570114,5556.0,9108.0,OK,Original:LINE_N2_C2_R01:1 | Original:LINE_N2_C2_R01:2 | Original:LINE_N2_C2_R01:4 | Original:LINE_N2_C2_R01:5
+LINE,2,C2,hqc_total_ticks_max,4,33992.25,127.36921396737387,33802.0,34068.0,OK,Original:LINE_N2_C2_R01:1 | Original:LINE_N2_C2_R01:2 | Original:LINE_N2_C2_R01:4 | Original:LINE_N2_C2_R01:5
+LINE,2,C2,mac_extra_attempts,4,28.0,5.477225575051661,21.0,34.0,OK,Original:LINE_N2_C2_R01:1 | Original:LINE_N2_C2_R01:2 | Original:LINE_N2_C2_R01:4 | Original:LINE_N2_C2_R01:5
+LINE,2,C2,nack_retransmitted_fragments,4,25.5,24.664414311581236,4.0,52.0,OK,Original:LINE_N2_C2_R01:1 | Original:LINE_N2_C2_R01:2 | Original:LINE_N2_C2_R01:4 | Original:LINE_N2_C2_R01:5
+LINE,2,C2,radio_bytes,4,57595.25,10374.797616499964,48321.0,68809.0,OK,Original:LINE_N2_C2_R01:1 | Original:LINE_N2_C2_R01:2 | Original:LINE_N2_C2_R01:4 | Original:LINE_N2_C2_R01:5
+LINE,2,C2,radio_listen_ticks,4,0.0,0.0,0.0,0.0,OK,Original:LINE_N2_C2_R01:1 | Original:LINE_N2_C2_R01:2 | Original:LINE_N2_C2_R01:4 | Original:LINE_N2_C2_R01:5
+LINE,2,C2,radio_rx_bytes,4,24690.25,3593.3228238869197,21427.0,28499.0,OK,Original:LINE_N2_C2_R01:1 | Original:LINE_N2_C2_R01:2 | Original:LINE_N2_C2_R01:4 | Original:LINE_N2_C2_R01:5
+LINE,2,C2,radio_transmit_ticks,4,0.0,0.0,0.0,0.0,OK,Original:LINE_N2_C2_R01:1 | Original:LINE_N2_C2_R01:2 | Original:LINE_N2_C2_R01:4 | Original:LINE_N2_C2_R01:5
+LINE,2,C2,radio_tx_bytes,4,32905.0,6782.7664955631,26894.0,40310.0,OK,Original:LINE_N2_C2_R01:1 | Original:LINE_N2_C2_R01:2 | Original:LINE_N2_C2_R01:4 | Original:LINE_N2_C2_R01:5
+LINE,2,C2,retransmission_pressure,4,74.5,29.8942580885806,49.0,109.0,OK,Original:LINE_N2_C2_R01:1 | Original:LINE_N2_C2_R01:2 | Original:LINE_N2_C2_R01:4 | Original:LINE_N2_C2_R01:5
+LINE,2,C2,retransmitted_bytes,4,1887.0,1825.1666590570114,296.0,3848.0,OK,Original:LINE_N2_C2_R01:1 | Original:LINE_N2_C2_R01:2 | Original:LINE_N2_C2_R01:4 | Original:LINE_N2_C2_R01:5
+LINE,2,C2,temp_tx,4,2.5,1.0,2.0,4.0,OK,Original:LINE_N2_C2_R01:1 | Original:LINE_N2_C2_R01:2 | Original:LINE_N2_C2_R01:4 | Original:LINE_N2_C2_R01:5
+LINE,2,C3,app_bytes,3,5660.333333333333,180.71063425635288,5556.0,5869.0,OK,Original:LINE_N2_C3_R01:1 | Original:LINE_N2_C3_R01:2 | ReWork:LINE_N2_C3:3
+LINE,2,C3,hqc_total_ticks_max,3,34237.0,696.9713050047326,33789.0,35040.0,OK,Original:LINE_N2_C3_R01:1 | Original:LINE_N2_C3_R01:2 | ReWork:LINE_N2_C3:3
+LINE,2,C3,mac_extra_attempts,3,28.0,5.0,23.0,33.0,OK,Original:LINE_N2_C3_R01:1 | Original:LINE_N2_C3_R01:2 | ReWork:LINE_N2_C3:3
+LINE,2,C3,nack_retransmitted_fragments,3,5.333333333333333,2.309401076758503,4.0,8.0,OK,Original:LINE_N2_C3_R01:1 | Original:LINE_N2_C3_R01:2 | ReWork:LINE_N2_C3:3
+LINE,2,C3,radio_bytes,3,49951.333333333336,1570.3236396785642,48905.0,51757.0,OK,Original:LINE_N2_C3_R01:1 | Original:LINE_N2_C3_R01:2 | ReWork:LINE_N2_C3:3
+LINE,2,C3,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:LINE_N2_C3_R01:1 | Original:LINE_N2_C3_R01:2 | ReWork:LINE_N2_C3:3
+LINE,2,C3,radio_rx_bytes,3,22155.666666666668,703.0286859960505,21449.0,22855.0,OK,Original:LINE_N2_C3_R01:1 | Original:LINE_N2_C3_R01:2 | ReWork:LINE_N2_C3:3
+LINE,2,C3,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:LINE_N2_C3_R01:1 | Original:LINE_N2_C3_R01:2 | ReWork:LINE_N2_C3:3
+LINE,2,C3,radio_tx_bytes,3,27795.666666666668,981.612109406426,27029.0,28902.0,OK,Original:LINE_N2_C3_R01:1 | Original:LINE_N2_C3_R01:2 | ReWork:LINE_N2_C3:3
+LINE,2,C3,retransmission_pressure,3,45.333333333333336,14.571661996262929,29.0,57.0,OK,Original:LINE_N2_C3_R01:1 | Original:LINE_N2_C3_R01:2 | ReWork:LINE_N2_C3:3
+LINE,2,C3,retransmitted_bytes,3,394.6666666666667,170.89567968012923,296.0,592.0,OK,Original:LINE_N2_C3_R01:1 | Original:LINE_N2_C3_R01:2 | ReWork:LINE_N2_C3:3
+LINE,2,C3,temp_tx,3,10.333333333333334,2.309401076758503,9.0,13.0,OK,Original:LINE_N2_C3_R01:1 | Original:LINE_N2_C3_R01:2 | ReWork:LINE_N2_C3:3
+LINE,2,C4,app_bytes,3,758.0,0.0,758.0,758.0,OK,Original:LINE_N2_C4_R01:1 | Original:LINE_N2_C4_R01:2 | Original:LINE_N2_C4_R01:3
+LINE,2,C4,hqc_total_ticks_max,3,0.0,0.0,0.0,0.0,OK,Original:LINE_N2_C4_R01:1 | Original:LINE_N2_C4_R01:2 | Original:LINE_N2_C4_R01:3
+LINE,2,C4,mac_extra_attempts,3,1.0,0.0,1.0,1.0,OK,Original:LINE_N2_C4_R01:1 | Original:LINE_N2_C4_R01:2 | Original:LINE_N2_C4_R01:3
+LINE,2,C4,nack_retransmitted_fragments,3,0.0,0.0,0.0,0.0,OK,Original:LINE_N2_C4_R01:1 | Original:LINE_N2_C4_R01:2 | Original:LINE_N2_C4_R01:3
+LINE,2,C4,radio_bytes,3,3555.3333333333335,1144.804495681832,2292.0,4524.0,OK,Original:LINE_N2_C4_R01:1 | Original:LINE_N2_C4_R01:2 | Original:LINE_N2_C4_R01:3
+LINE,2,C4,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:LINE_N2_C4_R01:1 | Original:LINE_N2_C4_R01:2 | Original:LINE_N2_C4_R01:3
+LINE,2,C4,radio_rx_bytes,3,1236.6666666666667,368.7768069352157,817.0,1509.0,OK,Original:LINE_N2_C4_R01:1 | Original:LINE_N2_C4_R01:2 | Original:LINE_N2_C4_R01:3
+LINE,2,C4,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:LINE_N2_C4_R01:1 | Original:LINE_N2_C4_R01:2 | Original:LINE_N2_C4_R01:3
+LINE,2,C4,radio_tx_bytes,3,2318.6666666666665,780.5000533845807,1475.0,3015.0,OK,Original:LINE_N2_C4_R01:1 | Original:LINE_N2_C4_R01:2 | Original:LINE_N2_C4_R01:3
+LINE,2,C4,retransmission_pressure,3,1.6666666666666667,1.1547005383792515,1.0,3.0,OK,Original:LINE_N2_C4_R01:1 | Original:LINE_N2_C4_R01:2 | Original:LINE_N2_C4_R01:3
+LINE,2,C4,retransmitted_bytes,3,0.0,0.0,0.0,0.0,OK,Original:LINE_N2_C4_R01:1 | Original:LINE_N2_C4_R01:2 | Original:LINE_N2_C4_R01:3
+LINE,2,C4,temp_tx,3,25.0,11.532562594670797,16.0,38.0,OK,Original:LINE_N2_C4_R01:1 | Original:LINE_N2_C4_R01:2 | Original:LINE_N2_C4_R01:3
+LINE,3,C0,app_bytes,3,1137.0,0.0,1137.0,1137.0,OK,Original:LINE_N3_C0_R01:1 | Original:LINE_N3_C0_R01:2 | Original:LINE_N3_C0_R01:3
+LINE,3,C0,hqc_total_ticks_max,3,0.0,0.0,0.0,0.0,OK,Original:LINE_N3_C0_R01:1 | Original:LINE_N3_C0_R01:2 | Original:LINE_N3_C0_R01:3
+LINE,3,C0,mac_extra_attempts,3,0.6666666666666666,0.5773502691896257,0.0,1.0,OK,Original:LINE_N3_C0_R01:1 | Original:LINE_N3_C0_R01:2 | Original:LINE_N3_C0_R01:3
+LINE,3,C0,nack_retransmitted_fragments,3,0.0,0.0,0.0,0.0,OK,Original:LINE_N3_C0_R01:1 | Original:LINE_N3_C0_R01:2 | Original:LINE_N3_C0_R01:3
+LINE,3,C0,radio_bytes,3,4188.0,1489.5156931029628,3189.0,5900.0,OK,Original:LINE_N3_C0_R01:1 | Original:LINE_N3_C0_R01:2 | Original:LINE_N3_C0_R01:3
+LINE,3,C0,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:LINE_N3_C0_R01:1 | Original:LINE_N3_C0_R01:2 | Original:LINE_N3_C0_R01:3
+LINE,3,C0,radio_rx_bytes,3,2117.3333333333335,788.6630036544971,1660.0,3028.0,OK,Original:LINE_N3_C0_R01:1 | Original:LINE_N3_C0_R01:2 | Original:LINE_N3_C0_R01:3
+LINE,3,C0,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:LINE_N3_C0_R01:1 | Original:LINE_N3_C0_R01:2 | Original:LINE_N3_C0_R01:3
+LINE,3,C0,radio_tx_bytes,3,2070.6666666666665,708.154173420826,1529.0,2872.0,OK,Original:LINE_N3_C0_R01:1 | Original:LINE_N3_C0_R01:2 | Original:LINE_N3_C0_R01:3
+LINE,3,C0,retransmission_pressure,3,0.6666666666666666,0.5773502691896257,0.0,1.0,OK,Original:LINE_N3_C0_R01:1 | Original:LINE_N3_C0_R01:2 | Original:LINE_N3_C0_R01:3
+LINE,3,C0,retransmitted_bytes,3,0.0,0.0,0.0,0.0,OK,Original:LINE_N3_C0_R01:1 | Original:LINE_N3_C0_R01:2 | Original:LINE_N3_C0_R01:3
+LINE,3,C0,temp_tx,3,0.0,0.0,0.0,0.0,OK,Original:LINE_N3_C0_R01:1 | Original:LINE_N3_C0_R01:2 | Original:LINE_N3_C0_R01:3
+LINE,3,C2,app_bytes,2,7157.5,992.0708140047262,6456.0,7859.0,INSUFICIENTE,Original:LINE_N3_C2_R01:1 | ReWork:LINE_N3_C2:2
+LINE,3,C2,hqc_total_ticks_max,2,35212.0,226.27416997969522,35052.0,35372.0,INSUFICIENTE,Original:LINE_N3_C2_R01:1 | ReWork:LINE_N3_C2:2
+LINE,3,C2,mac_extra_attempts,2,91.5,12.020815280171307,83.0,100.0,INSUFICIENTE,Original:LINE_N3_C2_R01:1 | ReWork:LINE_N3_C2:2
+LINE,3,C2,nack_retransmitted_fragments,2,20.0,14.142135623730951,10.0,30.0,INSUFICIENTE,Original:LINE_N3_C2_R01:1 | ReWork:LINE_N3_C2:2
+LINE,3,C2,radio_bytes,2,108671.0,1211.9810229537425,107814.0,109528.0,INSUFICIENTE,Original:LINE_N3_C2_R01:1 | ReWork:LINE_N3_C2:2
+LINE,3,C2,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:LINE_N3_C2_R01:1 | ReWork:LINE_N3_C2:2
+LINE,3,C2,radio_rx_bytes,2,51658.0,842.8712831743646,51062.0,52254.0,INSUFICIENTE,Original:LINE_N3_C2_R01:1 | ReWork:LINE_N3_C2:2
+LINE,3,C2,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:LINE_N3_C2_R01:1 | ReWork:LINE_N3_C2:2
+LINE,3,C2,radio_tx_bytes,2,57013.0,2054.852306128107,55560.0,58466.0,INSUFICIENTE,Original:LINE_N3_C2_R01:1 | ReWork:LINE_N3_C2:2
+LINE,3,C2,retransmission_pressure,2,135.5,45.96194077712559,103.0,168.0,INSUFICIENTE,Original:LINE_N3_C2_R01:1 | ReWork:LINE_N3_C2:2
+LINE,3,C2,retransmitted_bytes,2,1480.0,1046.5180361560904,740.0,2220.0,INSUFICIENTE,Original:LINE_N3_C2_R01:1 | ReWork:LINE_N3_C2:2
+LINE,3,C2,temp_tx,2,2.0,0.0,2.0,2.0,INSUFICIENTE,Original:LINE_N3_C2_R01:1 | ReWork:LINE_N3_C2:2
+LINE,3,C3,app_bytes,3,6411.333333333333,299.0323282411675,6180.0,6749.0,OK,Original:LINE_N3_C3_R01:1 | Original:LINE_N3_C3_R01:2 | Original:LINE_N3_C3_R01:3
+LINE,3,C3,hqc_total_ticks_max,3,35989.0,434.1555020957353,35723.0,36490.0,OK,Original:LINE_N3_C3_R01:1 | Original:LINE_N3_C3_R01:2 | Original:LINE_N3_C3_R01:3
+LINE,3,C3,mac_extra_attempts,3,86.33333333333333,14.571661996262929,71.0,100.0,OK,Original:LINE_N3_C3_R01:1 | Original:LINE_N3_C3_R01:2 | Original:LINE_N3_C3_R01:3
+LINE,3,C3,nack_retransmitted_fragments,3,10.333333333333334,4.163331998932265,7.0,15.0,OK,Original:LINE_N3_C3_R01:1 | Original:LINE_N3_C3_R01:2 | Original:LINE_N3_C3_R01:3
+LINE,3,C3,radio_bytes,3,100294.0,5128.68296934018,94419.0,103877.0,OK,Original:LINE_N3_C3_R01:1 | Original:LINE_N3_C3_R01:2 | Original:LINE_N3_C3_R01:3
+LINE,3,C3,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:LINE_N3_C3_R01:1 | Original:LINE_N3_C3_R01:2 | Original:LINE_N3_C3_R01:3
+LINE,3,C3,radio_rx_bytes,3,48116.333333333336,2737.6888671529737,44956.0,49761.0,OK,Original:LINE_N3_C3_R01:1 | Original:LINE_N3_C3_R01:2 | Original:LINE_N3_C3_R01:3
+LINE,3,C3,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:LINE_N3_C3_R01:1 | Original:LINE_N3_C3_R01:2 | Original:LINE_N3_C3_R01:3
+LINE,3,C3,radio_tx_bytes,3,52177.666666666664,2455.8422859241864,49463.0,54245.0,OK,Original:LINE_N3_C3_R01:1 | Original:LINE_N3_C3_R01:2 | Original:LINE_N3_C3_R01:3
+LINE,3,C3,retransmission_pressure,3,109.33333333333333,19.857828011475306,92.0,131.0,OK,Original:LINE_N3_C3_R01:1 | Original:LINE_N3_C3_R01:2 | Original:LINE_N3_C3_R01:3
+LINE,3,C3,retransmitted_bytes,3,764.6666666666666,308.08656792098765,518.0,1110.0,OK,Original:LINE_N3_C3_R01:1 | Original:LINE_N3_C3_R01:2 | Original:LINE_N3_C3_R01:3
+LINE,3,C3,temp_tx,3,23.333333333333332,4.163331998932265,20.0,28.0,OK,Original:LINE_N3_C3_R01:1 | Original:LINE_N3_C3_R01:2 | Original:LINE_N3_C3_R01:3
+LINE,3,C4,app_bytes,2,1137.0,0.0,1137.0,1137.0,INSUFICIENTE,Original:LINE_N3_C4_R01:2 | Original:LINE_N3_C4_R01:3
+LINE,3,C4,hqc_total_ticks_max,1,0.0,,0.0,0.0,INSUFICIENTE,Original:LINE_N3_C4_R01:3
+LINE,3,C4,mac_extra_attempts,2,1.0,1.4142135623730951,0.0,2.0,INSUFICIENTE,Original:LINE_N3_C4_R01:2 | Original:LINE_N3_C4_R01:3
+LINE,3,C4,nack_retransmitted_fragments,1,0.0,,0.0,0.0,INSUFICIENTE,Original:LINE_N3_C4_R01:1
+LINE,3,C4,radio_bytes,1,9059.0,,9059.0,9059.0,INSUFICIENTE,Original:LINE_N3_C4_R01:2
+LINE,3,C4,radio_listen_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,Original:LINE_N3_C4_R01:3
+LINE,3,C4,radio_rx_bytes,3,3746.3333333333335,168.00396820710318,3579.0,3915.0,OK,Original:LINE_N3_C4_R01:1 | Original:LINE_N3_C4_R01:2 | Original:LINE_N3_C4_R01:3
+LINE,3,C4,radio_transmit_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,Original:LINE_N3_C4_R01:3
+LINE,3,C4,radio_tx_bytes,1,5314.0,,5314.0,5314.0,INSUFICIENTE,Original:LINE_N3_C4_R01:2
+LINE,3,C4,retransmitted_bytes,3,0.0,0.0,0.0,0.0,OK,Original:LINE_N3_C4_R01:1 | Original:LINE_N3_C4_R01:2 | Original:LINE_N3_C4_R01:3
+LINE,3,C4,temp_tx,1,27.0,,27.0,27.0,INSUFICIENTE,Original:LINE_N3_C4_R01:3
+LINE,4,C0,app_bytes,3,1516.0,0.0,1516.0,1516.0,OK,Original:LINE_N4_C0_R01:1 | Original:LINE_N4_C0_R01:2 | Original:LINE_N4_C0_R01:3
+LINE,4,C0,hqc_total_ticks_max,3,0.0,0.0,0.0,0.0,OK,Original:LINE_N4_C0_R01:1 | Original:LINE_N4_C0_R01:2 | Original:LINE_N4_C0_R01:3
+LINE,4,C0,mac_extra_attempts,3,2.0,1.0,1.0,3.0,OK,Original:LINE_N4_C0_R01:1 | Original:LINE_N4_C0_R01:2 | Original:LINE_N4_C0_R01:3
+LINE,4,C0,nack_retransmitted_fragments,3,0.0,0.0,0.0,0.0,OK,Original:LINE_N4_C0_R01:1 | Original:LINE_N4_C0_R01:2 | Original:LINE_N4_C0_R01:3
+LINE,4,C0,radio_bytes,3,4642.333333333333,771.0598766200543,3849.0,5389.0,OK,Original:LINE_N4_C0_R01:1 | Original:LINE_N4_C0_R01:2 | Original:LINE_N4_C0_R01:3
+LINE,4,C0,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:LINE_N4_C0_R01:1 | Original:LINE_N4_C0_R01:2 | Original:LINE_N4_C0_R01:3
+LINE,4,C0,radio_rx_bytes,3,2423.3333333333335,527.005060064259,1895.0,2949.0,OK,Original:LINE_N4_C0_R01:1 | Original:LINE_N4_C0_R01:2 | Original:LINE_N4_C0_R01:3
+LINE,4,C0,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:LINE_N4_C0_R01:1 | Original:LINE_N4_C0_R01:2 | Original:LINE_N4_C0_R01:3
+LINE,4,C0,radio_tx_bytes,3,2219.0,245.96951030564745,1954.0,2440.0,OK,Original:LINE_N4_C0_R01:1 | Original:LINE_N4_C0_R01:2 | Original:LINE_N4_C0_R01:3
+LINE,4,C0,retransmission_pressure,3,2.6666666666666665,0.5773502691896257,2.0,3.0,OK,Original:LINE_N4_C0_R01:1 | Original:LINE_N4_C0_R01:2 | Original:LINE_N4_C0_R01:3
+LINE,4,C0,retransmitted_bytes,3,0.0,0.0,0.0,0.0,OK,Original:LINE_N4_C0_R01:1 | Original:LINE_N4_C0_R01:2 | Original:LINE_N4_C0_R01:3
+LINE,4,C0,temp_tx,3,0.0,0.0,0.0,0.0,OK,Original:LINE_N4_C0_R01:1 | Original:LINE_N4_C0_R01:2 | Original:LINE_N4_C0_R01:3
+LINE,4,C2,app_bytes,2,9917.5,973.686037693876,9229.0,10606.0,INSUFICIENTE,Original:LINE_N4_C2_R01:2 | Original:LINE_N4_C2_R01:3
+LINE,4,C2,hqc_total_ticks_max,3,36215.666666666664,488.15400575364873,35669.0,36608.0,OK,Original:LINE_N4_C2_R01:1 | Original:LINE_N4_C2_R01:2 | Original:LINE_N4_C2_R01:3
+LINE,4,C2,mac_extra_attempts,3,148.0,30.805843601498726,120.0,181.0,OK,Original:LINE_N4_C2_R01:1 | Original:LINE_N4_C2_R01:2 | Original:LINE_N4_C2_R01:3
+LINE,4,C2,nack_retransmitted_fragments,3,46.666666666666664,13.868429375143148,35.0,62.0,OK,Original:LINE_N4_C2_R01:1 | Original:LINE_N4_C2_R01:2 | Original:LINE_N4_C2_R01:3
+LINE,4,C2,radio_bytes,1,193723.0,,193723.0,193723.0,INSUFICIENTE,Original:LINE_N4_C2_R01:3
+LINE,4,C2,radio_rx_bytes,2,94448.0,2173.646245367447,92911.0,95985.0,INSUFICIENTE,Original:LINE_N4_C2_R01:2 | Original:LINE_N4_C2_R01:3
+LINE,4,C2,radio_tx_bytes,2,94534.5,8877.725637797104,88257.0,100812.0,INSUFICIENTE,Original:LINE_N4_C2_R01:1 | Original:LINE_N4_C2_R01:3
+LINE,4,C2,retransmission_pressure,2,254.0,63.63961030678928,209.0,299.0,INSUFICIENTE,Original:LINE_N4_C2_R01:2 | Original:LINE_N4_C2_R01:3
+LINE,4,C2,retransmitted_bytes,3,3453.3333333333335,1026.2637737605928,2590.0,4588.0,OK,Original:LINE_N4_C2_R01:1 | Original:LINE_N4_C2_R01:2 | Original:LINE_N4_C2_R01:3
+LINE,4,C2,temp_tx,3,2.3333333333333335,0.5773502691896257,2.0,3.0,OK,Original:LINE_N4_C2_R01:1 | Original:LINE_N4_C2_R01:2 | Original:LINE_N4_C2_R01:3
+LINE,4,C3,app_bytes,1,10255.0,,10255.0,10255.0,INSUFICIENTE,Original:LINE_N4_C3_R01:1
+LINE,4,C3,hqc_total_ticks_max,2,36382.0,384.66608896548183,36110.0,36654.0,INSUFICIENTE,Original:LINE_N4_C3_R01:1 | Original:LINE_N4_C3_R01:2
+LINE,4,C3,mac_extra_attempts,2,223.5,61.518289963229634,180.0,267.0,INSUFICIENTE,Original:LINE_N4_C3_R01:1 | Original:LINE_N4_C3_R01:2
+LINE,4,C3,nack_retransmitted_fragments,2,48.5,12.020815280171307,40.0,57.0,INSUFICIENTE,Original:LINE_N4_C3_R01:1 | Original:LINE_N4_C3_R01:2
+LINE,4,C3,radio_bytes,2,212116.5,555.0788232314399,211724.0,212509.0,INSUFICIENTE,Original:LINE_N4_C3_R01:1 | Original:LINE_N4_C3_R01:2
+LINE,4,C3,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:LINE_N4_C3_R01:1 | Original:LINE_N4_C3_R01:2
+LINE,4,C3,radio_rx_bytes,2,101287.0,183.84776310850236,101157.0,101417.0,INSUFICIENTE,Original:LINE_N4_C3_R01:1 | Original:LINE_N4_C3_R01:2
+LINE,4,C3,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:LINE_N4_C3_R01:1 | Original:LINE_N4_C3_R01:2
+LINE,4,C3,radio_tx_bytes,2,110829.5,738.9265863399422,110307.0,111352.0,INSUFICIENTE,Original:LINE_N4_C3_R01:1 | Original:LINE_N4_C3_R01:2
+LINE,4,C3,retransmission_pressure,1,365.0,,365.0,365.0,INSUFICIENTE,Original:LINE_N4_C3_R01:2
+LINE,4,C3,retransmitted_bytes,2,3589.0,889.5403307326768,2960.0,4218.0,INSUFICIENTE,Original:LINE_N4_C3_R01:1 | Original:LINE_N4_C3_R01:2
+LINE,4,C3,temp_tx,2,41.5,16.263455967290593,30.0,53.0,INSUFICIENTE,Original:LINE_N4_C3_R01:1 | Original:LINE_N4_C3_R01:2
+LINE,4,C4,app_bytes,1,1516.0,,1516.0,1516.0,INSUFICIENTE,Original:LINE_N4_C4_R01:1
+LINE,4,C4,hqc_total_ticks_max,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:LINE_N4_C4_R01:1 | Original:LINE_N4_C4_R01:2
+LINE,4,C4,mac_extra_attempts,2,1.5,0.7071067811865476,1.0,2.0,INSUFICIENTE,Original:LINE_N4_C4_R01:1 | Original:LINE_N4_C4_R01:2
+LINE,4,C4,nack_retransmitted_fragments,1,0.0,,0.0,0.0,INSUFICIENTE,Original:LINE_N4_C4_R01:1
+LINE,4,C4,radio_bytes,2,12228.5,1567.655733890576,11120.0,13337.0,INSUFICIENTE,Original:LINE_N4_C4_R01:1 | Original:LINE_N4_C4_R01:2
+LINE,4,C4,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:LINE_N4_C4_R01:1 | Original:LINE_N4_C4_R01:2
+LINE,4,C4,radio_rx_bytes,2,5305.5,579.1204537917824,4896.0,5715.0,INSUFICIENTE,Original:LINE_N4_C4_R01:1 | Original:LINE_N4_C4_R01:2
+LINE,4,C4,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:LINE_N4_C4_R01:1 | Original:LINE_N4_C4_R01:2
+LINE,4,C4,radio_tx_bytes,2,6923.0,988.5352800987935,6224.0,7622.0,INSUFICIENTE,Original:LINE_N4_C4_R01:1 | Original:LINE_N4_C4_R01:2
+LINE,4,C4,retransmission_pressure,1,8.0,,8.0,8.0,INSUFICIENTE,Original:LINE_N4_C4_R01:1
+LINE,4,C4,retransmitted_bytes,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:LINE_N4_C4_R01:1 | Original:LINE_N4_C4_R01:2
+LINE,4,C4,temp_tx,2,36.5,0.7071067811865476,36.0,37.0,INSUFICIENTE,Original:LINE_N4_C4_R01:1 | Original:LINE_N4_C4_R01:2
+LINE,5,C0,app_bytes,1,1895.0,,1895.0,1895.0,INSUFICIENTE,Original:LINE_N5_C0_R01:1
+LINE,5,C0,hqc_total_ticks_max,1,0.0,,0.0,0.0,INSUFICIENTE,Original:LINE_N5_C0_R01:1
+LINE,5,C0,radio_rx_bytes,1,6082.0,,6082.0,6082.0,INSUFICIENTE,Original:LINE_N5_C0_R01:3
+LINE,5,C0,retransmitted_bytes,1,0.0,,0.0,0.0,INSUFICIENTE,Original:LINE_N5_C0_R01:2
+LINE,5,C0,temp_tx,1,0.0,,0.0,0.0,INSUFICIENTE,Original:LINE_N5_C0_R01:3
+LINE,5,C2,radio_rx_bytes,1,123538.0,,123538.0,123538.0,INSUFICIENTE,Original:LINE_N5_C2_R01:1
+LINE,5,C2,retransmitted_bytes,2,3219.0,680.2367235014588,2738.0,3700.0,INSUFICIENTE,Original:LINE_N5_C2_R01:1 | Original:LINE_N5_C2_R01:2
+LINE,5,C3,app_bytes,2,7293.5,221.32442251138937,7137.0,7450.0,INSUFICIENTE,ReWork:LINE_N5_C3:1 | ReWork:LINE_N5_C3:2
+LINE,5,C3,hqc_total_ticks_max,2,37020.0,1415.6277759354682,36019.0,38021.0,INSUFICIENTE,ReWork:LINE_N5_C3:1 | ReWork:LINE_N5_C3:2
+LINE,5,C3,mac_extra_attempts,1,209.0,,209.0,209.0,INSUFICIENTE,ReWork:LINE_N5_C3:2
+LINE,5,C3,nack_retransmitted_fragments,1,14.0,,14.0,14.0,INSUFICIENTE,ReWork:LINE_N5_C3:2
+LINE,5,C3,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,ReWork:LINE_N5_C3:1 | ReWork:LINE_N5_C3:2
+LINE,5,C3,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,ReWork:LINE_N5_C3:1 | ReWork:LINE_N5_C3:2
+LINE,5,C3,retransmitted_bytes,1,1036.0,,1036.0,1036.0,INSUFICIENTE,ReWork:LINE_N5_C3:2
+LINE,5,C3,temp_tx,1,48.0,,48.0,48.0,INSUFICIENTE,ReWork:LINE_N5_C3:1
+LINE,5,C4,app_bytes,1,1895.0,,1895.0,1895.0,INSUFICIENTE,Original:LINE_N5_C4_R01:2
+LINE,5,C4,nack_retransmitted_fragments,1,0.0,,0.0,0.0,INSUFICIENTE,Original:LINE_N5_C4_R01:1
+LINE,5,C4,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:LINE_N5_C4_R01:1 | Original:LINE_N5_C4_R01:2
+LINE,5,C4,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:LINE_N5_C4_R01:1 | Original:LINE_N5_C4_R01:2
+LINE,5,C4,retransmitted_bytes,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:LINE_N5_C4_R01:1 | Original:LINE_N5_C4_R01:2
+LINE,6,C0,app_bytes,1,2274.0,,2274.0,2274.0,INSUFICIENTE,Original:LINE_N6_C0_R01:1
+LINE,6,C0,mac_extra_attempts,1,3.0,,3.0,3.0,INSUFICIENTE,Original:LINE_N6_C0_R01:1
+LINE,6,C0,radio_bytes,1,18227.0,,18227.0,18227.0,INSUFICIENTE,Original:LINE_N6_C0_R01:1
+LINE,6,C0,radio_rx_bytes,1,10236.0,,10236.0,10236.0,INSUFICIENTE,Original:LINE_N6_C0_R01:1
+LINE,6,C0,radio_tx_bytes,2,7558.0,612.3544725075502,7125.0,7991.0,INSUFICIENTE,Original:LINE_N6_C0_R01:1 | ReWork:LINE_N6_C0:2
+LINE,6,C0,temp_tx,1,0.0,,0.0,0.0,INSUFICIENTE,Original:LINE_N6_C0_R01:1
+LINE,6,C2,retransmitted_bytes,1,1184.0,,1184.0,1184.0,INSUFICIENTE,ReWork:LINE_N6_C2:1
+LINE,6,C3,retransmitted_bytes,1,3108.0,,3108.0,3108.0,INSUFICIENTE,Original:LINE_N6_C3_R01:2
+LINE,6,C4,mac_extra_attempts,1,20.0,,20.0,20.0,INSUFICIENTE,Original:LINE_N6_C4_R01:2
+LINE,6,C4,nack_retransmitted_fragments,1,0.0,,0.0,0.0,INSUFICIENTE,Original:LINE_N6_C4_R01:2
+LINE,6,C4,radio_listen_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,Original:LINE_N6_C4_R01:2
+LINE,6,C4,radio_transmit_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,Original:LINE_N6_C4_R01:2
+LINE,6,C4,temp_tx,1,53.0,,53.0,53.0,INSUFICIENTE,Original:LINE_N6_C4_R01:2
+P2P,1,C0,app_bytes,5,379.0,0.0,379.0,379.0,OK,Original:P2P_C0_R01:1 | Original:P2P_C0_R01:2 | Original:P2P_C0_R01:3 | Original:P2P_C0_R01:4 | Original:P2P_C0_R01:5
+P2P,1,C0,hqc_total_ticks_max,5,0.0,0.0,0.0,0.0,OK,Original:P2P_C0_R01:1 | Original:P2P_C0_R01:2 | Original:P2P_C0_R01:3 | Original:P2P_C0_R01:4 | Original:P2P_C0_R01:5
+P2P,1,C0,mac_extra_attempts,5,2.0,2.7386127875258306,0.0,5.0,OK,Original:P2P_C0_R01:1 | Original:P2P_C0_R01:2 | Original:P2P_C0_R01:3 | Original:P2P_C0_R01:4 | Original:P2P_C0_R01:5
+P2P,1,C0,nack_retransmitted_fragments,5,0.0,0.0,0.0,0.0,OK,Original:P2P_C0_R01:1 | Original:P2P_C0_R01:2 | Original:P2P_C0_R01:3 | Original:P2P_C0_R01:4 | Original:P2P_C0_R01:5
+P2P,1,C0,radio_bytes,5,210.0,147.9070654160916,0.0,397.0,OK,Original:P2P_C0_R01:1 | Original:P2P_C0_R01:2 | Original:P2P_C0_R01:3 | Original:P2P_C0_R01:4 | Original:P2P_C0_R01:5
+P2P,1,C0,radio_listen_ticks,5,0.0,0.0,0.0,0.0,OK,Original:P2P_C0_R01:1 | Original:P2P_C0_R01:2 | Original:P2P_C0_R01:3 | Original:P2P_C0_R01:4 | Original:P2P_C0_R01:5
+P2P,1,C0,radio_rx_bytes,5,115.6,76.13343549321809,0.0,205.0,OK,Original:P2P_C0_R01:1 | Original:P2P_C0_R01:2 | Original:P2P_C0_R01:3 | Original:P2P_C0_R01:4 | Original:P2P_C0_R01:5
+P2P,1,C0,radio_transmit_ticks,5,0.0,0.0,0.0,0.0,OK,Original:P2P_C0_R01:1 | Original:P2P_C0_R01:2 | Original:P2P_C0_R01:3 | Original:P2P_C0_R01:4 | Original:P2P_C0_R01:5
+P2P,1,C0,radio_tx_bytes,5,94.4,91.86566279083823,0.0,192.0,OK,Original:P2P_C0_R01:1 | Original:P2P_C0_R01:2 | Original:P2P_C0_R01:3 | Original:P2P_C0_R01:4 | Original:P2P_C0_R01:5
+P2P,1,C0,retransmission_pressure,5,2.4,3.361547262794322,0.0,7.0,OK,Original:P2P_C0_R01:1 | Original:P2P_C0_R01:2 | Original:P2P_C0_R01:3 | Original:P2P_C0_R01:4 | Original:P2P_C0_R01:5
+P2P,1,C0,retransmitted_bytes,5,0.0,0.0,0.0,0.0,OK,Original:P2P_C0_R01:1 | Original:P2P_C0_R01:2 | Original:P2P_C0_R01:3 | Original:P2P_C0_R01:4 | Original:P2P_C0_R01:5
+P2P,1,C0,temp_tx,5,0.0,0.0,0.0,0.0,OK,Original:P2P_C0_R01:1 | Original:P2P_C0_R01:2 | Original:P2P_C0_R01:3 | Original:P2P_C0_R01:4 | Original:P2P_C0_R01:5
+P2P,1,C2,app_bytes,4,8770.25,934.45077451945,7710.0,9987.0,OK,Original:P2P_C2_R01:1 | Original:P2P_C2_R01:3 | Original:P2P_C2_R01:4 | Original:P2P_C2_R01:5
+P2P,1,C2,hqc_total_ticks_max,4,33812.0,1850.8299039439937,32802.0,36583.0,OK,Original:P2P_C2_R01:1 | Original:P2P_C2_R01:3 | Original:P2P_C2_R01:4 | Original:P2P_C2_R01:5
+P2P,1,C2,mac_extra_attempts,4,4.0,2.160246899469287,2.0,7.0,OK,Original:P2P_C2_R01:1 | Original:P2P_C2_R01:3 | Original:P2P_C2_R01:4 | Original:P2P_C2_R01:5
+P2P,1,C2,nack_retransmitted_fragments,4,52.5,12.714820748507101,38.0,69.0,OK,Original:P2P_C2_R01:1 | Original:P2P_C2_R01:3 | Original:P2P_C2_R01:4 | Original:P2P_C2_R01:5
+P2P,1,C2,radio_bytes,4,19799.75,1043.5798563917697,18806.0,20724.0,OK,Original:P2P_C2_R01:1 | Original:P2P_C2_R01:3 | Original:P2P_C2_R01:4 | Original:P2P_C2_R01:5
+P2P,1,C2,radio_listen_ticks,4,0.0,0.0,0.0,0.0,OK,Original:P2P_C2_R01:1 | Original:P2P_C2_R01:3 | Original:P2P_C2_R01:4 | Original:P2P_C2_R01:5
+P2P,1,C2,radio_rx_bytes,4,5248.0,122.66485505908636,5147.0,5425.0,OK,Original:P2P_C2_R01:1 | Original:P2P_C2_R01:3 | Original:P2P_C2_R01:4 | Original:P2P_C2_R01:5
+P2P,1,C2,radio_transmit_ticks,4,0.0,0.0,0.0,0.0,OK,Original:P2P_C2_R01:1 | Original:P2P_C2_R01:3 | Original:P2P_C2_R01:4 | Original:P2P_C2_R01:5
+P2P,1,C2,radio_tx_bytes,4,14551.75,1123.1554879000503,13381.0,15531.0,OK,Original:P2P_C2_R01:1 | Original:P2P_C2_R01:3 | Original:P2P_C2_R01:4 | Original:P2P_C2_R01:5
+P2P,1,C2,retransmission_pressure,4,69.5,14.82115605027714,49.0,83.0,OK,Original:P2P_C2_R01:1 | Original:P2P_C2_R01:3 | Original:P2P_C2_R01:4 | Original:P2P_C2_R01:5
+P2P,1,C2,retransmitted_bytes,4,3885.0,940.8967353895255,2812.0,5106.0,OK,Original:P2P_C2_R01:1 | Original:P2P_C2_R01:3 | Original:P2P_C2_R01:4 | Original:P2P_C2_R01:5
+P2P,1,C2,temp_tx,4,1.75,0.9574271077563381,1.0,3.0,OK,Original:P2P_C2_R01:1 | Original:P2P_C2_R01:3 | Original:P2P_C2_R01:4 | Original:P2P_C2_R01:5
+P2P,1,C4,app_bytes,2,379.0,0.0,379.0,379.0,INSUFICIENTE,Original:P2P_N1_C4_R01:1 | Original:P2P_N1_C4_R01:2
+P2P,1,C4,hqc_total_ticks_max,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:P2P_N1_C4_R01:1 | Original:P2P_N1_C4_R01:2
+P2P,1,C4,mac_extra_attempts,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:P2P_N1_C4_R01:1 | Original:P2P_N1_C4_R01:2
+P2P,1,C4,nack_retransmitted_fragments,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:P2P_N1_C4_R01:1 | Original:P2P_N1_C4_R01:2
+P2P,1,C4,radio_bytes,2,1160.5,584.7773080412748,747.0,1574.0,INSUFICIENTE,Original:P2P_N1_C4_R01:1 | Original:P2P_N1_C4_R01:2
+P2P,1,C4,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:P2P_N1_C4_R01:1 | Original:P2P_N1_C4_R01:2
+P2P,1,C4,radio_rx_bytes,2,206.0,82.02438661763951,148.0,264.0,INSUFICIENTE,Original:P2P_N1_C4_R01:1 | Original:P2P_N1_C4_R01:2
+P2P,1,C4,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:P2P_N1_C4_R01:1 | Original:P2P_N1_C4_R01:2
+P2P,1,C4,radio_tx_bytes,2,954.5,502.7529214236353,599.0,1310.0,INSUFICIENTE,Original:P2P_N1_C4_R01:1 | Original:P2P_N1_C4_R01:2
+P2P,1,C4,retransmission_pressure,2,8.0,11.313708498984761,0.0,16.0,INSUFICIENTE,Original:P2P_N1_C4_R01:1 | Original:P2P_N1_C4_R01:2
+P2P,1,C4,retransmitted_bytes,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:P2P_N1_C4_R01:1 | Original:P2P_N1_C4_R01:2
+P2P,1,C4,temp_tx,2,11.5,0.7071067811865476,11.0,12.0,INSUFICIENTE,Original:P2P_N1_C4_R01:1 | Original:P2P_N1_C4_R01:2
+STAR,2,C0,app_bytes,3,758.0,0.0,758.0,758.0,OK,Original:STAR_N2_C0_R01:1 | Original:STAR_N2_C0_R01:2 | Original:STAR_N2_C0_R01:3
+STAR,2,C0,hqc_total_ticks_max,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N2_C0_R01:1 | Original:STAR_N2_C0_R01:2 | Original:STAR_N2_C0_R01:3
+STAR,2,C0,mac_extra_attempts,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N2_C0_R01:1 | Original:STAR_N2_C0_R01:2 | Original:STAR_N2_C0_R01:3
+STAR,2,C0,nack_retransmitted_fragments,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N2_C0_R01:1 | Original:STAR_N2_C0_R01:2 | Original:STAR_N2_C0_R01:3
+STAR,2,C0,radio_bytes,3,560.6666666666666,139.23122255203154,406.0,676.0,OK,Original:STAR_N2_C0_R01:1 | Original:STAR_N2_C0_R01:2 | Original:STAR_N2_C0_R01:3
+STAR,2,C0,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N2_C0_R01:1 | Original:STAR_N2_C0_R01:2 | Original:STAR_N2_C0_R01:3
+STAR,2,C0,radio_rx_bytes,3,332.6666666666667,102.80726303784832,216.0,410.0,OK,Original:STAR_N2_C0_R01:1 | Original:STAR_N2_C0_R01:2 | Original:STAR_N2_C0_R01:3
+STAR,2,C0,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N2_C0_R01:1 | Original:STAR_N2_C0_R01:2 | Original:STAR_N2_C0_R01:3
+STAR,2,C0,radio_tx_bytes,3,228.0,65.81793068761733,190.0,304.0,OK,Original:STAR_N2_C0_R01:1 | Original:STAR_N2_C0_R01:2 | Original:STAR_N2_C0_R01:3
+STAR,2,C0,retransmission_pressure,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N2_C0_R01:1 | Original:STAR_N2_C0_R01:2 | Original:STAR_N2_C0_R01:3
+STAR,2,C0,retransmitted_bytes,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N2_C0_R01:1 | Original:STAR_N2_C0_R01:2 | Original:STAR_N2_C0_R01:3
+STAR,2,C0,temp_tx,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N2_C0_R01:1 | Original:STAR_N2_C0_R01:2 | Original:STAR_N2_C0_R01:3
+STAR,2,C2,app_bytes,3,5842.333333333333,907.5264918079986,5260.0,6888.0,OK,Original:STAR_N2_C2_R01:1 | Original:STAR_N2_C2_R01:2 | Original:STAR_N2_C2_R01:3
+STAR,2,C2,hqc_total_ticks_max,3,32962.666666666664,138.31967804088228,32803.0,33046.0,OK,Original:STAR_N2_C2_R01:1 | Original:STAR_N2_C2_R01:2 | Original:STAR_N2_C2_R01:3
+STAR,2,C2,mac_extra_attempts,3,3.6666666666666665,3.7859388972001824,1.0,8.0,OK,Original:STAR_N2_C2_R01:1 | Original:STAR_N2_C2_R01:2 | Original:STAR_N2_C2_R01:3
+STAR,2,C2,nack_retransmitted_fragments,3,7.666666666666667,12.42309676905615,0.0,22.0,OK,Original:STAR_N2_C2_R01:1 | Original:STAR_N2_C2_R01:2 | Original:STAR_N2_C2_R01:3
+STAR,2,C2,radio_bytes,3,14979.666666666666,1667.8277289136709,13343.0,16677.0,OK,Original:STAR_N2_C2_R01:1 | Original:STAR_N2_C2_R01:2 | Original:STAR_N2_C2_R01:3
+STAR,2,C2,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N2_C2_R01:1 | Original:STAR_N2_C2_R01:2 | Original:STAR_N2_C2_R01:3
+STAR,2,C2,radio_rx_bytes,3,5142.666666666667,482.63892645883146,4675.0,5639.0,OK,Original:STAR_N2_C2_R01:1 | Original:STAR_N2_C2_R01:2 | Original:STAR_N2_C2_R01:3
+STAR,2,C2,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N2_C2_R01:1 | Original:STAR_N2_C2_R01:2 | Original:STAR_N2_C2_R01:3
+STAR,2,C2,radio_tx_bytes,3,9837.0,1525.75981071727,8668.0,11563.0,OK,Original:STAR_N2_C2_R01:1 | Original:STAR_N2_C2_R01:2 | Original:STAR_N2_C2_R01:3
+STAR,2,C2,retransmission_pressure,3,12.0,15.588457268119896,3.0,30.0,OK,Original:STAR_N2_C2_R01:1 | Original:STAR_N2_C2_R01:2 | Original:STAR_N2_C2_R01:3
+STAR,2,C2,retransmitted_bytes,3,567.3333333333334,919.309160910155,0.0,1628.0,OK,Original:STAR_N2_C2_R01:1 | Original:STAR_N2_C2_R01:2 | Original:STAR_N2_C2_R01:3
+STAR,2,C2,temp_tx,3,2.0,1.0,1.0,3.0,OK,Original:STAR_N2_C2_R01:1 | Original:STAR_N2_C2_R01:2 | Original:STAR_N2_C2_R01:3
+STAR,2,C3,app_bytes,3,5265.666666666667,9.814954576223638,5260.0,5277.0,OK,Original:STAR_N2_C3_R01:1 | Original:STAR_N2_C3_R01:2 | Original:STAR_N2_C3_R01:3
+STAR,2,C3,hqc_total_ticks_max,3,32789.666666666664,7.371114795831994,32784.0,32798.0,OK,Original:STAR_N2_C3_R01:1 | Original:STAR_N2_C3_R01:2 | Original:STAR_N2_C3_R01:3
+STAR,2,C3,mac_extra_attempts,3,3.6666666666666665,2.516611478423583,1.0,6.0,OK,Original:STAR_N2_C3_R01:1 | Original:STAR_N2_C3_R01:2 | Original:STAR_N2_C3_R01:3
+STAR,2,C3,nack_retransmitted_fragments,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N2_C3_R01:1 | Original:STAR_N2_C3_R01:2 | Original:STAR_N2_C3_R01:3
+STAR,2,C3,radio_bytes,3,14521.333333333334,312.6504970943327,14300.0,14879.0,OK,Original:STAR_N2_C3_R01:1 | Original:STAR_N2_C3_R01:2 | Original:STAR_N2_C3_R01:3
+STAR,2,C3,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N2_C3_R01:1 | Original:STAR_N2_C3_R01:2 | Original:STAR_N2_C3_R01:3
+STAR,2,C3,radio_rx_bytes,3,5156.0,45.902069670114,5114.0,5205.0,OK,Original:STAR_N2_C3_R01:1 | Original:STAR_N2_C3_R01:2 | Original:STAR_N2_C3_R01:3
+STAR,2,C3,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N2_C3_R01:1 | Original:STAR_N2_C3_R01:2 | Original:STAR_N2_C3_R01:3
+STAR,2,C3,radio_tx_bytes,3,9365.333333333334,346.4250760746591,9151.0,9765.0,OK,Original:STAR_N2_C3_R01:1 | Original:STAR_N2_C3_R01:2 | Original:STAR_N2_C3_R01:3
+STAR,2,C3,retransmission_pressure,3,7.0,1.0,6.0,8.0,OK,Original:STAR_N2_C3_R01:1 | Original:STAR_N2_C3_R01:2 | Original:STAR_N2_C3_R01:3
+STAR,2,C3,retransmitted_bytes,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N2_C3_R01:1 | Original:STAR_N2_C3_R01:2 | Original:STAR_N2_C3_R01:3
+STAR,2,C3,temp_tx,3,9.0,1.0,8.0,10.0,OK,Original:STAR_N2_C3_R01:1 | Original:STAR_N2_C3_R01:2 | Original:STAR_N2_C3_R01:3
+STAR,2,C4,app_bytes,3,758.0,0.0,758.0,758.0,OK,Original:STAR_N2_C4_R01:1 | Original:STAR_N2_C4_R01:2 | Original:STAR_N2_C4_R01:3
+STAR,2,C4,hqc_total_ticks_max,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N2_C4_R01:1 | Original:STAR_N2_C4_R01:2 | Original:STAR_N2_C4_R01:3
+STAR,2,C4,mac_extra_attempts,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N2_C4_R01:1 | Original:STAR_N2_C4_R01:2 | Original:STAR_N2_C4_R01:3
+STAR,2,C4,nack_retransmitted_fragments,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N2_C4_R01:1 | Original:STAR_N2_C4_R01:2 | Original:STAR_N2_C4_R01:3
+STAR,2,C4,radio_bytes,3,2166.6666666666665,1409.0597337704792,1220.0,3786.0,OK,Original:STAR_N2_C4_R01:1 | Original:STAR_N2_C4_R01:2 | Original:STAR_N2_C4_R01:3
+STAR,2,C4,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N2_C4_R01:1 | Original:STAR_N2_C4_R01:2 | Original:STAR_N2_C4_R01:3
+STAR,2,C4,radio_rx_bytes,3,511.0,423.61421128191625,238.0,999.0,OK,Original:STAR_N2_C4_R01:1 | Original:STAR_N2_C4_R01:2 | Original:STAR_N2_C4_R01:3
+STAR,2,C4,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N2_C4_R01:1 | Original:STAR_N2_C4_R01:2 | Original:STAR_N2_C4_R01:3
+STAR,2,C4,radio_tx_bytes,3,1655.6666666666667,985.6978915130809,982.0,2787.0,OK,Original:STAR_N2_C4_R01:1 | Original:STAR_N2_C4_R01:2 | Original:STAR_N2_C4_R01:3
+STAR,2,C4,retransmission_pressure,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N2_C4_R01:1 | Original:STAR_N2_C4_R01:2 | Original:STAR_N2_C4_R01:3
+STAR,2,C4,retransmitted_bytes,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N2_C4_R01:1 | Original:STAR_N2_C4_R01:2 | Original:STAR_N2_C4_R01:3
+STAR,2,C4,temp_tx,3,24.0,8.54400374531753,16.0,33.0,OK,Original:STAR_N2_C4_R01:1 | Original:STAR_N2_C4_R01:2 | Original:STAR_N2_C4_R01:3
+STAR,3,C0,app_bytes,2,1137.0,0.0,1137.0,1137.0,INSUFICIENTE,Original:STAR_N3_C0:1 | Original:STAR_N3_C0:3
+STAR,3,C0,hqc_total_ticks_max,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N3_C0:1 | Original:STAR_N3_C0:3
+STAR,3,C0,mac_extra_attempts,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N3_C0:1 | Original:STAR_N3_C0:3
+STAR,3,C0,nack_retransmitted_fragments,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N3_C0:1 | Original:STAR_N3_C0:3
+STAR,3,C0,radio_bytes,2,814.5,876.1053018901324,195.0,1434.0,INSUFICIENTE,Original:STAR_N3_C0:1 | Original:STAR_N3_C0:3
+STAR,3,C0,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N3_C0:1 | Original:STAR_N3_C0:3
+STAR,3,C0,radio_rx_bytes,2,493.0,442.64884502277874,180.0,806.0,INSUFICIENTE,Original:STAR_N3_C0:1 | Original:STAR_N3_C0:3
+STAR,3,C0,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N3_C0:1 | Original:STAR_N3_C0:3
+STAR,3,C0,radio_tx_bytes,2,321.5,433.4564568673536,15.0,628.0,INSUFICIENTE,Original:STAR_N3_C0:1 | Original:STAR_N3_C0:3
+STAR,3,C0,retransmission_pressure,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N3_C0:1 | Original:STAR_N3_C0:3
+STAR,3,C0,retransmitted_bytes,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N3_C0:1 | Original:STAR_N3_C0:3
+STAR,3,C0,temp_tx,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N3_C0:1 | Original:STAR_N3_C0:3
+STAR,3,C2,app_bytes,2,6527.5,836.5073221436858,5936.0,7119.0,INSUFICIENTE,Original:STAR_N3_C2:1 | Original:STAR_N3_C2:3
+STAR,3,C2,hqc_total_ticks_max,2,33593.0,110.30865786510141,33515.0,33671.0,INSUFICIENTE,Original:STAR_N3_C2:1 | Original:STAR_N3_C2:3
+STAR,3,C2,mac_extra_attempts,2,5.0,1.4142135623730951,4.0,6.0,INSUFICIENTE,Original:STAR_N3_C2:1 | Original:STAR_N3_C2:3
+STAR,3,C2,nack_retransmitted_fragments,2,11.5,12.020815280171307,3.0,20.0,INSUFICIENTE,Original:STAR_N3_C2:1 | Original:STAR_N3_C2:3
+STAR,3,C2,radio_bytes,2,16302.5,273.6503243191939,16109.0,16496.0,INSUFICIENTE,Original:STAR_N3_C2:1 | Original:STAR_N3_C2:3
+STAR,3,C2,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N3_C2:1 | Original:STAR_N3_C2:3
+STAR,3,C2,radio_rx_bytes,2,5721.0,933.3809511662428,5061.0,6381.0,INSUFICIENTE,Original:STAR_N3_C2:1 | Original:STAR_N3_C2:3
+STAR,3,C2,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N3_C2:1 | Original:STAR_N3_C2:3
+STAR,3,C2,radio_tx_bytes,2,10581.5,659.7306268470488,10115.0,11048.0,INSUFICIENTE,Original:STAR_N3_C2:1 | Original:STAR_N3_C2:3
+STAR,3,C2,retransmission_pressure,2,16.5,10.606601717798213,9.0,24.0,INSUFICIENTE,Original:STAR_N3_C2:1 | Original:STAR_N3_C2:3
+STAR,3,C2,retransmitted_bytes,2,851.0,889.5403307326768,222.0,1480.0,INSUFICIENTE,Original:STAR_N3_C2:1 | Original:STAR_N3_C2:3
+STAR,3,C2,temp_tx,2,1.0,0.0,1.0,1.0,INSUFICIENTE,Original:STAR_N3_C2:1 | Original:STAR_N3_C2:3
+STAR,3,C3,app_bytes,2,5639.0,0.0,5639.0,5639.0,INSUFICIENTE,Original:STAR_N3_C3:1 | Original:STAR_N3_C3:2
+STAR,3,C3,hqc_total_ticks_max,2,32704.5,0.7071067811865476,32704.0,32705.0,INSUFICIENTE,Original:STAR_N3_C3:1 | Original:STAR_N3_C3:2
+STAR,3,C3,mac_extra_attempts,2,2.0,0.0,2.0,2.0,INSUFICIENTE,Original:STAR_N3_C3:1 | Original:STAR_N3_C3:2
+STAR,3,C3,nack_retransmitted_fragments,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N3_C3:1 | Original:STAR_N3_C3:2
+STAR,3,C3,radio_bytes,2,15156.5,1009.0413767532033,14443.0,15870.0,INSUFICIENTE,Original:STAR_N3_C3:1 | Original:STAR_N3_C3:2
+STAR,3,C3,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N3_C3:1 | Original:STAR_N3_C3:2
+STAR,3,C3,radio_rx_bytes,2,5385.5,573.46359954229,4980.0,5791.0,INSUFICIENTE,Original:STAR_N3_C3:1 | Original:STAR_N3_C3:2
+STAR,3,C3,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N3_C3:1 | Original:STAR_N3_C3:2
+STAR,3,C3,radio_tx_bytes,2,9771.0,435.57777721091327,9463.0,10079.0,INSUFICIENTE,Original:STAR_N3_C3:1 | Original:STAR_N3_C3:2
+STAR,3,C3,retransmission_pressure,2,2.0,0.0,2.0,2.0,INSUFICIENTE,Original:STAR_N3_C3:1 | Original:STAR_N3_C3:2
+STAR,3,C3,retransmitted_bytes,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N3_C3:1 | Original:STAR_N3_C3:2
+STAR,3,C3,temp_tx,2,17.0,2.8284271247461903,15.0,19.0,INSUFICIENTE,Original:STAR_N3_C3:1 | Original:STAR_N3_C3:2
+STAR,3,C4,app_bytes,2,1137.0,0.0,1137.0,1137.0,INSUFICIENTE,Original:STAR_N3_C4:2 | Original:STAR_N3_C4:3
+STAR,3,C4,hqc_total_ticks_max,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N3_C4:2 | Original:STAR_N3_C4:3
+STAR,3,C4,mac_extra_attempts,2,9.5,2.1213203435596424,8.0,11.0,INSUFICIENTE,Original:STAR_N3_C4:2 | Original:STAR_N3_C4:3
+STAR,3,C4,nack_retransmitted_fragments,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N3_C4:2 | Original:STAR_N3_C4:3
+STAR,3,C4,radio_bytes,2,2248.5,382.54476862192223,1978.0,2519.0,INSUFICIENTE,Original:STAR_N3_C4:2 | Original:STAR_N3_C4:3
+STAR,3,C4,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N3_C4:2 | Original:STAR_N3_C4:3
+STAR,3,C4,radio_rx_bytes,2,677.5,140.71424945612296,578.0,777.0,INSUFICIENTE,Original:STAR_N3_C4:2 | Original:STAR_N3_C4:3
+STAR,3,C4,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N3_C4:2 | Original:STAR_N3_C4:3
+STAR,3,C4,radio_tx_bytes,2,1571.0,523.2590180780452,1201.0,1941.0,INSUFICIENTE,Original:STAR_N3_C4:2 | Original:STAR_N3_C4:3
+STAR,3,C4,retransmission_pressure,2,9.5,2.1213203435596424,8.0,11.0,INSUFICIENTE,Original:STAR_N3_C4:2 | Original:STAR_N3_C4:3
+STAR,3,C4,retransmitted_bytes,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N3_C4:2 | Original:STAR_N3_C4:3
+STAR,3,C4,temp_tx,2,22.5,6.363961030678928,18.0,27.0,INSUFICIENTE,Original:STAR_N3_C4:2 | Original:STAR_N3_C4:3
+STAR,4,C0,app_bytes,3,1516.0,0.0,1516.0,1516.0,OK,Original:STAR_N4_C0:1 | Original:STAR_N4_C0:2 | Original:STAR_N4_C0:3
+STAR,4,C0,hqc_total_ticks_max,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N4_C0:1 | Original:STAR_N4_C0:2 | Original:STAR_N4_C0:3
+STAR,4,C0,mac_extra_attempts,3,8.666666666666666,14.153915830374764,0.0,25.0,OK,Original:STAR_N4_C0:1 | Original:STAR_N4_C0:2 | Original:STAR_N4_C0:3
+STAR,4,C0,nack_retransmitted_fragments,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N4_C0:1 | Original:STAR_N4_C0:2 | Original:STAR_N4_C0:3
+STAR,4,C0,radio_bytes,3,8902.333333333334,8051.978535324925,2569.0,17964.0,OK,Original:STAR_N4_C0:1 | Original:STAR_N4_C0:2 | Original:STAR_N4_C0:3
+STAR,4,C0,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N4_C0:1 | Original:STAR_N4_C0:2 | Original:STAR_N4_C0:3
+STAR,4,C0,radio_rx_bytes,3,4618.333333333333,3509.840072329982,1545.0,8443.0,OK,Original:STAR_N4_C0:1 | Original:STAR_N4_C0:2 | Original:STAR_N4_C0:3
+STAR,4,C0,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N4_C0:1 | Original:STAR_N4_C0:2 | Original:STAR_N4_C0:3
+STAR,4,C0,radio_tx_bytes,3,4284.0,4580.518420441075,1024.0,9521.0,OK,Original:STAR_N4_C0:1 | Original:STAR_N4_C0:2 | Original:STAR_N4_C0:3
+STAR,4,C0,retransmission_pressure,3,12.0,19.924858845171276,0.0,35.0,OK,Original:STAR_N4_C0:1 | Original:STAR_N4_C0:2 | Original:STAR_N4_C0:3
+STAR,4,C0,retransmitted_bytes,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N4_C0:1 | Original:STAR_N4_C0:2 | Original:STAR_N4_C0:3
+STAR,4,C0,temp_tx,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N4_C0:1 | Original:STAR_N4_C0:2 | Original:STAR_N4_C0:3
+STAR,4,C2,app_bytes,2,6795.0,1098.8439379638949,6018.0,7572.0,INSUFICIENTE,Original:STAR_N4_C2:1 | Original:STAR_N4_C2:2
+STAR,4,C2,hqc_total_ticks_max,2,33019.5,352.8462838120872,32770.0,33269.0,INSUFICIENTE,Original:STAR_N4_C2:1 | Original:STAR_N4_C2:2
+STAR,4,C2,mac_extra_attempts,1,3.0,,3.0,3.0,INSUFICIENTE,Original:STAR_N4_C2:2
+STAR,4,C2,nack_retransmitted_fragments,2,10.5,14.849242404917497,0.0,21.0,INSUFICIENTE,Original:STAR_N4_C2:1 | Original:STAR_N4_C2:2
+STAR,4,C2,radio_bytes,2,15098.5,2266.277233702885,13496.0,16701.0,INSUFICIENTE,Original:STAR_N4_C2:1 | Original:STAR_N4_C2:2
+STAR,4,C2,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N4_C2:1 | Original:STAR_N4_C2:2
+STAR,4,C2,radio_rx_bytes,2,5014.0,241.83051916579925,4843.0,5185.0,INSUFICIENTE,Original:STAR_N4_C2:1 | Original:STAR_N4_C2:2
+STAR,4,C2,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N4_C2:1 | Original:STAR_N4_C2:2
+STAR,4,C2,radio_tx_bytes,2,10084.5,2024.4467145370857,8653.0,11516.0,INSUFICIENTE,Original:STAR_N4_C2:1 | Original:STAR_N4_C2:2
+STAR,4,C2,retransmission_pressure,1,3.0,,3.0,3.0,INSUFICIENTE,Original:STAR_N4_C2:2
+STAR,4,C2,retransmitted_bytes,2,777.0,1098.8439379638949,0.0,1554.0,INSUFICIENTE,Original:STAR_N4_C2:1 | Original:STAR_N4_C2:2
+STAR,4,C2,temp_tx,2,1.5,0.7071067811865476,1.0,2.0,INSUFICIENTE,Original:STAR_N4_C2:1 | Original:STAR_N4_C2:2
+STAR,4,C3,app_bytes,2,6018.0,0.0,6018.0,6018.0,INSUFICIENTE,Original:STAR_N4_C3:1 | Original:STAR_N4_C3:2
+STAR,4,C3,hqc_total_ticks_max,2,32767.5,10.606601717798213,32760.0,32775.0,INSUFICIENTE,Original:STAR_N4_C3:1 | Original:STAR_N4_C3:2
+STAR,4,C3,mac_extra_attempts,2,1.0,1.4142135623730951,0.0,2.0,INSUFICIENTE,Original:STAR_N4_C3:1 | Original:STAR_N4_C3:2
+STAR,4,C3,nack_retransmitted_fragments,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N4_C3:1 | Original:STAR_N4_C3:2
+STAR,4,C3,radio_bytes,2,16716.0,1473.6105319927651,15674.0,17758.0,INSUFICIENTE,Original:STAR_N4_C3:1 | Original:STAR_N4_C3:2
+STAR,4,C3,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N4_C3:1 | Original:STAR_N4_C3:2
+STAR,4,C3,radio_rx_bytes,2,5781.0,671.7514421272201,5306.0,6256.0,INSUFICIENTE,Original:STAR_N4_C3:1 | Original:STAR_N4_C3:2
+STAR,4,C3,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N4_C3:1 | Original:STAR_N4_C3:2
+STAR,4,C3,radio_tx_bytes,2,10935.0,801.8590898655449,10368.0,11502.0,INSUFICIENTE,Original:STAR_N4_C3:1 | Original:STAR_N4_C3:2
+STAR,4,C3,retransmission_pressure,2,1.0,1.4142135623730951,0.0,2.0,INSUFICIENTE,Original:STAR_N4_C3:1 | Original:STAR_N4_C3:2
+STAR,4,C3,retransmitted_bytes,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N4_C3:1 | Original:STAR_N4_C3:2
+STAR,4,C3,temp_tx,2,28.5,6.363961030678928,24.0,33.0,INSUFICIENTE,Original:STAR_N4_C3:1 | Original:STAR_N4_C3:2
+STAR,4,C4,app_bytes,3,1516.0,0.0,1516.0,1516.0,OK,Original:STAR_N4_C4:1 | Original:STAR_N4_C4:2 | Original:STAR_N4_C4:3
+STAR,4,C4,hqc_total_ticks_max,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N4_C4:1 | Original:STAR_N4_C4:2 | Original:STAR_N4_C4:3
+STAR,4,C4,mac_extra_attempts,3,0.6666666666666666,0.5773502691896257,0.0,1.0,OK,Original:STAR_N4_C4:1 | Original:STAR_N4_C4:2 | Original:STAR_N4_C4:3
+STAR,4,C4,nack_retransmitted_fragments,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N4_C4:1 | Original:STAR_N4_C4:2 | Original:STAR_N4_C4:3
+STAR,4,C4,radio_bytes,3,3280.0,646.8260971853254,2720.0,3988.0,OK,Original:STAR_N4_C4:1 | Original:STAR_N4_C4:2 | Original:STAR_N4_C4:3
+STAR,4,C4,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N4_C4:1 | Original:STAR_N4_C4:2 | Original:STAR_N4_C4:3
+STAR,4,C4,radio_rx_bytes,3,1009.3333333333334,536.672463736806,648.0,1626.0,OK,Original:STAR_N4_C4:1 | Original:STAR_N4_C4:2 | Original:STAR_N4_C4:3
+STAR,4,C4,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N4_C4:1 | Original:STAR_N4_C4:2 | Original:STAR_N4_C4:3
+STAR,4,C4,radio_tx_bytes,3,2270.6666666666665,172.2362718283618,2072.0,2378.0,OK,Original:STAR_N4_C4:1 | Original:STAR_N4_C4:2 | Original:STAR_N4_C4:3
+STAR,4,C4,retransmission_pressure,3,0.6666666666666666,0.5773502691896257,0.0,1.0,OK,Original:STAR_N4_C4:1 | Original:STAR_N4_C4:2 | Original:STAR_N4_C4:3
+STAR,4,C4,retransmitted_bytes,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N4_C4:1 | Original:STAR_N4_C4:2 | Original:STAR_N4_C4:3
+STAR,4,C4,temp_tx,3,29.0,2.6457513110645907,27.0,32.0,OK,Original:STAR_N4_C4:1 | Original:STAR_N4_C4:2 | Original:STAR_N4_C4:3
+STAR,5,C0,app_bytes,3,1895.0,0.0,1895.0,1895.0,OK,Original:STAR_N5_C0:1 | Original:STAR_N5_C0:2 | Original:STAR_N5_C0:3
+STAR,5,C0,hqc_total_ticks_max,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N5_C0:1 | Original:STAR_N5_C0:2 | Original:STAR_N5_C0:3
+STAR,5,C0,mac_extra_attempts,3,1.0,1.7320508075688772,0.0,3.0,OK,Original:STAR_N5_C0:1 | Original:STAR_N5_C0:2 | Original:STAR_N5_C0:3
+STAR,5,C0,nack_retransmitted_fragments,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N5_C0:1 | Original:STAR_N5_C0:2 | Original:STAR_N5_C0:3
+STAR,5,C0,radio_bytes,3,7370.333333333333,817.2572014570036,6441.0,7977.0,OK,Original:STAR_N5_C0:1 | Original:STAR_N5_C0:2 | Original:STAR_N5_C0:3
+STAR,5,C0,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N5_C0:1 | Original:STAR_N5_C0:2 | Original:STAR_N5_C0:3
+STAR,5,C0,radio_rx_bytes,3,4502.0,618.160982269182,3793.0,4928.0,OK,Original:STAR_N5_C0:1 | Original:STAR_N5_C0:2 | Original:STAR_N5_C0:3
+STAR,5,C0,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N5_C0:1 | Original:STAR_N5_C0:2 | Original:STAR_N5_C0:3
+STAR,5,C0,radio_tx_bytes,3,2868.3333333333335,203.421565556195,2648.0,3049.0,OK,Original:STAR_N5_C0:1 | Original:STAR_N5_C0:2 | Original:STAR_N5_C0:3
+STAR,5,C0,retransmission_pressure,3,1.0,1.7320508075688772,0.0,3.0,OK,Original:STAR_N5_C0:1 | Original:STAR_N5_C0:2 | Original:STAR_N5_C0:3
+STAR,5,C0,retransmitted_bytes,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N5_C0:1 | Original:STAR_N5_C0:2 | Original:STAR_N5_C0:3
+STAR,5,C0,temp_tx,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N5_C0:1 | Original:STAR_N5_C0:2 | Original:STAR_N5_C0:3
+STAR,5,C2,app_bytes,2,7163.0,974.3931444750625,6474.0,7852.0,INSUFICIENTE,Original:STAR_N5_C2:1 | Original:STAR_N5_C2:2
+STAR,5,C2,hqc_total_ticks_max,2,32854.5,0.7071067811865476,32854.0,32855.0,INSUFICIENTE,Original:STAR_N5_C2:1 | Original:STAR_N5_C2:2
+STAR,5,C2,mac_extra_attempts,2,5.5,3.5355339059327378,3.0,8.0,INSUFICIENTE,Original:STAR_N5_C2:1 | Original:STAR_N5_C2:2
+STAR,5,C2,nack_retransmitted_fragments,2,9.5,13.435028842544403,0.0,19.0,INSUFICIENTE,Original:STAR_N5_C2:1 | Original:STAR_N5_C2:2
+STAR,5,C2,radio_bytes,2,16466.0,1562.70598642227,15361.0,17571.0,INSUFICIENTE,Original:STAR_N5_C2:1 | Original:STAR_N5_C2:2
+STAR,5,C2,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N5_C2:1 | Original:STAR_N5_C2:2
+STAR,5,C2,radio_rx_bytes,2,5860.5,159.0990257669732,5748.0,5973.0,INSUFICIENTE,Original:STAR_N5_C2:1 | Original:STAR_N5_C2:2
+STAR,5,C2,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N5_C2:1 | Original:STAR_N5_C2:2
+STAR,5,C2,radio_tx_bytes,2,10605.5,1403.606960655297,9613.0,11598.0,INSUFICIENTE,Original:STAR_N5_C2:1 | Original:STAR_N5_C2:2
+STAR,5,C2,retransmission_pressure,2,15.0,9.899494936611665,8.0,22.0,INSUFICIENTE,Original:STAR_N5_C2:1 | Original:STAR_N5_C2:2
+STAR,5,C2,retransmitted_bytes,2,703.0,994.1921343482858,0.0,1406.0,INSUFICIENTE,Original:STAR_N5_C2:1 | Original:STAR_N5_C2:2
+STAR,5,C2,temp_tx,2,1.0,0.0,1.0,1.0,INSUFICIENTE,Original:STAR_N5_C2:1 | Original:STAR_N5_C2:2
+STAR,5,C3,app_bytes,3,9017.666666666666,2546.0285413430333,6415.0,11503.0,OK,Original:STAR_N5_C3:1 | Original:STAR_N5_C3:2 | Original:STAR_N5_C3:3
+STAR,5,C3,hqc_total_ticks_max,3,34094.666666666664,2158.4254291805714,32846.0,36587.0,OK,Original:STAR_N5_C3:1 | Original:STAR_N5_C3:2 | Original:STAR_N5_C3:3
+STAR,5,C3,mac_extra_attempts,3,10.333333333333334,0.5773502691896257,10.0,11.0,OK,Original:STAR_N5_C3:1 | Original:STAR_N5_C3:2 | Original:STAR_N5_C3:3
+STAR,5,C3,nack_retransmitted_fragments,3,35.333333333333336,34.53018003621373,0.0,69.0,OK,Original:STAR_N5_C3:1 | Original:STAR_N5_C3:2 | Original:STAR_N5_C3:3
+STAR,5,C3,radio_bytes,3,21633.666666666668,3815.9368880175853,17238.0,24096.0,OK,Original:STAR_N5_C3:1 | Original:STAR_N5_C3:2 | Original:STAR_N5_C3:3
+STAR,5,C3,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N5_C3:1 | Original:STAR_N5_C3:2 | Original:STAR_N5_C3:3
+STAR,5,C3,radio_rx_bytes,3,6857.333333333333,753.6924660186894,6062.0,7561.0,OK,Original:STAR_N5_C3:1 | Original:STAR_N5_C3:2 | Original:STAR_N5_C3:3
+STAR,5,C3,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N5_C3:1 | Original:STAR_N5_C3:2 | Original:STAR_N5_C3:3
+STAR,5,C3,radio_tx_bytes,3,14776.333333333334,3169.742944362103,11176.0,17147.0,OK,Original:STAR_N5_C3:1 | Original:STAR_N5_C3:2 | Original:STAR_N5_C3:3
+STAR,5,C3,retransmission_pressure,3,47.666666666666664,34.01960219246153,13.0,81.0,OK,Original:STAR_N5_C3:1 | Original:STAR_N5_C3:2 | Original:STAR_N5_C3:3
+STAR,5,C3,retransmitted_bytes,3,2614.6666666666665,2555.233322679816,0.0,5106.0,OK,Original:STAR_N5_C3:1 | Original:STAR_N5_C3:2 | Original:STAR_N5_C3:3
+STAR,5,C3,temp_tx,3,32.333333333333336,2.309401076758503,31.0,35.0,OK,Original:STAR_N5_C3:1 | Original:STAR_N5_C3:2 | Original:STAR_N5_C3:3
+STAR,5,C4,app_bytes,3,1895.0,0.0,1895.0,1895.0,OK,Original:STAR_N5_C4:1 | Original:STAR_N5_C4:2 | Original:STAR_N5_C4:3
+STAR,5,C4,hqc_total_ticks_max,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N5_C4:1 | Original:STAR_N5_C4:2 | Original:STAR_N5_C4:3
+STAR,5,C4,mac_extra_attempts,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N5_C4:2 | Original:STAR_N5_C4:3
+STAR,5,C4,nack_retransmitted_fragments,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N5_C4:1 | Original:STAR_N5_C4:2 | Original:STAR_N5_C4:3
+STAR,5,C4,radio_bytes,3,4382.666666666667,1681.6706970549653,2715.0,6078.0,OK,Original:STAR_N5_C4:1 | Original:STAR_N5_C4:2 | Original:STAR_N5_C4:3
+STAR,5,C4,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N5_C4:1 | Original:STAR_N5_C4:2 | Original:STAR_N5_C4:3
+STAR,5,C4,radio_rx_bytes,3,1303.3333333333333,880.63178078771,665.0,2308.0,OK,Original:STAR_N5_C4:1 | Original:STAR_N5_C4:2 | Original:STAR_N5_C4:3
+STAR,5,C4,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N5_C4:1 | Original:STAR_N5_C4:2 | Original:STAR_N5_C4:3
+STAR,5,C4,radio_tx_bytes,3,3079.3333333333335,908.6370745976269,2050.0,3770.0,OK,Original:STAR_N5_C4:1 | Original:STAR_N5_C4:2 | Original:STAR_N5_C4:3
+STAR,5,C4,retransmission_pressure,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N5_C4:2 | Original:STAR_N5_C4:3
+STAR,5,C4,retransmitted_bytes,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N5_C4:1 | Original:STAR_N5_C4:2 | Original:STAR_N5_C4:3
+STAR,5,C4,temp_tx,3,40.666666666666664,7.023769168568492,34.0,48.0,OK,Original:STAR_N5_C4:1 | Original:STAR_N5_C4:2 | Original:STAR_N5_C4:3
+STAR,6,C0,app_bytes,3,2274.0,0.0,2274.0,2274.0,OK,Original:STAR_N6_C0:1 | Original:STAR_N6_C0:2 | Original:STAR_N6_C0:3
+STAR,6,C0,hqc_total_ticks_max,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N6_C0:1 | Original:STAR_N6_C0:2 | Original:STAR_N6_C0:3
+STAR,6,C0,mac_extra_attempts,3,2.6666666666666665,2.516611478423583,0.0,5.0,OK,Original:STAR_N6_C0:1 | Original:STAR_N6_C0:2 | Original:STAR_N6_C0:3
+STAR,6,C0,nack_retransmitted_fragments,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N6_C0:1 | Original:STAR_N6_C0:2 | Original:STAR_N6_C0:3
+STAR,6,C0,radio_bytes,3,8044.666666666667,3887.2212869006225,3714.0,11232.0,OK,Original:STAR_N6_C0:1 | Original:STAR_N6_C0:2 | Original:STAR_N6_C0:3
+STAR,6,C0,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N6_C0:1 | Original:STAR_N6_C0:2 | Original:STAR_N6_C0:3
+STAR,6,C0,radio_rx_bytes,3,4796.666666666667,2418.040597949781,2276.0,7097.0,OK,Original:STAR_N6_C0:1 | Original:STAR_N6_C0:2 | Original:STAR_N6_C0:3
+STAR,6,C0,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N6_C0:1 | Original:STAR_N6_C0:2 | Original:STAR_N6_C0:3
+STAR,6,C0,radio_tx_bytes,3,3248.0,1567.6093263310217,1438.0,4171.0,OK,Original:STAR_N6_C0:1 | Original:STAR_N6_C0:2 | Original:STAR_N6_C0:3
+STAR,6,C0,retransmission_pressure,3,4.666666666666667,4.509249752822894,0.0,9.0,OK,Original:STAR_N6_C0:1 | Original:STAR_N6_C0:2 | Original:STAR_N6_C0:3
+STAR,6,C0,retransmitted_bytes,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N6_C0:1 | Original:STAR_N6_C0:2 | Original:STAR_N6_C0:3
+STAR,6,C0,temp_tx,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N6_C0:2 | Original:STAR_N6_C0:3
+STAR,6,C2,app_bytes,2,7592.5,966.6149698820104,6909.0,8276.0,INSUFICIENTE,Original:STAR_N6_C2:1 | Original:STAR_N6_C2:2
+STAR,6,C2,hqc_total_ticks_max,2,32973.5,154.8563850798539,32864.0,33083.0,INSUFICIENTE,Original:STAR_N6_C2:1 | Original:STAR_N6_C2:2
+STAR,6,C2,mac_extra_attempts,2,4.0,0.0,4.0,4.0,INSUFICIENTE,Original:STAR_N6_C2:1 | Original:STAR_N6_C2:2
+STAR,6,C2,nack_retransmitted_fragments,2,10.5,13.435028842544403,1.0,20.0,INSUFICIENTE,Original:STAR_N6_C2:1 | Original:STAR_N6_C2:2
+STAR,6,C2,radio_bytes,2,16984.5,1171.6759364261093,16156.0,17813.0,INSUFICIENTE,Original:STAR_N6_C2:1 | Original:STAR_N6_C2:2
+STAR,6,C2,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N6_C2:1 | Original:STAR_N6_C2:2
+STAR,6,C2,radio_rx_bytes,2,5894.5,123.74368670764582,5807.0,5982.0,INSUFICIENTE,Original:STAR_N6_C2:1 | Original:STAR_N6_C2:2
+STAR,6,C2,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N6_C2:1 | Original:STAR_N6_C2:2
+STAR,6,C2,radio_tx_bytes,2,11090.0,1295.419623133755,10174.0,12006.0,INSUFICIENTE,Original:STAR_N6_C2:1 | Original:STAR_N6_C2:2
+STAR,6,C2,retransmission_pressure,2,25.5,12.020815280171307,17.0,34.0,INSUFICIENTE,Original:STAR_N6_C2:1 | Original:STAR_N6_C2:2
+STAR,6,C2,retransmitted_bytes,2,777.0,994.1921343482858,74.0,1480.0,INSUFICIENTE,Original:STAR_N6_C2:1 | Original:STAR_N6_C2:2
+STAR,6,C2,temp_tx,2,1.5,0.7071067811865476,1.0,2.0,INSUFICIENTE,Original:STAR_N6_C2:1 | Original:STAR_N6_C2:2
+STAR,6,C3,app_bytes,1,6834.0,,6834.0,6834.0,INSUFICIENTE,Original:STAR_N6_C3:2
+STAR,6,C3,hqc_total_ticks_max,2,33102.5,361.3315651863258,32847.0,33358.0,INSUFICIENTE,Original:STAR_N6_C3:1 | Original:STAR_N6_C3:2
+STAR,6,C3,mac_extra_attempts,2,24.0,9.899494936611665,17.0,31.0,INSUFICIENTE,Original:STAR_N6_C3:1 | Original:STAR_N6_C3:2
+STAR,6,C3,nack_retransmitted_fragments,2,12.0,16.97056274847714,0.0,24.0,INSUFICIENTE,Original:STAR_N6_C3:1 | Original:STAR_N6_C3:2
+STAR,6,C3,radio_bytes,2,21479.5,3189.758689932516,19224.0,23735.0,INSUFICIENTE,Original:STAR_N6_C3:1 | Original:STAR_N6_C3:2
+STAR,6,C3,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N6_C3:1 | Original:STAR_N6_C3:2
+STAR,6,C3,radio_rx_bytes,2,6528.0,19.79898987322333,6514.0,6542.0,INSUFICIENTE,Original:STAR_N6_C3:1 | Original:STAR_N6_C3:2
+STAR,6,C3,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N6_C3:1 | Original:STAR_N6_C3:2
+STAR,6,C3,radio_tx_bytes,2,14951.5,3169.9597000592926,12710.0,17193.0,INSUFICIENTE,Original:STAR_N6_C3:1 | Original:STAR_N6_C3:2
+STAR,6,C3,retransmission_pressure,2,76.0,49.49747468305833,41.0,111.0,INSUFICIENTE,Original:STAR_N6_C3:1 | Original:STAR_N6_C3:2
+STAR,6,C3,retransmitted_bytes,2,888.0,1255.8216433873083,0.0,1776.0,INSUFICIENTE,Original:STAR_N6_C3:1 | Original:STAR_N6_C3:2
+STAR,6,C3,temp_tx,2,43.0,1.4142135623730951,42.0,44.0,INSUFICIENTE,Original:STAR_N6_C3:1 | Original:STAR_N6_C3:2
+STAR,6,C4,app_bytes,2,2274.0,0.0,2274.0,2274.0,INSUFICIENTE,Original:STAR_N6_C4:1 | Original:STAR_N6_C4:2
+STAR,6,C4,hqc_total_ticks_max,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N6_C4:1 | Original:STAR_N6_C4:2
+STAR,6,C4,mac_extra_attempts,2,31.5,7.7781745930520225,26.0,37.0,INSUFICIENTE,Original:STAR_N6_C4:1 | Original:STAR_N6_C4:2
+STAR,6,C4,nack_retransmitted_fragments,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N6_C4:1 | Original:STAR_N6_C4:2
+STAR,6,C4,radio_bytes,1,7497.0,,7497.0,7497.0,INSUFICIENTE,Original:STAR_N6_C4:2
+STAR,6,C4,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N6_C4:1 | Original:STAR_N6_C4:2
+STAR,6,C4,radio_rx_bytes,1,2885.0,,2885.0,2885.0,INSUFICIENTE,Original:STAR_N6_C4:2
+STAR,6,C4,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N6_C4:1 | Original:STAR_N6_C4:2
+STAR,6,C4,radio_tx_bytes,2,5064.5,639.9316369738256,4612.0,5517.0,INSUFICIENTE,Original:STAR_N6_C4:1 | Original:STAR_N6_C4:2
+STAR,6,C4,retransmission_pressure,1,45.0,,45.0,45.0,INSUFICIENTE,Original:STAR_N6_C4:2
+STAR,6,C4,retransmitted_bytes,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N6_C4:1 | Original:STAR_N6_C4:2
+STAR,6,C4,temp_tx,2,53.5,9.192388155425117,47.0,60.0,INSUFICIENTE,Original:STAR_N6_C4:1 | Original:STAR_N6_C4:2
+STAR,7,C0,app_bytes,2,2653.0,0.0,2653.0,2653.0,INSUFICIENTE,Original:STAR_N7_C0:1 | Original:STAR_N7_C0:2
+STAR,7,C0,hqc_total_ticks_max,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N7_C0:1 | Original:STAR_N7_C0:2
+STAR,7,C0,mac_extra_attempts,2,22.5,31.81980515339464,0.0,45.0,INSUFICIENTE,Original:STAR_N7_C0:1 | Original:STAR_N7_C0:2
+STAR,7,C0,nack_retransmitted_fragments,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N7_C0:1 | Original:STAR_N7_C0:2
+STAR,7,C0,radio_bytes,2,8435.5,5185.214026440953,4769.0,12102.0,INSUFICIENTE,Original:STAR_N7_C0:1 | Original:STAR_N7_C0:2
+STAR,7,C0,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N7_C0:1 | Original:STAR_N7_C0:2
+STAR,7,C0,radio_rx_bytes,2,3755.0,1903.5314549541858,2409.0,5101.0,INSUFICIENTE,Original:STAR_N7_C0:1 | Original:STAR_N7_C0:2
+STAR,7,C0,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N7_C0:1 | Original:STAR_N7_C0:2
+STAR,7,C0,radio_tx_bytes,2,4680.5,3281.682571486767,2360.0,7001.0,INSUFICIENTE,Original:STAR_N7_C0:1 | Original:STAR_N7_C0:2
+STAR,7,C0,retransmission_pressure,2,63.5,89.80256121069154,0.0,127.0,INSUFICIENTE,Original:STAR_N7_C0:1 | Original:STAR_N7_C0:2
+STAR,7,C0,retransmitted_bytes,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N7_C0:1 | Original:STAR_N7_C0:2
+STAR,7,C0,temp_tx,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N7_C0:1 | Original:STAR_N7_C0:2
+STAR,7,C2,hqc_total_ticks_max,1,33134.0,,33134.0,33134.0,INSUFICIENTE,Original:STAR_N7_C2:1
+STAR,7,C2,mac_extra_attempts,1,1.0,,1.0,1.0,INSUFICIENTE,Original:STAR_N7_C2:1
+STAR,7,C2,nack_retransmitted_fragments,1,21.0,,21.0,21.0,INSUFICIENTE,Original:STAR_N7_C2:1
+STAR,7,C2,radio_bytes,1,19177.0,,19177.0,19177.0,INSUFICIENTE,Original:STAR_N7_C2:1
+STAR,7,C2,radio_listen_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,Original:STAR_N7_C2:1
+STAR,7,C2,radio_rx_bytes,1,6555.0,,6555.0,6555.0,INSUFICIENTE,Original:STAR_N7_C2:1
+STAR,7,C2,radio_transmit_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,Original:STAR_N7_C2:1
+STAR,7,C2,radio_tx_bytes,1,12622.0,,12622.0,12622.0,INSUFICIENTE,Original:STAR_N7_C2:1
+STAR,7,C2,retransmission_pressure,1,22.0,,22.0,22.0,INSUFICIENTE,Original:STAR_N7_C2:1
+STAR,7,C2,temp_tx,1,3.0,,3.0,3.0,INSUFICIENTE,Original:STAR_N7_C2:1
+STAR,7,C3,app_bytes,2,10445.5,654.0737725975565,9983.0,10908.0,INSUFICIENTE,Original:STAR_N7_C3:1 | Original:STAR_N7_C3:2
+STAR,7,C3,hqc_total_ticks_max,2,32878.0,1.4142135623730951,32877.0,32879.0,INSUFICIENTE,Original:STAR_N7_C3:1 | Original:STAR_N7_C3:2
+STAR,7,C3,mac_extra_attempts,2,4.0,1.4142135623730951,3.0,5.0,INSUFICIENTE,Original:STAR_N7_C3:1 | Original:STAR_N7_C3:2
+STAR,7,C3,nack_retransmitted_fragments,2,44.0,8.48528137423857,38.0,50.0,INSUFICIENTE,Original:STAR_N7_C3:1 | Original:STAR_N7_C3:2
+STAR,7,C3,radio_bytes,1,26202.0,,26202.0,26202.0,INSUFICIENTE,Original:STAR_N7_C3:1
+STAR,7,C3,radio_listen_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,Original:STAR_N7_C3:1
+STAR,7,C3,radio_rx_bytes,2,7186.5,1048.63935649965,6445.0,7928.0,INSUFICIENTE,Original:STAR_N7_C3:1 | Original:STAR_N7_C3:2
+STAR,7,C3,radio_transmit_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,Original:STAR_N7_C3:1
+STAR,7,C3,radio_tx_bytes,1,18274.0,,18274.0,18274.0,INSUFICIENTE,Original:STAR_N7_C3:1
+STAR,7,C3,retransmission_pressure,1,45.0,,45.0,45.0,INSUFICIENTE,Original:STAR_N7_C3:1
+STAR,7,C3,retransmitted_bytes,1,2812.0,,2812.0,2812.0,INSUFICIENTE,Original:STAR_N7_C3:1
+STAR,7,C3,temp_tx,2,47.0,7.0710678118654755,42.0,52.0,INSUFICIENTE,Original:STAR_N7_C3:1 | Original:STAR_N7_C3:2
+STAR,7,C4,app_bytes,3,2653.0,0.0,2653.0,2653.0,OK,Original:STAR_N7_C4:1 | Original:STAR_N7_C4:2 | Original:STAR_N7_C4:3
+STAR,7,C4,hqc_total_ticks_max,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N7_C4:1 | Original:STAR_N7_C4:2 | Original:STAR_N7_C4:3
+STAR,7,C4,mac_extra_attempts,3,1.3333333333333333,1.5275252316519468,0.0,3.0,OK,Original:STAR_N7_C4:1 | Original:STAR_N7_C4:2 | Original:STAR_N7_C4:3
+STAR,7,C4,nack_retransmitted_fragments,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N7_C4:1 | Original:STAR_N7_C4:2 | Original:STAR_N7_C4:3
+STAR,7,C4,radio_bytes,3,4089.6666666666665,752.3199673897625,3325.0,4829.0,OK,Original:STAR_N7_C4:1 | Original:STAR_N7_C4:2 | Original:STAR_N7_C4:3
+STAR,7,C4,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N7_C4:1 | Original:STAR_N7_C4:2 | Original:STAR_N7_C4:3
+STAR,7,C4,radio_rx_bytes,3,978.0,156.08971779076288,880.0,1158.0,OK,Original:STAR_N7_C4:1 | Original:STAR_N7_C4:2 | Original:STAR_N7_C4:3
+STAR,7,C4,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N7_C4:1 | Original:STAR_N7_C4:2 | Original:STAR_N7_C4:3
+STAR,7,C4,radio_tx_bytes,3,3111.6666666666665,630.1185073724889,2429.0,3671.0,OK,Original:STAR_N7_C4:1 | Original:STAR_N7_C4:2 | Original:STAR_N7_C4:3
+STAR,7,C4,retransmission_pressure,3,1.3333333333333333,1.5275252316519468,0.0,3.0,OK,Original:STAR_N7_C4:1 | Original:STAR_N7_C4:2 | Original:STAR_N7_C4:3
+STAR,7,C4,retransmitted_bytes,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N7_C4:1 | Original:STAR_N7_C4:2 | Original:STAR_N7_C4:3
+STAR,7,C4,temp_tx,3,45.333333333333336,8.962886439832502,35.0,51.0,OK,Original:STAR_N7_C4:1 | Original:STAR_N7_C4:2 | Original:STAR_N7_C4:3
+STAR,8,C0,app_bytes,2,3032.0,0.0,3032.0,3032.0,INSUFICIENTE,Original:STAR_N8_C0:1 | Original:STAR_N8_C0:2
+STAR,8,C0,hqc_total_ticks_max,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N8_C0:1 | Original:STAR_N8_C0:2
+STAR,8,C0,mac_extra_attempts,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N8_C0:1 | Original:STAR_N8_C0:2
+STAR,8,C0,nack_retransmitted_fragments,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N8_C0:1 | Original:STAR_N8_C0:2
+STAR,8,C0,radio_bytes,2,3509.0,865.4987001723342,2897.0,4121.0,INSUFICIENTE,Original:STAR_N8_C0:1 | Original:STAR_N8_C0:2
+STAR,8,C0,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N8_C0:1 | Original:STAR_N8_C0:2
+STAR,8,C0,radio_rx_bytes,2,1996.5,485.78235867515815,1653.0,2340.0,INSUFICIENTE,Original:STAR_N8_C0:1 | Original:STAR_N8_C0:2
+STAR,8,C0,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N8_C0:1 | Original:STAR_N8_C0:2
+STAR,8,C0,radio_tx_bytes,2,1512.5,379.716341497176,1244.0,1781.0,INSUFICIENTE,Original:STAR_N8_C0:1 | Original:STAR_N8_C0:2
+STAR,8,C0,retransmission_pressure,2,1.0,1.4142135623730951,0.0,2.0,INSUFICIENTE,Original:STAR_N8_C0:1 | Original:STAR_N8_C0:2
+STAR,8,C0,retransmitted_bytes,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N8_C0:1 | Original:STAR_N8_C0:2
+STAR,8,C0,temp_tx,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N8_C0:1 | Original:STAR_N8_C0:2
+STAR,8,C4,app_bytes,2,3032.0,0.0,3032.0,3032.0,INSUFICIENTE,Original:STAR_N8_C4:1 | Original:STAR_N8_C4:2
+STAR,8,C4,hqc_total_ticks_max,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N8_C4:1 | Original:STAR_N8_C4:2
+STAR,8,C4,mac_extra_attempts,2,2.0,1.4142135623730951,1.0,3.0,INSUFICIENTE,Original:STAR_N8_C4:1 | Original:STAR_N8_C4:2
+STAR,8,C4,nack_retransmitted_fragments,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N8_C4:1 | Original:STAR_N8_C4:2
+STAR,8,C4,radio_bytes,3,6737.0,1717.06464642424,5558.0,8707.0,OK,Original:STAR_N8_C4:1 | Original:STAR_N8_C4:2 | Original:STAR_N8_C4:3
+STAR,8,C4,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N8_C4:1 | Original:STAR_N8_C4:2 | Original:STAR_N8_C4:3
+STAR,8,C4,radio_rx_bytes,3,2060.3333333333335,630.229587795855,1663.0,2787.0,OK,Original:STAR_N8_C4:1 | Original:STAR_N8_C4:2 | Original:STAR_N8_C4:3
+STAR,8,C4,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:STAR_N8_C4:1 | Original:STAR_N8_C4:2 | Original:STAR_N8_C4:3
+STAR,8,C4,radio_tx_bytes,3,4676.666666666667,1088.5808804739008,3895.0,5920.0,OK,Original:STAR_N8_C4:1 | Original:STAR_N8_C4:2 | Original:STAR_N8_C4:3
+STAR,8,C4,retransmission_pressure,2,2.0,1.4142135623730951,1.0,3.0,INSUFICIENTE,Original:STAR_N8_C4:1 | Original:STAR_N8_C4:2
+STAR,8,C4,retransmitted_bytes,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N8_C4:1 | Original:STAR_N8_C4:2
+STAR,8,C4,temp_tx,2,53.5,3.5355339059327378,51.0,56.0,INSUFICIENTE,Original:STAR_N8_C4:1 | Original:STAR_N8_C4:2
+STAR,9,C0,app_bytes,2,3411.0,0.0,3411.0,3411.0,INSUFICIENTE,Original:STAR_N9_C0:2 | Original:STAR_N9_C0:3
+STAR,9,C0,hqc_total_ticks_max,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N9_C0:2 | Original:STAR_N9_C0:3
+STAR,9,C0,mac_extra_attempts,1,22.0,,22.0,22.0,INSUFICIENTE,Original:STAR_N9_C0:3
+STAR,9,C0,nack_retransmitted_fragments,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N9_C0:2 | Original:STAR_N9_C0:3
+STAR,9,C0,radio_bytes,1,11645.0,,11645.0,11645.0,INSUFICIENTE,Original:STAR_N9_C0:3
+STAR,9,C0,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N9_C0:2 | Original:STAR_N9_C0:3
+STAR,9,C0,radio_rx_bytes,1,6588.0,,6588.0,6588.0,INSUFICIENTE,Original:STAR_N9_C0:3
+STAR,9,C0,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N9_C0:2 | Original:STAR_N9_C0:3
+STAR,9,C0,radio_tx_bytes,2,5072.0,21.213203435596427,5057.0,5087.0,INSUFICIENTE,Original:STAR_N9_C0:2 | Original:STAR_N9_C0:3
+STAR,9,C0,retransmission_pressure,1,56.0,,56.0,56.0,INSUFICIENTE,Original:STAR_N9_C0:3
+STAR,9,C0,retransmitted_bytes,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:STAR_N9_C0:2 | Original:STAR_N9_C0:3
+STAR,9,C0,temp_tx,1,0.0,,0.0,0.0,INSUFICIENTE,Original:STAR_N9_C0:2
+STAR,9,C2,app_bytes,1,7942.0,,7942.0,7942.0,INSUFICIENTE,Original:STAR_N9_C2:3
+STAR,9,C2,hqc_total_ticks_max,2,33171.0,533.1585130146568,32794.0,33548.0,INSUFICIENTE,Original:STAR_N9_C2:2 | Original:STAR_N9_C2:3
+STAR,9,C2,mac_extra_attempts,2,49.0,60.81118318204309,6.0,92.0,INSUFICIENTE,Original:STAR_N9_C2:2 | Original:STAR_N9_C2:3
+STAR,9,C2,nack_retransmitted_fragments,1,0.0,,0.0,0.0,INSUFICIENTE,Original:STAR_N9_C2:3
+STAR,9,C2,radio_bytes,2,25579.5,4710.0382694835935,22249.0,28910.0,INSUFICIENTE,Original:STAR_N9_C2:2 | Original:STAR_N9_C2:3
+STAR,9,C2,radio_listen_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,Original:STAR_N9_C2:3
+STAR,9,C2,radio_rx_bytes,2,10676.0,704.2783540618013,10178.0,11174.0,INSUFICIENTE,Original:STAR_N9_C2:2 | Original:STAR_N9_C2:3
+STAR,9,C2,radio_transmit_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,Original:STAR_N9_C2:3
+STAR,9,C2,radio_tx_bytes,2,14903.5,4005.759915421792,12071.0,17736.0,INSUFICIENTE,Original:STAR_N9_C2:2 | Original:STAR_N9_C2:3
+STAR,9,C2,retransmission_pressure,1,14.0,,14.0,14.0,INSUFICIENTE,Original:STAR_N9_C2:3
+STAR,9,C2,retransmitted_bytes,1,0.0,,0.0,0.0,INSUFICIENTE,Original:STAR_N9_C2:3
+STAR,9,C2,temp_tx,2,1.5,0.7071067811865476,1.0,2.0,INSUFICIENTE,Original:STAR_N9_C2:2 | Original:STAR_N9_C2:3
+STAR,9,C4,app_bytes,1,3411.0,,3411.0,3411.0,INSUFICIENTE,Original:STAR_N9_C4:2
+STAR,9,C4,mac_extra_attempts,2,4.5,3.5355339059327378,2.0,7.0,INSUFICIENTE,ReWork:STAR_N9_C4:1 | Original:STAR_N9_C4:2
+STAR,9,C4,nack_retransmitted_fragments,2,0.0,0.0,0.0,0.0,INSUFICIENTE,ReWork:STAR_N9_C4:1 | Original:STAR_N9_C4:2
+STAR,9,C4,radio_bytes,2,9525.5,4486.592526628644,6353.0,12698.0,INSUFICIENTE,ReWork:STAR_N9_C4:1 | Original:STAR_N9_C4:2
+STAR,9,C4,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,ReWork:STAR_N9_C4:1 | Original:STAR_N9_C4:2
+STAR,9,C4,radio_rx_bytes,2,4082.5,3349.5648224806755,1714.0,6451.0,INSUFICIENTE,ReWork:STAR_N9_C4:1 | Original:STAR_N9_C4:2
+STAR,9,C4,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,ReWork:STAR_N9_C4:1 | Original:STAR_N9_C4:2
+STAR,9,C4,radio_tx_bytes,2,5443.0,1137.0277041479685,4639.0,6247.0,INSUFICIENTE,ReWork:STAR_N9_C4:1 | Original:STAR_N9_C4:2
+STAR,9,C4,retransmitted_bytes,1,0.0,,0.0,0.0,INSUFICIENTE,Original:STAR_N9_C4:2
+STAR,9,C4,temp_tx,1,62.0,,62.0,62.0,INSUFICIENTE,Original:STAR_N9_C4:2
+STAR,10,C0,app_bytes,1,3790.0,,3790.0,3790.0,INSUFICIENTE,Original:STAR_N10_C0:3
+STAR,10,C0,hqc_total_ticks_max,1,0.0,,0.0,0.0,INSUFICIENTE,Original:STAR_N10_C0:3
+STAR,10,C0,mac_extra_attempts,1,9.0,,9.0,9.0,INSUFICIENTE,Original:STAR_N10_C0:1
+STAR,10,C0,nack_retransmitted_fragments,1,0.0,,0.0,0.0,INSUFICIENTE,Original:STAR_N10_C0:3
+STAR,10,C0,radio_listen_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,Original:STAR_N10_C0:3
+STAR,10,C0,radio_transmit_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,Original:STAR_N10_C0:3
+STAR,10,C0,retransmitted_bytes,1,0.0,,0.0,0.0,INSUFICIENTE,Original:STAR_N10_C0:3
+STAR,10,C0,temp_tx,1,0.0,,0.0,0.0,INSUFICIENTE,Original:STAR_N10_C0:3
+STAR,10,C2,app_bytes,1,8292.0,,8292.0,8292.0,INSUFICIENTE,ReWork:STAR_N10_C2:3
+STAR,10,C2,hqc_total_ticks_max,1,34184.0,,34184.0,34184.0,INSUFICIENTE,ReWork:STAR_N10_C2:3
+STAR,10,C2,mac_extra_attempts,1,5.0,,5.0,5.0,INSUFICIENTE,ReWork:STAR_N10_C2:3
+STAR,10,C2,nack_retransmitted_fragments,1,0.0,,0.0,0.0,INSUFICIENTE,ReWork:STAR_N10_C2:3
+STAR,10,C2,radio_bytes,1,30236.0,,30236.0,30236.0,INSUFICIENTE,ReWork:STAR_N10_C2:3
+STAR,10,C2,radio_listen_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,ReWork:STAR_N10_C2:3
+STAR,10,C2,radio_rx_bytes,1,16928.0,,16928.0,16928.0,INSUFICIENTE,ReWork:STAR_N10_C2:3
+STAR,10,C2,radio_transmit_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,ReWork:STAR_N10_C2:3
+STAR,10,C2,radio_tx_bytes,1,13308.0,,13308.0,13308.0,INSUFICIENTE,ReWork:STAR_N10_C2:3
+STAR,10,C2,retransmission_pressure,1,11.0,,11.0,11.0,INSUFICIENTE,ReWork:STAR_N10_C2:3
+STAR,10,C2,retransmitted_bytes,1,0.0,,0.0,0.0,INSUFICIENTE,ReWork:STAR_N10_C2:3
+STAR,10,C2,temp_tx,1,4.0,,4.0,4.0,INSUFICIENTE,ReWork:STAR_N10_C2:3
+STAR,10,C4,mac_extra_attempts,1,3.0,,3.0,3.0,INSUFICIENTE,Original:STAR_N10_C4:3
+STAR,10,C4,temp_tx,1,82.0,,82.0,82.0,INSUFICIENTE,Original:STAR_N10_C4:3
+TREE,2,C0,app_bytes,3,758.0,0.0,758.0,758.0,OK,Original:TREE_N2_C0:1 | Original:TREE_N2_C0:2 | Original:TREE_N2_C0:3
+TREE,2,C0,hqc_total_ticks_max,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N2_C0:1 | Original:TREE_N2_C0:2 | Original:TREE_N2_C0:3
+TREE,2,C0,mac_extra_attempts,3,1.6666666666666667,2.8867513459481287,0.0,5.0,OK,Original:TREE_N2_C0:1 | Original:TREE_N2_C0:2 | Original:TREE_N2_C0:3
+TREE,2,C0,nack_retransmitted_fragments,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N2_C0:1 | Original:TREE_N2_C0:2 | Original:TREE_N2_C0:3
+TREE,2,C0,radio_bytes,3,1655.6666666666667,1216.3109525665438,794.0,3047.0,OK,Original:TREE_N2_C0:1 | Original:TREE_N2_C0:2 | Original:TREE_N2_C0:3
+TREE,2,C0,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N2_C0:1 | Original:TREE_N2_C0:2 | Original:TREE_N2_C0:3
+TREE,2,C0,radio_rx_bytes,3,849.3333333333334,564.4903305933002,410.0,1486.0,OK,Original:TREE_N2_C0:1 | Original:TREE_N2_C0:2 | Original:TREE_N2_C0:3
+TREE,2,C0,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N2_C0:1 | Original:TREE_N2_C0:2 | Original:TREE_N2_C0:3
+TREE,2,C0,radio_tx_bytes,3,806.3333333333334,655.1078791568099,384.0,1561.0,OK,Original:TREE_N2_C0:1 | Original:TREE_N2_C0:2 | Original:TREE_N2_C0:3
+TREE,2,C0,retransmission_pressure,3,2.3333333333333335,4.041451884327381,0.0,7.0,OK,Original:TREE_N2_C0:1 | Original:TREE_N2_C0:2 | Original:TREE_N2_C0:3
+TREE,2,C0,retransmitted_bytes,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N2_C0:1 | Original:TREE_N2_C0:2 | Original:TREE_N2_C0:3
+TREE,2,C0,temp_tx,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N2_C0:1 | Original:TREE_N2_C0:2 | Original:TREE_N2_C0:3
+TREE,2,C2,app_bytes,3,5260.0,0.0,5260.0,5260.0,OK,Original:TREE_N2_C2:1 | Original:TREE_N2_C2:2 | Original:TREE_N2_C2:3
+TREE,2,C2,hqc_total_ticks_max,3,32884.666666666664,152.71651296874654,32795.0,33061.0,OK,Original:TREE_N2_C2:1 | Original:TREE_N2_C2:2 | Original:TREE_N2_C2:3
+TREE,2,C2,mac_extra_attempts,3,5.0,3.0,2.0,8.0,OK,Original:TREE_N2_C2:1 | Original:TREE_N2_C2:2 | Original:TREE_N2_C2:3
+TREE,2,C2,nack_retransmitted_fragments,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N2_C2:1 | Original:TREE_N2_C2:2 | Original:TREE_N2_C2:3
+TREE,2,C2,radio_bytes,3,14146.333333333334,974.0186514299063,13298.0,15210.0,OK,Original:TREE_N2_C2:1 | Original:TREE_N2_C2:2 | Original:TREE_N2_C2:3
+TREE,2,C2,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N2_C2:1 | Original:TREE_N2_C2:2 | Original:TREE_N2_C2:3
+TREE,2,C2,radio_rx_bytes,3,5080.333333333333,435.85586302507545,4718.0,5564.0,OK,Original:TREE_N2_C2:1 | Original:TREE_N2_C2:2 | Original:TREE_N2_C2:3
+TREE,2,C2,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N2_C2:1 | Original:TREE_N2_C2:2 | Original:TREE_N2_C2:3
+TREE,2,C2,radio_tx_bytes,3,9066.0,539.1808601944249,8580.0,9646.0,OK,Original:TREE_N2_C2:1 | Original:TREE_N2_C2:2 | Original:TREE_N2_C2:3
+TREE,2,C2,retransmission_pressure,3,5.0,3.0,2.0,8.0,OK,Original:TREE_N2_C2:1 | Original:TREE_N2_C2:2 | Original:TREE_N2_C2:3
+TREE,2,C2,retransmitted_bytes,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N2_C2:1 | Original:TREE_N2_C2:2 | Original:TREE_N2_C2:3
+TREE,2,C2,temp_tx,3,2.0,1.7320508075688772,1.0,4.0,OK,Original:TREE_N2_C2:1 | Original:TREE_N2_C2:2 | Original:TREE_N2_C2:3
+TREE,2,C3,app_bytes,1,5260.0,,5260.0,5260.0,INSUFICIENTE,Original:TREE_N2_C3:1
+TREE,2,C3,hqc_total_ticks_max,1,32884.0,,32884.0,32884.0,INSUFICIENTE,Original:TREE_N2_C3:1
+TREE,2,C3,mac_extra_attempts,1,8.0,,8.0,8.0,INSUFICIENTE,Original:TREE_N2_C3:1
+TREE,2,C3,nack_retransmitted_fragments,1,0.0,,0.0,0.0,INSUFICIENTE,Original:TREE_N2_C3:1
+TREE,2,C3,radio_bytes,1,14905.0,,14905.0,14905.0,INSUFICIENTE,Original:TREE_N2_C3:1
+TREE,2,C3,radio_listen_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,Original:TREE_N2_C3:1
+TREE,2,C3,radio_rx_bytes,1,5061.0,,5061.0,5061.0,INSUFICIENTE,Original:TREE_N2_C3:1
+TREE,2,C3,radio_transmit_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,Original:TREE_N2_C3:1
+TREE,2,C3,radio_tx_bytes,1,9844.0,,9844.0,9844.0,INSUFICIENTE,Original:TREE_N2_C3:1
+TREE,2,C3,retransmission_pressure,1,14.0,,14.0,14.0,INSUFICIENTE,Original:TREE_N2_C3:1
+TREE,2,C3,retransmitted_bytes,1,0.0,,0.0,0.0,INSUFICIENTE,Original:TREE_N2_C3:1
+TREE,2,C3,temp_tx,1,15.0,,15.0,15.0,INSUFICIENTE,Original:TREE_N2_C3:1
+TREE,2,C4,app_bytes,3,758.0,0.0,758.0,758.0,OK,Original:TREE_N2_C4:1 | Original:TREE_N2_C4:2 | Original:TREE_N2_C4:3
+TREE,2,C4,hqc_total_ticks_max,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N2_C4:1 | Original:TREE_N2_C4:2 | Original:TREE_N2_C4:3
+TREE,2,C4,mac_extra_attempts,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N2_C4:1 | Original:TREE_N2_C4:2 | Original:TREE_N2_C4:3
+TREE,2,C4,nack_retransmitted_fragments,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N2_C4:1 | Original:TREE_N2_C4:2 | Original:TREE_N2_C4:3
+TREE,2,C4,radio_bytes,3,1602.6666666666667,721.0695759310147,812.0,2224.0,OK,Original:TREE_N2_C4:1 | Original:TREE_N2_C4:2 | Original:TREE_N2_C4:3
+TREE,2,C4,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N2_C4:1 | Original:TREE_N2_C4:2 | Original:TREE_N2_C4:3
+TREE,2,C4,radio_rx_bytes,3,429.3333333333333,221.00075414652625,208.0,650.0,OK,Original:TREE_N2_C4:1 | Original:TREE_N2_C4:2 | Original:TREE_N2_C4:3
+TREE,2,C4,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N2_C4:1 | Original:TREE_N2_C4:2 | Original:TREE_N2_C4:3
+TREE,2,C4,radio_tx_bytes,3,1173.3333333333333,506.51883808337607,604.0,1574.0,OK,Original:TREE_N2_C4:1 | Original:TREE_N2_C4:2 | Original:TREE_N2_C4:3
+TREE,2,C4,retransmission_pressure,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N2_C4:1 | Original:TREE_N2_C4:2 | Original:TREE_N2_C4:3
+TREE,2,C4,retransmitted_bytes,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N2_C4:1 | Original:TREE_N2_C4:2 | Original:TREE_N2_C4:3
+TREE,2,C4,temp_tx,3,14.666666666666666,5.033222956847166,10.0,20.0,OK,Original:TREE_N2_C4:1 | Original:TREE_N2_C4:2 | Original:TREE_N2_C4:3
+TREE,3,C0,app_bytes,3,1137.0,0.0,1137.0,1137.0,OK,Original:TREE_N3_C0:1 | Original:TREE_N3_C0:2 | Original:TREE_N3_C0:3
+TREE,3,C0,hqc_total_ticks_max,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N3_C0:1 | Original:TREE_N3_C0:2 | Original:TREE_N3_C0:3
+TREE,3,C0,mac_extra_attempts,3,0.6666666666666666,0.5773502691896257,0.0,1.0,OK,Original:TREE_N3_C0:1 | Original:TREE_N3_C0:2 | Original:TREE_N3_C0:3
+TREE,3,C0,nack_retransmitted_fragments,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N3_C0:1 | Original:TREE_N3_C0:2 | Original:TREE_N3_C0:3
+TREE,3,C0,radio_bytes,3,2715.3333333333335,436.829867721214,2211.0,2975.0,OK,Original:TREE_N3_C0:1 | Original:TREE_N3_C0:2 | Original:TREE_N3_C0:3
+TREE,3,C0,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N3_C0:1 | Original:TREE_N3_C0:2 | Original:TREE_N3_C0:3
+TREE,3,C0,radio_rx_bytes,3,1588.6666666666667,212.22707964190934,1371.0,1795.0,OK,Original:TREE_N3_C0:1 | Original:TREE_N3_C0:2 | Original:TREE_N3_C0:3
+TREE,3,C0,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N3_C0:1 | Original:TREE_N3_C0:2 | Original:TREE_N3_C0:3
+TREE,3,C0,radio_tx_bytes,3,1126.6666666666667,264.07069760451145,840.0,1360.0,OK,Original:TREE_N3_C0:1 | Original:TREE_N3_C0:2 | Original:TREE_N3_C0:3
+TREE,3,C0,retransmission_pressure,3,0.6666666666666666,0.5773502691896257,0.0,1.0,OK,Original:TREE_N3_C0:1 | Original:TREE_N3_C0:2 | Original:TREE_N3_C0:3
+TREE,3,C0,retransmitted_bytes,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N3_C0:1 | Original:TREE_N3_C0:2 | Original:TREE_N3_C0:3
+TREE,3,C0,temp_tx,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N3_C0:1 | Original:TREE_N3_C0:2 | Original:TREE_N3_C0:3
+TREE,3,C2,app_bytes,3,6477.666666666667,815.120440998343,5935.0,7415.0,OK,Original:TREE_N3_C2:1 | Original:TREE_N3_C2:2 | Original:TREE_N3_C2:3
+TREE,3,C2,hqc_total_ticks_max,3,34515.333333333336,376.9885055718985,34189.0,34928.0,OK,Original:TREE_N3_C2:1 | Original:TREE_N3_C2:2 | Original:TREE_N3_C2:3
+TREE,3,C2,mac_extra_attempts,3,28.0,6.244997998398398,21.0,33.0,OK,Original:TREE_N3_C2:1 | Original:TREE_N3_C2:2 | Original:TREE_N3_C2:3
+TREE,3,C2,nack_retransmitted_fragments,3,11.333333333333334,11.015141094572204,4.0,24.0,OK,Original:TREE_N3_C2:1 | Original:TREE_N3_C2:2 | Original:TREE_N3_C2:3
+TREE,3,C2,radio_bytes,3,51496.0,3955.559758112624,47973.0,55775.0,OK,Original:TREE_N3_C2:1 | Original:TREE_N3_C2:2 | Original:TREE_N3_C2:3
+TREE,3,C2,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N3_C2:1 | Original:TREE_N3_C2:2 | Original:TREE_N3_C2:3
+TREE,3,C2,radio_rx_bytes,3,22914.0,1465.635357106262,21460.0,24391.0,OK,Original:TREE_N3_C2:1 | Original:TREE_N3_C2:2 | Original:TREE_N3_C2:3
+TREE,3,C2,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N3_C2:1 | Original:TREE_N3_C2:2 | Original:TREE_N3_C2:3
+TREE,3,C2,radio_tx_bytes,3,28582.0,2516.8684908036016,26513.0,31384.0,OK,Original:TREE_N3_C2:1 | Original:TREE_N3_C2:2 | Original:TREE_N3_C2:3
+TREE,3,C2,retransmission_pressure,3,44.0,13.527749258468683,31.0,58.0,OK,Original:TREE_N3_C2:1 | Original:TREE_N3_C2:2 | Original:TREE_N3_C2:3
+TREE,3,C2,retransmitted_bytes,3,838.6666666666666,815.120440998343,296.0,1776.0,OK,Original:TREE_N3_C2:1 | Original:TREE_N3_C2:2 | Original:TREE_N3_C2:3
+TREE,3,C2,temp_tx,3,1.0,1.0,0.0,2.0,OK,Original:TREE_N3_C2:1 | Original:TREE_N3_C2:2 | Original:TREE_N3_C2:3
+TREE,3,C3,app_bytes,3,5770.333333333333,123.8439878772213,5639.0,5885.0,OK,Original:TREE_N3_C3:1 | Original:TREE_N3_C3:2 | Original:TREE_N3_C3:3
+TREE,3,C3,hqc_total_ticks_max,3,33280.333333333336,379.9609629071562,32870.0,33620.0,OK,Original:TREE_N3_C3:1 | Original:TREE_N3_C3:2 | Original:TREE_N3_C3:3
+TREE,3,C3,mac_extra_attempts,3,31.0,9.16515138991168,21.0,39.0,OK,Original:TREE_N3_C3:1 | Original:TREE_N3_C3:2 | Original:TREE_N3_C3:3
+TREE,3,C3,nack_retransmitted_fragments,3,1.6666666666666667,1.5275252316519468,0.0,3.0,OK,Original:TREE_N3_C3:1 | Original:TREE_N3_C3:2 | Original:TREE_N3_C3:3
+TREE,3,C3,radio_bytes,3,49589.666666666664,3291.2776141391255,47433.0,53378.0,OK,Original:TREE_N3_C3:1 | Original:TREE_N3_C3:2 | Original:TREE_N3_C3:3
+TREE,3,C3,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N3_C3:1 | Original:TREE_N3_C3:2 | Original:TREE_N3_C3:3
+TREE,3,C3,radio_rx_bytes,3,22238.333333333332,1262.9039287821277,21473.0,23696.0,OK,Original:TREE_N3_C3:1 | Original:TREE_N3_C3:2 | Original:TREE_N3_C3:3
+TREE,3,C3,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N3_C3:1 | Original:TREE_N3_C3:2 | Original:TREE_N3_C3:3
+TREE,3,C3,radio_tx_bytes,3,27351.333333333332,2040.442680727232,25887.0,29682.0,OK,Original:TREE_N3_C3:1 | Original:TREE_N3_C3:2 | Original:TREE_N3_C3:3
+TREE,3,C3,retransmission_pressure,3,36.666666666666664,11.50362261782493,25.0,48.0,OK,Original:TREE_N3_C3:1 | Original:TREE_N3_C3:2 | Original:TREE_N3_C3:3
+TREE,3,C3,retransmitted_bytes,3,123.33333333333333,113.03686714224405,0.0,222.0,OK,Original:TREE_N3_C3:1 | Original:TREE_N3_C3:2 | Original:TREE_N3_C3:3
+TREE,3,C3,temp_tx,3,15.0,2.6457513110645907,13.0,18.0,OK,Original:TREE_N3_C3:1 | Original:TREE_N3_C3:2 | Original:TREE_N3_C3:3
+TREE,3,C4,app_bytes,3,1137.0,0.0,1137.0,1137.0,OK,Original:TREE_N3_C4:1 | Original:TREE_N3_C4:2 | Original:TREE_N3_C4:3
+TREE,3,C4,hqc_total_ticks_max,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N3_C4:1 | Original:TREE_N3_C4:2 | Original:TREE_N3_C4:3
+TREE,3,C4,mac_extra_attempts,3,0.3333333333333333,0.5773502691896257,0.0,1.0,OK,Original:TREE_N3_C4:1 | Original:TREE_N3_C4:2 | Original:TREE_N3_C4:3
+TREE,3,C4,nack_retransmitted_fragments,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N3_C4:1 | Original:TREE_N3_C4:2 | Original:TREE_N3_C4:3
+TREE,3,C4,radio_bytes,3,2890.6666666666665,506.1712490188803,2330.0,3314.0,OK,Original:TREE_N3_C4:1 | Original:TREE_N3_C4:2 | Original:TREE_N3_C4:3
+TREE,3,C4,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N3_C4:1 | Original:TREE_N3_C4:2 | Original:TREE_N3_C4:3
+TREE,3,C4,radio_rx_bytes,3,1064.3333333333333,264.38103815011647,773.0,1289.0,OK,Original:TREE_N3_C4:1 | Original:TREE_N3_C4:2 | Original:TREE_N3_C4:3
+TREE,3,C4,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N3_C4:1 | Original:TREE_N3_C4:2 | Original:TREE_N3_C4:3
+TREE,3,C4,radio_tx_bytes,3,1826.3333333333333,322.0082814670041,1557.0,2183.0,OK,Original:TREE_N3_C4:1 | Original:TREE_N3_C4:2 | Original:TREE_N3_C4:3
+TREE,3,C4,retransmission_pressure,3,0.3333333333333333,0.5773502691896257,0.0,1.0,OK,Original:TREE_N3_C4:1 | Original:TREE_N3_C4:2 | Original:TREE_N3_C4:3
+TREE,3,C4,retransmitted_bytes,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N3_C4:1 | Original:TREE_N3_C4:2 | Original:TREE_N3_C4:3
+TREE,3,C4,temp_tx,3,16.666666666666668,2.309401076758503,14.0,18.0,OK,Original:TREE_N3_C4:1 | Original:TREE_N3_C4:2 | Original:TREE_N3_C4:3
+TREE,4,C0,app_bytes,3,1516.0,0.0,1516.0,1516.0,OK,Original:TREE_N4_C0:1 | Original:TREE_N4_C0:2 | Original:TREE_N4_C0:3
+TREE,4,C0,hqc_total_ticks_max,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N4_C0:1 | Original:TREE_N4_C0:2 | Original:TREE_N4_C0:3
+TREE,4,C0,mac_extra_attempts,3,0.6666666666666666,0.5773502691896257,0.0,1.0,OK,Original:TREE_N4_C0:1 | Original:TREE_N4_C0:2 | Original:TREE_N4_C0:3
+TREE,4,C0,nack_retransmitted_fragments,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N4_C0:1 | Original:TREE_N4_C0:2 | Original:TREE_N4_C0:3
+TREE,4,C0,radio_bytes,3,5463.666666666667,1344.6428274204766,4192.0,6871.0,OK,Original:TREE_N4_C0:1 | Original:TREE_N4_C0:2 | Original:TREE_N4_C0:3
+TREE,4,C0,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N4_C0:1 | Original:TREE_N4_C0:2 | Original:TREE_N4_C0:3
+TREE,4,C0,radio_rx_bytes,3,2983.0,898.6306248954572,2030.0,3815.0,OK,Original:TREE_N4_C0:1 | Original:TREE_N4_C0:2 | Original:TREE_N4_C0:3
+TREE,4,C0,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N4_C0:1 | Original:TREE_N4_C0:2 | Original:TREE_N4_C0:3
+TREE,4,C0,radio_tx_bytes,3,2480.6666666666665,499.2167198054702,2162.0,3056.0,OK,Original:TREE_N4_C0:1 | Original:TREE_N4_C0:2 | Original:TREE_N4_C0:3
+TREE,4,C0,retransmission_pressure,3,2.0,1.7320508075688772,0.0,3.0,OK,Original:TREE_N4_C0:1 | Original:TREE_N4_C0:2 | Original:TREE_N4_C0:3
+TREE,4,C0,retransmitted_bytes,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N4_C0:1 | Original:TREE_N4_C0:2 | Original:TREE_N4_C0:3
+TREE,4,C0,temp_tx,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N4_C0:1 | Original:TREE_N4_C0:2 | Original:TREE_N4_C0:3
+TREE,4,C2,app_bytes,2,6527.0,196.5756851698602,6388.0,6666.0,INSUFICIENTE,Original:TREE_N4_C2:1 | Original:TREE_N4_C2:2
+TREE,4,C2,hqc_total_ticks_max,2,35931.5,2291.7330778256005,34311.0,37552.0,INSUFICIENTE,Original:TREE_N4_C2:1 | Original:TREE_N4_C2:2
+TREE,4,C2,mac_extra_attempts,2,32.0,1.4142135623730951,31.0,33.0,INSUFICIENTE,Original:TREE_N4_C2:1 | Original:TREE_N4_C2:2
+TREE,4,C2,nack_retransmitted_fragments,2,6.5,2.1213203435596424,5.0,8.0,INSUFICIENTE,Original:TREE_N4_C2:1 | Original:TREE_N4_C2:2
+TREE,4,C2,radio_bytes,2,57887.5,3582.9100602722365,55354.0,60421.0,INSUFICIENTE,Original:TREE_N4_C2:1 | Original:TREE_N4_C2:2
+TREE,4,C2,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N4_C2:1 | Original:TREE_N4_C2:2
+TREE,4,C2,radio_rx_bytes,2,26968.5,1522.4008998946367,25892.0,28045.0,INSUFICIENTE,Original:TREE_N4_C2:1 | Original:TREE_N4_C2:2
+TREE,4,C2,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N4_C2:1 | Original:TREE_N4_C2:2
+TREE,4,C2,radio_tx_bytes,2,30919.0,2060.5091603775995,29462.0,32376.0,INSUFICIENTE,Original:TREE_N4_C2:1 | Original:TREE_N4_C2:2
+TREE,4,C2,retransmission_pressure,2,46.5,3.5355339059327378,44.0,49.0,INSUFICIENTE,Original:TREE_N4_C2:1 | Original:TREE_N4_C2:2
+TREE,4,C2,retransmitted_bytes,2,481.0,156.97770542341354,370.0,592.0,INSUFICIENTE,Original:TREE_N4_C2:1 | Original:TREE_N4_C2:2
+TREE,4,C2,temp_tx,2,1.5,0.7071067811865476,1.0,2.0,INSUFICIENTE,Original:TREE_N4_C2:1 | Original:TREE_N4_C2:2
+TREE,4,C3,app_bytes,3,8164.0,2884.1019399459515,6462.0,11494.0,OK,Original:TREE_N4_C3:1 | Original:TREE_N4_C3:2 | Original:TREE_N4_C3:3
+TREE,4,C3,hqc_total_ticks_max,3,35954.666666666664,1957.0450514317072,34704.0,38210.0,OK,Original:TREE_N4_C3:1 | Original:TREE_N4_C3:2 | Original:TREE_N4_C3:3
+TREE,4,C3,mac_extra_attempts,3,35.333333333333336,7.571877794400365,30.0,44.0,OK,Original:TREE_N4_C3:1 | Original:TREE_N4_C3:2 | Original:TREE_N4_C3:3
+TREE,4,C3,nack_retransmitted_fragments,3,29.0,38.97435053981015,6.0,74.0,OK,Original:TREE_N4_C3:1 | Original:TREE_N4_C3:2 | Original:TREE_N4_C3:3
+TREE,4,C3,radio_bytes,3,61112.333333333336,9535.034049930464,54199.0,71990.0,OK,Original:TREE_N4_C3:1 | Original:TREE_N4_C3:2 | Original:TREE_N4_C3:3
+TREE,4,C3,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N4_C3:1 | Original:TREE_N4_C3:2 | Original:TREE_N4_C3:3
+TREE,4,C3,radio_rx_bytes,3,27151.666666666668,2817.1997325949987,24800.0,30274.0,OK,Original:TREE_N4_C3:1 | Original:TREE_N4_C3:2 | Original:TREE_N4_C3:3
+TREE,4,C3,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N4_C3:1 | Original:TREE_N4_C3:2 | Original:TREE_N4_C3:3
+TREE,4,C3,radio_tx_bytes,3,33960.666666666664,6751.055645847791,29399.0,41716.0,OK,Original:TREE_N4_C3:1 | Original:TREE_N4_C3:2 | Original:TREE_N4_C3:3
+TREE,4,C3,retransmission_pressure,3,69.66666666666667,45.93836450433704,36.0,122.0,OK,Original:TREE_N4_C3:1 | Original:TREE_N4_C3:2 | Original:TREE_N4_C3:3
+TREE,4,C3,retransmitted_bytes,3,2146.0,2884.1019399459515,444.0,5476.0,OK,Original:TREE_N4_C3:1 | Original:TREE_N4_C3:2 | Original:TREE_N4_C3:3
+TREE,4,C3,temp_tx,3,20.666666666666668,1.5275252316519468,19.0,22.0,OK,Original:TREE_N4_C3:1 | Original:TREE_N4_C3:2 | Original:TREE_N4_C3:3
+TREE,4,C4,app_bytes,3,1516.0,0.0,1516.0,1516.0,OK,Original:TREE_N4_C4:1 | Original:TREE_N4_C4:2 | Original:TREE_N4_C4:3
+TREE,4,C4,hqc_total_ticks_max,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N4_C4:1 | Original:TREE_N4_C4:2 | Original:TREE_N4_C4:3
+TREE,4,C4,mac_extra_attempts,3,1.0,1.0,0.0,2.0,OK,Original:TREE_N4_C4:1 | Original:TREE_N4_C4:2 | Original:TREE_N4_C4:3
+TREE,4,C4,nack_retransmitted_fragments,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N4_C4:1 | Original:TREE_N4_C4:2 | Original:TREE_N4_C4:3
+TREE,4,C4,radio_bytes,2,5219.0,794.7880220536795,4657.0,5781.0,INSUFICIENTE,Original:TREE_N4_C4:1 | Original:TREE_N4_C4:3
+TREE,4,C4,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N4_C4:1 | Original:TREE_N4_C4:2 | Original:TREE_N4_C4:3
+TREE,4,C4,radio_rx_bytes,3,2099.6666666666665,224.71611720865357,1843.0,2261.0,OK,Original:TREE_N4_C4:1 | Original:TREE_N4_C4:2 | Original:TREE_N4_C4:3
+TREE,4,C4,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N4_C4:1 | Original:TREE_N4_C4:2 | Original:TREE_N4_C4:3
+TREE,4,C4,radio_tx_bytes,2,3200.0,545.8864350760147,2814.0,3586.0,INSUFICIENTE,Original:TREE_N4_C4:1 | Original:TREE_N4_C4:3
+TREE,4,C4,retransmission_pressure,3,1.0,1.0,0.0,2.0,OK,Original:TREE_N4_C4:1 | Original:TREE_N4_C4:2 | Original:TREE_N4_C4:3
+TREE,4,C4,retransmitted_bytes,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N4_C4:1 | Original:TREE_N4_C4:2 | Original:TREE_N4_C4:3
+TREE,4,C4,temp_tx,3,26.666666666666668,1.5275252316519468,25.0,28.0,OK,Original:TREE_N4_C4:1 | Original:TREE_N4_C4:2 | Original:TREE_N4_C4:3
+TREE,5,C0,app_bytes,3,1895.0,0.0,1895.0,1895.0,OK,Original:TREE_N5_C0:1 | Original:TREE_N5_C0:2 | Original:TREE_N5_C0:3
+TREE,5,C0,hqc_total_ticks_max,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N5_C0:1 | Original:TREE_N5_C0:2 | Original:TREE_N5_C0:3
+TREE,5,C0,mac_extra_attempts,3,12.333333333333334,17.09775813764288,1.0,32.0,OK,Original:TREE_N5_C0:1 | Original:TREE_N5_C0:2 | Original:TREE_N5_C0:3
+TREE,5,C0,nack_retransmitted_fragments,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N5_C0:1 | Original:TREE_N5_C0:2 | Original:TREE_N5_C0:3
+TREE,5,C0,radio_bytes,3,9278.666666666666,3684.2503081812088,5965.0,13246.0,OK,Original:TREE_N5_C0:1 | Original:TREE_N5_C0:2 | Original:TREE_N5_C0:3
+TREE,5,C0,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N5_C0:1 | Original:TREE_N5_C0:2 | Original:TREE_N5_C0:3
+TREE,5,C0,radio_rx_bytes,3,5238.0,2076.59553115189,3150.0,7303.0,OK,Original:TREE_N5_C0:1 | Original:TREE_N5_C0:2 | Original:TREE_N5_C0:3
+TREE,5,C0,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N5_C0:1 | Original:TREE_N5_C0:2 | Original:TREE_N5_C0:3
+TREE,5,C0,radio_tx_bytes,3,4040.6666666666665,1670.180928322837,2815.0,5943.0,OK,Original:TREE_N5_C0:1 | Original:TREE_N5_C0:2 | Original:TREE_N5_C0:3
+TREE,5,C0,retransmission_pressure,3,25.0,39.0,1.0,70.0,OK,Original:TREE_N5_C0:1 | Original:TREE_N5_C0:2 | Original:TREE_N5_C0:3
+TREE,5,C0,retransmitted_bytes,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N5_C0:1 | Original:TREE_N5_C0:2 | Original:TREE_N5_C0:3
+TREE,5,C0,temp_tx,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N5_C0:1 | Original:TREE_N5_C0:2
+TREE,5,C2,app_bytes,2,9864.0,2008.183258569795,8444.0,11284.0,INSUFICIENTE,Original:TREE_N5_C2:1 | Original:TREE_N5_C2:2
+TREE,5,C2,hqc_total_ticks_max,3,34925.666666666664,768.7973291663632,34085.0,35593.0,OK,Original:TREE_N5_C2:1 | Original:TREE_N5_C2:2 | Original:TREE_N5_C2:3
+TREE,5,C2,mac_extra_attempts,3,47.666666666666664,21.594752448994022,25.0,68.0,OK,Original:TREE_N5_C2:1 | Original:TREE_N5_C2:2 | Original:TREE_N5_C2:3
+TREE,5,C2,nack_retransmitted_fragments,3,42.0,20.223748416156685,27.0,65.0,OK,Original:TREE_N5_C2:1 | Original:TREE_N5_C2:2 | Original:TREE_N5_C2:3
+TREE,5,C2,radio_bytes,2,70829.5,2246.4782438296616,69241.0,72418.0,INSUFICIENTE,Original:TREE_N5_C2:2 | Original:TREE_N5_C2:3
+TREE,5,C2,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N5_C2:1 | Original:TREE_N5_C2:2 | Original:TREE_N5_C2:3
+TREE,5,C2,radio_rx_bytes,3,30213.666666666668,1212.240212719135,29068.0,31483.0,OK,Original:TREE_N5_C2:1 | Original:TREE_N5_C2:2 | Original:TREE_N5_C2:3
+TREE,5,C2,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N5_C2:1 | Original:TREE_N5_C2:2 | Original:TREE_N5_C2:3
+TREE,5,C2,radio_tx_bytes,2,40043.0,1261.4784976368007,39151.0,40935.0,INSUFICIENTE,Original:TREE_N5_C2:2 | Original:TREE_N5_C2:3
+TREE,5,C2,retransmission_pressure,3,109.66666666666667,28.448784391135824,77.0,129.0,OK,Original:TREE_N5_C2:1 | Original:TREE_N5_C2:2 | Original:TREE_N5_C2:3
+TREE,5,C2,retransmitted_bytes,3,3108.0,1496.5573827955945,1998.0,4810.0,OK,Original:TREE_N5_C2:1 | Original:TREE_N5_C2:2 | Original:TREE_N5_C2:3
+TREE,5,C2,temp_tx,3,1.3333333333333333,0.5773502691896257,1.0,2.0,OK,Original:TREE_N5_C2:1 | Original:TREE_N5_C2:2 | Original:TREE_N5_C2:3
+TREE,5,C3,app_bytes,3,8355.0,2536.7374716355653,6863.0,11284.0,OK,Original:TREE_N5_C3:1 | Original:TREE_N5_C3:2 | Original:TREE_N5_C3:3
+TREE,5,C3,hqc_total_ticks_max,3,34874.333333333336,863.1479208880326,34372.0,35871.0,OK,Original:TREE_N5_C3:1 | Original:TREE_N5_C3:2 | Original:TREE_N5_C3:3
+TREE,5,C3,mac_extra_attempts,3,42.0,11.357816691600547,34.0,55.0,OK,Original:TREE_N5_C3:1 | Original:TREE_N5_C3:2 | Original:TREE_N5_C3:3
+TREE,5,C3,nack_retransmitted_fragments,3,25.666666666666668,34.06366588218792,6.0,65.0,OK,Original:TREE_N5_C3:1 | Original:TREE_N5_C3:2 | Original:TREE_N5_C3:3
+TREE,5,C3,radio_bytes,3,70787.66666666667,12868.040617488481,62185.0,85581.0,OK,Original:TREE_N5_C3:1 | Original:TREE_N5_C3:2 | Original:TREE_N5_C3:3
+TREE,5,C3,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N5_C3:1 | Original:TREE_N5_C3:2 | Original:TREE_N5_C3:3
+TREE,5,C3,radio_rx_bytes,3,30910.0,4149.7266175014465,28444.0,35701.0,OK,Original:TREE_N5_C3:1 | Original:TREE_N5_C3:2 | Original:TREE_N5_C3:3
+TREE,5,C3,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N5_C3:1 | Original:TREE_N5_C3:2 | Original:TREE_N5_C3:3
+TREE,5,C3,radio_tx_bytes,3,39877.666666666664,8736.381649935707,33741.0,49880.0,OK,Original:TREE_N5_C3:1 | Original:TREE_N5_C3:2 | Original:TREE_N5_C3:3
+TREE,5,C3,retransmission_pressure,3,77.66666666666667,31.02149792213995,46.0,108.0,OK,Original:TREE_N5_C3:1 | Original:TREE_N5_C3:2 | Original:TREE_N5_C3:3
+TREE,5,C3,retransmitted_bytes,3,1899.3333333333333,2520.711275281906,444.0,4810.0,OK,Original:TREE_N5_C3:1 | Original:TREE_N5_C3:2 | Original:TREE_N5_C3:3
+TREE,5,C3,temp_tx,3,33.666666666666664,2.0816659994661326,32.0,36.0,OK,Original:TREE_N5_C3:1 | Original:TREE_N5_C3:2 | Original:TREE_N5_C3:3
+TREE,5,C4,app_bytes,1,1895.0,,1895.0,1895.0,INSUFICIENTE,Original:TREE_N5_C4:3
+TREE,5,C4,hqc_total_ticks_max,1,0.0,,0.0,0.0,INSUFICIENTE,Original:TREE_N5_C4:3
+TREE,5,C4,mac_extra_attempts,1,2.0,,2.0,2.0,INSUFICIENTE,Original:TREE_N5_C4:3
+TREE,5,C4,nack_retransmitted_fragments,1,0.0,,0.0,0.0,INSUFICIENTE,Original:TREE_N5_C4:3
+TREE,5,C4,radio_bytes,1,9374.0,,9374.0,9374.0,INSUFICIENTE,Original:TREE_N5_C4:3
+TREE,5,C4,radio_listen_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,Original:TREE_N5_C4:3
+TREE,5,C4,radio_rx_bytes,1,3754.0,,3754.0,3754.0,INSUFICIENTE,Original:TREE_N5_C4:3
+TREE,5,C4,radio_transmit_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,Original:TREE_N5_C4:3
+TREE,5,C4,radio_tx_bytes,1,5620.0,,5620.0,5620.0,INSUFICIENTE,Original:TREE_N5_C4:3
+TREE,5,C4,retransmission_pressure,1,4.0,,4.0,4.0,INSUFICIENTE,Original:TREE_N5_C4:3
+TREE,5,C4,retransmitted_bytes,1,0.0,,0.0,0.0,INSUFICIENTE,Original:TREE_N5_C4:3
+TREE,5,C4,temp_tx,1,30.0,,30.0,30.0,INSUFICIENTE,Original:TREE_N5_C4:3
+TREE,6,C0,app_bytes,2,2274.0,0.0,2274.0,2274.0,INSUFICIENTE,Original:TREE_N6_C0:1 | Original:TREE_N6_C0:3
+TREE,6,C0,hqc_total_ticks_max,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N6_C0:1 | Original:TREE_N6_C0:3
+TREE,6,C0,mac_extra_attempts,2,2.5,2.1213203435596424,1.0,4.0,INSUFICIENTE,Original:TREE_N6_C0:1 | Original:TREE_N6_C0:3
+TREE,6,C0,nack_retransmitted_fragments,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N6_C0:1 | Original:TREE_N6_C0:3
+TREE,6,C0,radio_bytes,2,14816.5,2557.6052275517422,13008.0,16625.0,INSUFICIENTE,Original:TREE_N6_C0:1 | Original:TREE_N6_C0:3
+TREE,6,C0,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N6_C0:1 | Original:TREE_N6_C0:3
+TREE,6,C0,radio_rx_bytes,2,9389.0,323.85490578343877,9160.0,9618.0,INSUFICIENTE,Original:TREE_N6_C0:1 | Original:TREE_N6_C0:3
+TREE,6,C0,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N6_C0:1 | Original:TREE_N6_C0:3
+TREE,6,C0,radio_tx_bytes,2,5427.5,2233.750321768304,3848.0,7007.0,INSUFICIENTE,Original:TREE_N6_C0:1 | Original:TREE_N6_C0:3
+TREE,6,C0,retransmission_pressure,1,1.0,,1.0,1.0,INSUFICIENTE,Original:TREE_N6_C0:1
+TREE,6,C0,retransmitted_bytes,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N6_C0:1 | Original:TREE_N6_C0:3
+TREE,6,C0,temp_tx,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N6_C0:1 | Original:TREE_N6_C0:3
+TREE,6,C2,app_bytes,2,7678.0,84.8528137423857,7618.0,7738.0,INSUFICIENTE,Original:TREE_N6_C2:1 | ReWork:TREE_N6_C2:2
+TREE,6,C2,hqc_total_ticks_max,2,35839.0,354.9676041556469,35588.0,36090.0,INSUFICIENTE,Original:TREE_N6_C2:1 | ReWork:TREE_N6_C2:2
+TREE,6,C2,mac_extra_attempts,1,74.0,,74.0,74.0,INSUFICIENTE,Original:TREE_N6_C2:1
+TREE,6,C2,nack_retransmitted_fragments,2,12.0,1.4142135623730951,11.0,13.0,INSUFICIENTE,Original:TREE_N6_C2:1 | ReWork:TREE_N6_C2:2
+TREE,6,C2,radio_bytes,2,109835.5,5992.72997055599,105598.0,114073.0,INSUFICIENTE,Original:TREE_N6_C2:1 | ReWork:TREE_N6_C2:2
+TREE,6,C2,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N6_C2:1 | ReWork:TREE_N6_C2:2
+TREE,6,C2,radio_rx_bytes,2,53688.0,2453.66053071732,51953.0,55423.0,INSUFICIENTE,Original:TREE_N6_C2:1 | ReWork:TREE_N6_C2:2
+TREE,6,C2,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N6_C2:1 | ReWork:TREE_N6_C2:2
+TREE,6,C2,radio_tx_bytes,2,56147.5,3539.0694398386704,53645.0,58650.0,INSUFICIENTE,Original:TREE_N6_C2:1 | ReWork:TREE_N6_C2:2
+TREE,6,C2,retransmission_pressure,1,129.0,,129.0,129.0,INSUFICIENTE,Original:TREE_N6_C2:1
+TREE,6,C2,retransmitted_bytes,2,888.0,104.65180361560904,814.0,962.0,INSUFICIENTE,Original:TREE_N6_C2:1 | ReWork:TREE_N6_C2:2
+TREE,6,C2,temp_tx,2,1.5,0.7071067811865476,1.0,2.0,INSUFICIENTE,Original:TREE_N6_C2:1 | ReWork:TREE_N6_C2:2
+TREE,6,C3,app_bytes,2,7575.0,209.30360723121808,7427.0,7723.0,INSUFICIENTE,Original:TREE_N6_C3:1 | Original:TREE_N6_C3:2
+TREE,6,C3,hqc_total_ticks_max,2,36513.5,697.9143930311224,36020.0,37007.0,INSUFICIENTE,Original:TREE_N6_C3:1 | Original:TREE_N6_C3:2
+TREE,6,C3,mac_extra_attempts,1,137.0,,137.0,137.0,INSUFICIENTE,Original:TREE_N6_C3:2
+TREE,6,C3,nack_retransmitted_fragments,2,10.0,2.8284271247461903,8.0,12.0,INSUFICIENTE,Original:TREE_N6_C3:1 | Original:TREE_N6_C3:2
+TREE,6,C3,radio_bytes,2,126031.0,5898.68476865818,121860.0,130202.0,INSUFICIENTE,Original:TREE_N6_C3:1 | Original:TREE_N6_C3:2
+TREE,6,C3,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N6_C3:1 | Original:TREE_N6_C3:2
+TREE,6,C3,radio_rx_bytes,2,61135.5,4463.965109630674,57979.0,64292.0,INSUFICIENTE,Original:TREE_N6_C3:1 | Original:TREE_N6_C3:2
+TREE,6,C3,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N6_C3:1 | Original:TREE_N6_C3:2
+TREE,6,C3,radio_tx_bytes,2,64895.5,1434.719659027505,63881.0,65910.0,INSUFICIENTE,Original:TREE_N6_C3:1 | Original:TREE_N6_C3:2
+TREE,6,C3,retransmission_pressure,1,211.0,,211.0,211.0,INSUFICIENTE,Original:TREE_N6_C3:2
+TREE,6,C3,retransmitted_bytes,2,740.0,209.30360723121808,592.0,888.0,INSUFICIENTE,Original:TREE_N6_C3:1 | Original:TREE_N6_C3:2
+TREE,6,C3,temp_tx,2,40.5,0.7071067811865476,40.0,41.0,INSUFICIENTE,Original:TREE_N6_C3:1 | Original:TREE_N6_C3:2
+TREE,6,C4,app_bytes,2,2274.0,0.0,2274.0,2274.0,INSUFICIENTE,Original:TREE_N6_C4:1 | Original:TREE_N6_C4:2
+TREE,6,C4,hqc_total_ticks_max,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N6_C4:1 | Original:TREE_N6_C4:2 | Original:TREE_N6_C4:3
+TREE,6,C4,mac_extra_attempts,3,1.6666666666666667,1.5275252316519468,0.0,3.0,OK,Original:TREE_N6_C4:1 | Original:TREE_N6_C4:2 | Original:TREE_N6_C4:3
+TREE,6,C4,nack_retransmitted_fragments,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N6_C4:1 | Original:TREE_N6_C4:2 | Original:TREE_N6_C4:3
+TREE,6,C4,radio_bytes,3,14112.333333333334,800.3338886573111,13403.0,14980.0,OK,Original:TREE_N6_C4:1 | Original:TREE_N6_C4:2 | Original:TREE_N6_C4:3
+TREE,6,C4,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N6_C4:1 | Original:TREE_N6_C4:2 | Original:TREE_N6_C4:3
+TREE,6,C4,radio_rx_bytes,3,6255.666666666667,205.64613619840597,6097.0,6488.0,OK,Original:TREE_N6_C4:1 | Original:TREE_N6_C4:2 | Original:TREE_N6_C4:3
+TREE,6,C4,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N6_C4:1 | Original:TREE_N6_C4:2 | Original:TREE_N6_C4:3
+TREE,6,C4,radio_tx_bytes,3,7856.666666666667,819.1345025899797,7306.0,8798.0,OK,Original:TREE_N6_C4:1 | Original:TREE_N6_C4:2 | Original:TREE_N6_C4:3
+TREE,6,C4,retransmission_pressure,2,2.0,2.8284271247461903,0.0,4.0,INSUFICIENTE,Original:TREE_N6_C4:2 | Original:TREE_N6_C4:3
+TREE,6,C4,retransmitted_bytes,3,0.0,0.0,0.0,0.0,OK,Original:TREE_N6_C4:1 | Original:TREE_N6_C4:2 | Original:TREE_N6_C4:3
+TREE,6,C4,temp_tx,3,41.666666666666664,4.509249752822894,37.0,46.0,OK,Original:TREE_N6_C4:1 | Original:TREE_N6_C4:2 | Original:TREE_N6_C4:3
+TREE,7,C0,app_bytes,3,2653.0,0.0,2653.0,2653.0,OK,ReWork:TREE_N7_C0:1 | Original:TREE_N7_C0:2 | ReWork:TREE_N7_C0:3
+TREE,7,C0,hqc_total_ticks_max,3,0.0,0.0,0.0,0.0,OK,ReWork:TREE_N7_C0:1 | Original:TREE_N7_C0:2 | ReWork:TREE_N7_C0:3
+TREE,7,C0,mac_extra_attempts,3,3.0,2.6457513110645907,1.0,6.0,OK,ReWork:TREE_N7_C0:1 | Original:TREE_N7_C0:2 | ReWork:TREE_N7_C0:3
+TREE,7,C0,nack_retransmitted_fragments,3,0.0,0.0,0.0,0.0,OK,ReWork:TREE_N7_C0:1 | Original:TREE_N7_C0:2 | ReWork:TREE_N7_C0:3
+TREE,7,C0,radio_bytes,2,12255.5,269.4076836320746,12065.0,12446.0,INSUFICIENTE,ReWork:TREE_N7_C0:1 | Original:TREE_N7_C0:2
+TREE,7,C0,radio_listen_ticks,3,0.0,0.0,0.0,0.0,OK,ReWork:TREE_N7_C0:1 | Original:TREE_N7_C0:2 | ReWork:TREE_N7_C0:3
+TREE,7,C0,radio_rx_bytes,3,6427.0,510.04705665261906,6083.0,7013.0,OK,ReWork:TREE_N7_C0:1 | Original:TREE_N7_C0:2 | ReWork:TREE_N7_C0:3
+TREE,7,C0,radio_transmit_ticks,3,0.0,0.0,0.0,0.0,OK,ReWork:TREE_N7_C0:1 | Original:TREE_N7_C0:2 | ReWork:TREE_N7_C0:3
+TREE,7,C0,radio_tx_bytes,2,5707.5,927.0169901355638,5052.0,6363.0,INSUFICIENTE,ReWork:TREE_N7_C0:1 | Original:TREE_N7_C0:2
+TREE,7,C0,retransmission_pressure,2,2.5,2.1213203435596424,1.0,4.0,INSUFICIENTE,Original:TREE_N7_C0:2 | ReWork:TREE_N7_C0:3
+TREE,7,C0,retransmitted_bytes,3,0.0,0.0,0.0,0.0,OK,ReWork:TREE_N7_C0:1 | Original:TREE_N7_C0:2 | ReWork:TREE_N7_C0:3
+TREE,7,C0,temp_tx,3,0.0,0.0,0.0,0.0,OK,ReWork:TREE_N7_C0:1 | Original:TREE_N7_C0:2 | ReWork:TREE_N7_C0:3
+TREE,7,C2,app_bytes,2,8542.5,1095.3084040579622,7768.0,9317.0,INSUFICIENTE,ReWork:TREE_N7_C2:1 | ReWork:TREE_N7_C2:3
+TREE,7,C2,hqc_total_ticks_max,2,36017.5,1057.1246378738886,35270.0,36765.0,INSUFICIENTE,ReWork:TREE_N7_C2:1 | ReWork:TREE_N7_C2:3
+TREE,7,C2,mac_extra_attempts,2,102.0,25.45584412271571,84.0,120.0,INSUFICIENTE,ReWork:TREE_N7_C2:1 | ReWork:TREE_N7_C2:3
+TREE,7,C2,nack_retransmitted_fragments,2,18.5,14.849242404917497,8.0,29.0,INSUFICIENTE,ReWork:TREE_N7_C2:1 | ReWork:TREE_N7_C2:3
+TREE,7,C2,radio_bytes,2,113554.5,5777.7695090752795,109469.0,117640.0,INSUFICIENTE,ReWork:TREE_N7_C2:1 | ReWork:TREE_N7_C2:3
+TREE,7,C2,radio_listen_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,ReWork:TREE_N7_C2:3
+TREE,7,C2,radio_rx_bytes,2,55610.0,1408.5567081236027,54614.0,56606.0,INSUFICIENTE,ReWork:TREE_N7_C2:1 | ReWork:TREE_N7_C2:3
+TREE,7,C2,radio_transmit_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,ReWork:TREE_N7_C2:3
+TREE,7,C2,radio_tx_bytes,2,57944.5,4369.212800951677,54855.0,61034.0,INSUFICIENTE,ReWork:TREE_N7_C2:1 | ReWork:TREE_N7_C2:3
+TREE,7,C2,retransmission_pressure,2,136.5,40.30508652763321,108.0,165.0,INSUFICIENTE,ReWork:TREE_N7_C2:1 | ReWork:TREE_N7_C2:3
+TREE,7,C2,retransmitted_bytes,2,1369.0,1098.8439379638949,592.0,2146.0,INSUFICIENTE,ReWork:TREE_N7_C2:1 | ReWork:TREE_N7_C2:3
+TREE,7,C2,temp_tx,2,2.5,0.7071067811865476,2.0,3.0,INSUFICIENTE,ReWork:TREE_N7_C2:1 | ReWork:TREE_N7_C2:3
+TREE,7,C3,app_bytes,2,8605.5,1004.7987360660841,7895.0,9316.0,INSUFICIENTE,ReWork:TREE_N7_C3:1 | ReWork:TREE_N7_C3:3
+TREE,7,C3,hqc_total_ticks_max,2,35517.0,357.79603128039304,35264.0,35770.0,INSUFICIENTE,ReWork:TREE_N7_C3:1 | ReWork:TREE_N7_C3:3
+TREE,7,C3,mac_extra_attempts,2,123.0,2.8284271247461903,121.0,125.0,INSUFICIENTE,Original:TREE_N7_C3:2 | ReWork:TREE_N7_C3:3
+TREE,7,C3,nack_retransmitted_fragments,3,8.333333333333334,1.5275252316519468,7.0,10.0,OK,Original:TREE_N7_C3:1 | Original:TREE_N7_C3:2 | ReWork:TREE_N7_C3:3
+TREE,7,C3,radio_bytes,1,112485.0,,112485.0,112485.0,INSUFICIENTE,ReWork:TREE_N7_C3:3
+TREE,7,C3,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N7_C3:1 | ReWork:TREE_N7_C3:3
+TREE,7,C3,radio_rx_bytes,2,55486.0,2890.6525214906064,53442.0,57530.0,INSUFICIENTE,ReWork:TREE_N7_C3:1 | ReWork:TREE_N7_C3:3
+TREE,7,C3,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N7_C3:1 | ReWork:TREE_N7_C3:3
+TREE,7,C3,radio_tx_bytes,3,59877.333333333336,1423.5119716157408,59043.0,61521.0,OK,Original:TREE_N7_C3:1 | Original:TREE_N7_C3:2 | ReWork:TREE_N7_C3:3
+TREE,7,C3,retransmitted_bytes,2,666.0,104.65180361560904,592.0,740.0,INSUFICIENTE,Original:TREE_N7_C3:1 | ReWork:TREE_N7_C3:3
+TREE,7,C3,temp_tx,2,51.5,14.849242404917497,41.0,62.0,INSUFICIENTE,ReWork:TREE_N7_C3:1 | Original:TREE_N7_C3:2
+TREE,7,C4,app_bytes,1,2653.0,,2653.0,2653.0,INSUFICIENTE,Original:TREE_N7_C4:1
+TREE,7,C4,mac_extra_attempts,1,4.0,,4.0,4.0,INSUFICIENTE,Original:TREE_N7_C4:2
+TREE,7,C4,nack_retransmitted_fragments,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N7_C4:2 | Original:TREE_N7_C4:4
+TREE,7,C4,radio_rx_bytes,1,8489.0,,8489.0,8489.0,INSUFICIENTE,Original:TREE_N7_C4:1
+TREE,7,C4,radio_tx_bytes,1,10795.0,,10795.0,10795.0,INSUFICIENTE,Original:TREE_N7_C4:2
+TREE,7,C4,retransmitted_bytes,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N7_C4:1 | Original:TREE_N7_C4:2
+TREE,7,C4,temp_tx,3,64.33333333333333,26.576932353703526,48.0,95.0,OK,Original:TREE_N7_C4:1 | Original:TREE_N7_C4:2 | Original:TREE_N7_C4:4
+TREE,8,C0,app_bytes,2,3032.0,0.0,3032.0,3032.0,INSUFICIENTE,Original:TREE_N8_C0:2 | Original:TREE_N8_C0:3
+TREE,8,C0,hqc_total_ticks_max,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N8_C0:2 | Original:TREE_N8_C0:3
+TREE,8,C0,mac_extra_attempts,2,0.5,0.7071067811865476,0.0,1.0,INSUFICIENTE,Original:TREE_N8_C0:2 | Original:TREE_N8_C0:3
+TREE,8,C0,nack_retransmitted_fragments,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N8_C0:2 | Original:TREE_N8_C0:3
+TREE,8,C0,radio_bytes,2,14367.0,6672.259587276262,9649.0,19085.0,INSUFICIENTE,Original:TREE_N8_C0:2 | Original:TREE_N8_C0:3
+TREE,8,C0,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N8_C0:2 | Original:TREE_N8_C0:3
+TREE,8,C0,radio_rx_bytes,2,7443.5,3882.7233354953323,4698.0,10189.0,INSUFICIENTE,Original:TREE_N8_C0:2 | Original:TREE_N8_C0:3
+TREE,8,C0,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N8_C0:2 | Original:TREE_N8_C0:3
+TREE,8,C0,radio_tx_bytes,2,6923.5,2789.53625178093,4951.0,8896.0,INSUFICIENTE,Original:TREE_N8_C0:2 | Original:TREE_N8_C0:3
+TREE,8,C0,retransmission_pressure,2,2.5,0.7071067811865476,2.0,3.0,INSUFICIENTE,Original:TREE_N8_C0:2 | Original:TREE_N8_C0:3
+TREE,8,C0,retransmitted_bytes,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N8_C0:2 | Original:TREE_N8_C0:3
+TREE,8,C0,temp_tx,1,0.0,,0.0,0.0,INSUFICIENTE,Original:TREE_N8_C0:2
+TREE,8,C4,app_bytes,1,3032.0,,3032.0,3032.0,INSUFICIENTE,Original:TREE_N8_C4:1
+TREE,8,C4,nack_retransmitted_fragments,1,0.0,,0.0,0.0,INSUFICIENTE,Original:TREE_N8_C4:1
+TREE,9,C0,app_bytes,2,3411.0,0.0,3411.0,3411.0,INSUFICIENTE,Original:TREE_N9_C0:1 | Original:TREE_N9_C0:3
+TREE,9,C0,hqc_total_ticks_max,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N9_C0:1 | Original:TREE_N9_C0:3
+TREE,9,C0,mac_extra_attempts,2,4.5,3.5355339059327378,2.0,7.0,INSUFICIENTE,Original:TREE_N9_C0:1 | Original:TREE_N9_C0:3
+TREE,9,C0,nack_retransmitted_fragments,1,0.0,,0.0,0.0,INSUFICIENTE,ReWork:TREE_N9_C0:3
+TREE,9,C0,radio_bytes,1,22016.0,,22016.0,22016.0,INSUFICIENTE,Original:TREE_N9_C0:3
+TREE,9,C0,radio_listen_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N9_C0:1 | Original:TREE_N9_C0:3
+TREE,9,C0,radio_rx_bytes,2,8587.0,4671.147396518333,5284.0,11890.0,INSUFICIENTE,ReWork:TREE_N9_C0:1 | Original:TREE_N9_C0:3
+TREE,9,C0,radio_transmit_ticks,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N9_C0:1 | Original:TREE_N9_C0:3
+TREE,9,C0,radio_tx_bytes,2,10648.0,738.2194795587557,10126.0,11170.0,INSUFICIENTE,Original:TREE_N9_C0:1 | Original:TREE_N9_C0:3
+TREE,9,C0,retransmission_pressure,1,4.0,,4.0,4.0,INSUFICIENTE,ReWork:TREE_N9_C0:3
+TREE,9,C0,retransmitted_bytes,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N9_C0:1 | Original:TREE_N9_C0:3
+TREE,9,C0,temp_tx,2,0.0,0.0,0.0,0.0,INSUFICIENTE,Original:TREE_N9_C0:1 | Original:TREE_N9_C0:3
+TREE,9,C2,app_bytes,1,8653.0,,8653.0,8653.0,INSUFICIENTE,ReWork:TREE_N9_C2:3
+TREE,9,C2,hqc_total_ticks_max,1,35968.0,,35968.0,35968.0,INSUFICIENTE,ReWork:TREE_N9_C2:3
+TREE,9,C2,mac_extra_attempts,2,130.5,28.991378028648448,110.0,151.0,INSUFICIENTE,ReWork:TREE_N9_C2:2 | ReWork:TREE_N9_C2:3
+TREE,9,C2,radio_listen_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,ReWork:TREE_N9_C2:3
+TREE,9,C2,radio_rx_bytes,1,80067.0,,80067.0,80067.0,INSUFICIENTE,ReWork:TREE_N9_C2:2
+TREE,9,C2,radio_transmit_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,ReWork:TREE_N9_C2:3
+TREE,9,C2,radio_tx_bytes,1,77934.0,,77934.0,77934.0,INSUFICIENTE,ReWork:TREE_N9_C2:3
+TREE,9,C2,retransmitted_bytes,1,740.0,,740.0,740.0,INSUFICIENTE,ReWork:TREE_N9_C2:3
+TREE,9,C2,temp_tx,1,3.0,,3.0,3.0,INSUFICIENTE,ReWork:TREE_N9_C2:2
+TREE,9,C4,app_bytes,1,3411.0,,3411.0,3411.0,INSUFICIENTE,ReWork:TREE_N9_C4:1
+TREE,9,C4,mac_extra_attempts,1,7.0,,7.0,7.0,INSUFICIENTE,ReWork:TREE_N9_C4:1
+TREE,9,C4,nack_retransmitted_fragments,2,0.0,0.0,0.0,0.0,INSUFICIENTE,ReWork:TREE_N9_C4:1 | Original:TREE_N9_C4:3
+TREE,9,C4,radio_bytes,1,27561.0,,27561.0,27561.0,INSUFICIENTE,ReWork:TREE_N9_C4:1
+TREE,9,C4,radio_rx_bytes,1,11808.0,,11808.0,11808.0,INSUFICIENTE,ReWork:TREE_N9_C4:1
+TREE,9,C4,radio_tx_bytes,2,17865.0,2986.8190437319768,15753.0,19977.0,INSUFICIENTE,ReWork:TREE_N9_C4:1 | Original:TREE_N9_C4:3
+TREE,9,C4,retransmitted_bytes,1,0.0,,0.0,0.0,INSUFICIENTE,ReWork:TREE_N9_C4:1
+TREE,9,C4,temp_tx,2,97.5,0.7071067811865476,97.0,98.0,INSUFICIENTE,ReWork:TREE_N9_C4:1 | Original:TREE_N9_C4:3
+TREE,10,C0,hqc_total_ticks_max,1,0.0,,0.0,0.0,INSUFICIENTE,ReWork:TREE_N10_C0:1
+TREE,10,C0,nack_retransmitted_fragments,1,0.0,,0.0,0.0,INSUFICIENTE,ReWork:TREE_N10_C0:3
+TREE,10,C4,hqc_total_ticks_max,1,0.0,,0.0,0.0,INSUFICIENTE,Original:TREE_N10_C4:4
+TREE,10,C4,mac_extra_attempts,1,245.0,,245.0,245.0,INSUFICIENTE,Original:TREE_N10_C4:3
+TREE,10,C4,nack_retransmitted_fragments,1,0.0,,0.0,0.0,INSUFICIENTE,Original:TREE_N10_C4:3
+TREE,10,C4,radio_listen_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,Original:TREE_N10_C4:4
+TREE,10,C4,radio_transmit_ticks,1,0.0,,0.0,0.0,INSUFICIENTE,Original:TREE_N10_C4:4
+TREE,10,C4,radio_tx_bytes,2,51825.5,11959.296990208079,43369.0,60282.0,INSUFICIENTE,Original:TREE_N10_C4:3 | Original:TREE_N10_C4:4
+TREE,10,C4,retransmitted_bytes,1,0.0,,0.0,0.0,INSUFICIENTE,Original:TREE_N10_C4:4
+TREE,10,C4,temp_tx,1,210.0,,210.0,210.0,INSUFICIENTE,Original:TREE_N10_C4:3
