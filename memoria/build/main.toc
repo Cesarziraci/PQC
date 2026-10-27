@@ -36,9 +36,8 @@
 \contentsline {chapter}{\numberline {4}Resultados}{27}{chapter.4}%
 \contentsline {section}{\numberline {4.1}P2P}{27}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Estrella}{29}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Linea}{29}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Ábol}{29}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Comparativa}{29}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Discusión}{31}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusiones}{33}{chapter.6}%
-\contentsline {chapter}{Anexos}{39}{appendix*.20}%
+\contentsline {section}{\numberline {4.3}Linea}{31}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Ábol}{31}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Discusión}{33}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{35}{chapter.6}%
+\contentsline {chapter}{Anexos}{41}{appendix*.19}%
