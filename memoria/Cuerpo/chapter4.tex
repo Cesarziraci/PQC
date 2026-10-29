@@ -23,14 +23,14 @@ la topología P2P, en la que se busca conocer el impacto de transportar HQC entr
 \begin{figure}[htbp]
     \centering
     % Primera fila
-    \begin{subfigure}[b]{0.48\textwidth}
+    \begin{subfigure}[b]{0.6\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/Imagenes/Graficas_HQC/P2P/P2P_app_bytes_por_condicion.png}
         \caption{Bytes de la app}
         \label{fig:bytes_por_condicion}
     \end{subfigure}
     \hfill % Espacio horizontal entre columnas
-    \begin{subfigure}[b]{0.48\textwidth}
+    \begin{subfigure}[b]{0.6\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/Imagenes/Graficas_HQC/P2P/P2P_comparacion_app_tx_rx_total.png}
         \caption{Comparación tx rx}
@@ -39,7 +39,7 @@ la topología P2P, en la que se busca conocer el impacto de transportar HQC entr
 
     \vspace{0.5cm} % Espacio vertical entre filas
 
-    \begin{subfigure}[b]{0.48\textwidth}
+    \begin{subfigure}[b]{0.6\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/Imagenes/Graficas_HQC/P2P/P2P_hqc_total_ticks_max_por_condicion.png}
         \caption{Tiempo HQC}
@@ -70,17 +70,17 @@ matematico de la cpu, según nos marca la Figura~\ref{fig:Tiempo_hqc}. Este comp
 El siguiente paso es realizar la campaña de pruebas, se ejecutan las las condiciones de pruebas 0, 2, 3 y 4 sobre la topología estrella, las primeras
 tres figuras generadas con las siguientes. 
 
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centering
     % Primera fila
-    \begin{subfigure}[b]{0.495\textwidth}
+    \begin{subfigure}[b]{0.6\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/Imagenes/Graficas_HQC/STAR/STAR_app_bytes_por_condicion.png}
         \caption{Bytes de la app}
         \label{fig:bytes_por_condicion_star}
     \end{subfigure}
     \hfill % Espacio horizontal entre columnas
-    \begin{subfigure}[b]{0.495\textwidth}
+    \begin{subfigure}[b]{0.6\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/Imagenes/Graficas_HQC/STAR/STAR_hqc_total_ticks_max_por_condicion.png}
         \caption{Tiempos totales por condición}
@@ -89,7 +89,7 @@ tres figuras generadas con las siguientes.
 
     \vspace{0.5cm} % Espacio vertical entre filas
 
-    \begin{subfigure}[b]{0.51\textwidth}
+    \begin{subfigure}[b]{0.6\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/Imagenes/Graficas_HQC/STAR/STAR_radio_bytes_por_condicion.png}
         \caption{Tráfico total por condición}
@@ -97,8 +97,8 @@ tres figuras generadas con las siguientes.
     \end{subfigure}
 
     % Título general de la matriz
-    \caption{Análisis global del tráfico generado en escenarios star}
-    \label{fig:matriz_star_global} % Etiqueta principal de todo el bloque
+    \caption{Análisis global del tráfico generado en escenarios estrella}
+    \label{fig:matriz_LINE_global} % Etiqueta principal de todo el bloque
     
 \end{figure}
 
@@ -125,7 +125,7 @@ se congestiona, provocando que el protocolo deba reenviar paquetes.
 El crecimiento eponencial de la condición C2, revelando el coste en escalabilidad de HQC en una topología estrella. Aunque el protocolo
 intente mantener un flujo controlado, el servidor sufre un desgaste en el uso de la radio. 
 
-\begin{figure}
+\begin{figure}[H]
     
     \centering
     \includegraphics[width=\textwidth]{figures/Imagenes/Graficas_HQC/STAR/STAR_nack_retransmitted_fragments_C2_menos_C4.png}
@@ -134,14 +134,157 @@ intente mantener un flujo controlado, el servidor sufre un desgaste en el uso de
 
 \end{figure}
 
-Para terminar de completar la imagen de la topología estrella, la Figura~\ref{fig:NACK_STAR}, demuestra el $\delta C_2/C_4$ en fragmentos recuperados
+Para terminar de completar la imagen de la topología estrella, la Figura~\ref{fig:NACK_STAR}, demuestra el $\Delta C_2/C_4$ en fragmentos recuperados
 por el NACK. Los resultados revelan una correlación con las metricas de trafico: al alcanzar los 7 nodos, el sistema sufre un pico crítico de más de 
 21 fragmentos perdidos y recuperados por NACK. Esto demuestra que el tamaño de las claves del algoritmo HQC satura el medio físico de la topología, 
 provocando colisiones masivas y forzando al protocolo a realizar retransmisiones. El escenario de 9 nodos y su desplome denota una situación de saturación 
 donde la congestion impide la correcta señalización de paquetes perdidos.
 
-\section{Linea}
+\section{Línea}
+
+En esta sección se presentan los resultados obtenidos durante las pruebas realizadas en la topología línea, que, a diferencia de las configuraciones
+P2P y estrella, donde los nodos realizan una conexión directa con el servidor, esta topología introduce la participación de nodos intermedios, que se
+encargan de retransmitir los paquetes a través de múltiples saltos hasta el servidor. 
+
+El análisis de la Figura~\ref{fig:bytes_por_condicion_LINE} permite analizar el comportamiento de cada condición en función del crecimiento de la red. 
+Al observar la condición 0 y 4, salta a la vista el comportamiento lineal de las condiciones, al igual que en estrella, demostrando asi, que una vez
+asegurado el cifrado de las comunicaciones, el transporte es altamente eficiente. 
+
+Por la naturaleza de la topología, se entiende el colapso de las comunicaciones, la linea C2 arranca en un nivel alto alcanzando unos 10KB, y a partir del 
+quinto nodo se pierden por completo los datos, debido a una alta saturación del medio. Teniendo la linea C3 un comportamiento similar.
+
+Los tiempos de establecimiento de la red se mantienen estables entre topologías, con una latencia esperable debido a los saltos 
+que deben acometer los paquetes, como lo remarcan las lineas C2 y C3 de la Figura~\ref{fig:tiempo_LINE}. Siguendo el análisis inicial 
+una vez establecida la comunicación segura, es altamente eficiente el intercambio de paquetes cifrados, teniendo los mismos tiempos 
+de esttablecimiento la linea C4 que la linea C0.
 
 
-\section{Ábol}
+\begin{figure}[H]
+    \centering
+    % Primera fila
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/Imagenes/Graficas_HQC/LINE/LINE_app_bytes_por_condicion.png}
+        \caption{Bytes de la app}
+        \label{fig:bytes_por_condicion_LINE}
+    \end{subfigure}
+    \hfill % Espacio horizontal entre columnas
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/Imagenes/Graficas_HQC/LINE/LINE_hqc_total_ticks_max_por_condicion.png}
+        \caption{Tiempos totales por condición}
+        \label{fig:tiempo_LINE}
+    \end{subfigure}
 
+    \vspace{0.5cm} % Espacio vertical entre filas
+
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/Imagenes/Graficas_HQC/LINE/LINE_radio_bytes_por_condicion.png}
+        \caption{Tráfico total por condición}
+        \label{fig:trafico_LINE}
+    \end{subfigure}
+
+    % Título general de la matriz
+    \caption{Análisis global del tráfico generado en escenarios linea}
+    \label{fig:matriz_LINE_global} % Etiqueta principal de todo el bloque
+    
+\end{figure}
+
+La Figura~\ref{fig:trafico_LINE} complementa perfectamente el análisis realizado anteriormente, a medida que se añaden 
+capas a la red, el incremento del tráfico es cuasi-exponencial, a partir del cuarto nodo existe una saturación del medio tal que 
+no permite seguir recuperando datos de los nodos involucrados. Esto demuestra que el medio físico sufre una amplificación de más de 
+20 veces respecto a la aplicación. 
+
+En configuraciones de 2 y 3 nodos, el protocolo tolera la carga criptográfica, manteniendo el erscate de paquetes en una meseta de
+20 a 25 fragmentos, sin embago, a partir del cuarto nodo, el índice de pérdidas se dispara drásticamente, alcanzando un pico de más 
+de 40 fragmentos recuperados. Este disparo del mecanismo NACK, mostrado en la Figura~\ref{fig:NACK_LINE}, confirma que el tamaño 
+de las claves de HQC satura los búfers de los nodos intermedios, multiplicando las colisiones en el medio físico. Por lo que la topología linea representa el peor escenario en una red IoT, debido a una alta saturación tanto de la capa física
+como de los nodos involucrados en la conexión.
+
+\begin{figure}[H]
+    
+    \centering
+    \includegraphics[width=\textwidth]{figures/Imagenes/Graficas_HQC/LINE/LINE_nack_retransmitted_fragments_C2_menos_C4.png}
+    \caption{Fragmentos recuperados NACK}
+    \label{fig:NACK_LINE}
+
+\end{figure}
+
+\section{Árbol}
+
+Está sección presenta los resultados obtenidos en la campaña de pruebas realizada en la topología Árbol, similamente
+a la topología linea, en está la comunicación entre los nodos más alejados y el servidor requiere la participación
+de nodos intermedios, sin embargo, no se espera el sobrecoste de la topología linea. 
+
+Similarmente a la topología linea, en la Figura~\ref{fig:bytes_por_condicion_TREE}, los bytes de aplicación en C0 y C4 crecen linealmente con el crecimiento de la red,
+y al igual que la topología anterior, se tiene una alta eficiencia una vez establecida la comunicación segura. 
+
+Existe una mayor resiliencia en el intercambio de claves en comparación con la topología linea, hay una escalabilidad de hasta 9 nodos 
+en Árbol. La jerarquia del árbol divide el táfico, las ramas distribuyen la carga de transmisión de las claves de HQC, retrasando asi 
+el colapso de la red. 
+
+El pico en el quinto nodo donde C2 roza los 10KB, indica que al nivel de ramificación la red sufre una congestión severa, requiriendo multiples
+reintentos. 
+
+Con respecto a los tiempos de establecimiento, Figura~\ref{fig:tiempo_TREE}, siguen la misma trayectoria que topologias anteriores, 
+las lineas C0 y C4 son identicas, demostrando la alta eficiencia en el envio de los paquetes cifrados, y al transmitir las claves 
+existe una latencia evidente. 
+
+Al observar la Figura~\ref{fig:trafico_TREE} destaca el disparo en el tráfico generado en la topología, superando facilmente los 110KB
+generando asi un overhead del $1200\%$ aproximadamente en el punto más alto. A partir del sexto nodo, los nodos padres experimentan 
+un cuello de botella extremo, al recibir ráfagas de los fragmentos de las claves los bufers se desbordan, provocando perdidas
+masivas de paquetes. 
+
+A partir del septimo nodo, se puede intuir que el sistema alcanza un estado de saturación física, en el que no importa 
+si se intercambian claves o intenta unirse un nuevo nodo, el espectro de radio está congestionado de tal manera que opera al $100\%$ de su 
+capacidad en reintentos. 
+
+Por otro lado, las lineas C0 y C4 muestran otra cara, manteniendose estables a lo largo del crecimiento de la red, indicando que el problema
+de la criptografia post-cuánica en estructuras jerárquicas es un problema de establecimiendo de las claves. 
+
+\begin{figure}[H]
+    \centering
+    % Primera fila
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/Imagenes/Graficas_HQC/TREE/TREE_app_bytes_por_condicion.png}
+        \caption{Bytes de la app}
+        \label{fig:bytes_por_condicion_TREE}
+    \end{subfigure}
+    \hfill % Espacio horizontal entre columnas
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/Imagenes/Graficas_HQC/TREE/TREE_hqc_total_ticks_max_por_condicion.png}
+        \caption{Tiempos totales por condición}
+        \label{fig:tiempo_TREE}
+    \end{subfigure}
+
+    \vspace{0.5cm} % Espacio vertical entre filas
+
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/Imagenes/Graficas_HQC/TREE/TREE_radio_bytes_por_condicion.png}
+        \caption{Tráfico total por condición}
+        \label{fig:trafico_TREE}
+    \end{subfigure}
+
+    % Título general de la matriz
+    \caption{Análisis global del tráfico generado en escenarios linea}
+    \label{fig:matriz_TREE_global} % Etiqueta principal de todo el bloque
+    
+\end{figure}
+
+La Figura~\ref{fig:NACK_TREE} evidencia el cuello de botella cerca del quinto nodo, alcanzando un pico de más de 40 fragmentos recuperados
+por otro lado, al llegar al sexto y septimo nodo cae drasticamente la gráfica, esto puede deberse a la congestión extrema del medio físico
+de tal manera que los nodos dejan de recibir correctamente los paquetes y evita que se procese la telemetría. El protocolo puede dejar de emitir
+los NACK, o los nodos dejan de escuchar este protocolo.
+
+\begin{figure}[H]
+    
+    \centering
+    \includegraphics[width=\textwidth]{figures/Imagenes/Graficas_HQC/TREE/TREE_nack_retransmitted_fragments_C2_menos_C4.png}
+    \caption{Fragmentos recuperados NACK}
+    \label{fig:NACK_TREE}
+
+\end{figure}
