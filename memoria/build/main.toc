@@ -21,23 +21,23 @@
 \contentsline {chapter}{\numberline {3}Diseño e implementación del sistema}{21}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Plataforma experimental}{21}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Arquitectura del sistema}{23}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Protocolo de intercambio y transporte de HQC}{26}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Sistema de adquisición de métricas}{26}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Corrección del subsistema de comunicaciones}{26}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Sintomas iniciales}{26}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Proceso de diagnostico}{26}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Modificacion del driver}{26}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}impacto sobre el trabajo}{26}{subsection.3.5.4}%
-\contentsline {section}{\numberline {3.6}Diseño experimental}{26}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Escenarios y topologías}{26}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Condiciones experimentales}{26}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}Métricas evaluadas}{26}{subsection.3.6.3}%
-\contentsline {subsection}{\numberline {3.6.4}Procedimiento experimental}{26}{subsection.3.6.4}%
-\contentsline {chapter}{\numberline {4}Resultados}{27}{chapter.4}%
-\contentsline {section}{\numberline {4.1}P2P}{27}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Estrella}{29}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Línea}{31}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Árbol}{33}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Discusión}{37}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusiones}{39}{chapter.6}%
-\contentsline {chapter}{Anexos}{45}{appendix*.23}%
+\contentsline {section}{\numberline {3.3}Protocolo de intercambio y transporte de HQC}{25}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Sesiones}{29}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Cifrado de datos}{29}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Sistema de adquisición de métricas}{30}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Corrección del subsistema de comunicaciones}{30}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Sintomas iniciales}{30}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Modificacion del driver}{30}{subsection.3.7.2}%
+\contentsline {section}{\numberline {3.8}Diseño experimental}{30}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Escenarios y topologías}{30}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}Condiciones experimentales}{30}{subsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.8.3}Métricas evaluadas}{30}{subsection.3.8.3}%
+\contentsline {subsection}{\numberline {3.8.4}Procedimiento experimental}{30}{subsection.3.8.4}%
+\contentsline {chapter}{\numberline {4}Resultados}{31}{chapter.4}%
+\contentsline {section}{\numberline {4.1}P2P}{31}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Estrella}{33}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Línea}{35}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Árbol}{37}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Discusión}{41}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{43}{chapter.6}%
+\contentsline {chapter}{Anexos}{49}{appendix*.27}%

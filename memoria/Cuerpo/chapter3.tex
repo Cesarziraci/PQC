@@ -157,20 +157,154 @@ al establecimiento de sesiones mediante HQC, especialmente aquellos de mayor tam
 
 \section{Protocolo de intercambio y transporte de HQC}
 
+Como se ha tratado en la sección anterior, el intercambio de HQC se realiza mediante un protocolo de comunicación basadi en mensajes UDP,
+en el existe un nodo COOKIE que actúa como servidor para resivir todas las peticiones, datos y manejar cada una de las sesiones con los clientes. 
+En la Figura~\ref{fig:componentes_hardware} se muestra un diagrama de alto nivel del protocolo, en el que se puede observar el flujo de mensajes.
+
+Por otro lado, se implementó un mencanismo de fragmentación en ambos lados de la comunicación, tanto en servidor como en cliente, 
+para fragmentar las claves públicas y textos cifrados, respondiendo a la necesidad de transportar mensajes de mayor tamaño que la 
+carga útil máxima de un paquete UDP. El mecanismo fragmenta los mensajes en fragmentos de 64 bytes de datos, con 10 bytes para la 
+identificación del mensaje, el nodo, la posición del fragmento y otra información de control. 
+
+
+\begin{figure}[H] 
+    \centering
+    \includegraphics[width=0.85\linewidth]{figures/Diagrama_Frag.jpeg} 
+  
+    \caption{Arquitectura de fragmentación.} 
+    \label{fig:diagrama_frag} 
+
+\end{figure}
+
+La Figura~\ref{fig:diagrama_frag} muestra el flujo de fragmentación y reensamblado de los mensajes. Es impotante acotar, que el mecanismo de 
+fragmentación, resuelve el problema de transportar mensajes de gran tamaño, pero introduce cierto overhead sobre la red, y tampoco garantiza 
+la entrega de los fragmentos. Si un fragmento se pierde, el mensaje completo no puede ser reensamblado, y la sesión ya no seria valida. 
+
+Debido a está incidencia, se implementó un mecanismo de retransmisón de mensajes, que permite reintentar el envío de fragmentos especificos, 
+en el caso de que alguno de ellos no sea recibido. También conocido como NACK (negative acknowledgment), permite al receptor identificar
+que fragmentos no han sido recibidos y los solicita nuevamente. Este mecanismo se implementa en ambos lados de la comunicación. 
+
+\begin{figure}[H] 
+    \centering
+    \includegraphics[width=0.75\linewidth]{figures/Diagrama_rec_frag.jpeg} 
+  
+    \caption{Arquitectura de reensamblado de fragmentos.} 
+    \label{fig:diagrama_rec_frag} 
+
+\end{figure}
+
+La Figura~\ref{fig:diagrama_rec_frag} muestra el flujo de reensamblado y recuperación de fragmentos, en el que 
+se puede observar que el receptor mantiene un buffer de fragmentos, en el que se almacenan los recibidos, 
+y se genera un mensaje NACK en el que se identifican los faltantes. El emisor recibe este mensaje NACK 
+y reintenta el envío de los fragmentos faltantes. Este proceso se repite hasta que todos los fragmentos
+son recibidos correctamente.
+
+
+\begin{figure}[h] 
+    \centering
+    \includegraphics[width=0.87\linewidth]{figures/Diagrama_estados.jpeg} 
+  
+    \caption{Arquitectura de estados.} 
+    \label{fig:diagrama_estados} 
+\end{figure}
+
+El diagrama de estados de la Figura~\ref{fig:diagrama_estados} 
+muestra los estados definidos en el protocolo de comunicación, tanto para el cliente como para el servidor. 
+El servidor se mantiene en estado de espera hasta recibir el mensaje GETPK, momento en el que envía la clave pública
+generada al inicio del servidor. Al completar el envío se queda a la espera de recibir el CT, y una vez recibido envia una 
+confirmación al cliente, y se queda en el estado de espera de los datos cifrados. 
+
+
+\begin{figure}[H] 
+    \centering
+    \includegraphics[width=0.5\linewidth]{figures/Diagrama_trans.jpeg} 
+  
+    \caption{Arquitectura de transferencia.} 
+    \label{fig:diagrama_trans} 
+
+\end{figure}
+
+Por otro lado, en una implementación real de las topologías de red, al existir varios nodos conectados 
+al mismo servidor, es posible iniciar varias sesiones de manera simultanea, y el servidor al ser incapaz 
+de atender a todos los clientes al mismo tiempo, en el que cada sesión está en un estado diferente, 
+se debe implementar un mecanismo de prioridades de envío de mensajes. Como se muestra en la Figura~\ref{fig:diagrama_trans}, 
+el servidor mantiene una cola de mensajes, en la que se clasifica el tipo de mensaje a enviar, 
+y se prioriza el envío de los mensajes NACK, ACK y GETPK. 
+
+
+\section{Sesiones}
+
+
+\section{Cifrado de datos}
+
+Una vez establecida la sesión entre cliente y servidor, ambos nodos comparte el secreto compartido \textit{Secret Shared} \(SS\), que cunstituye 
+la base para el cifrado de los datos obtenidos por los sensores. Del Secreto compartido se deriva una clave simétrica de 256 bits. 
+
+La implementación del cifrado se realiza mediante el algoritmo AES-256, en modo \textit{CTR} (Counter Mode), que permite cifrar y descifrar bloques de datos de manera eficiente. 
+Los datos ambientales se representan en una estructura que contiene temperatura, humedad y un contador. Antes de enviarlos, se cifran mediante la clave AES derivada del secreto compartido,
+generando para cada mensaje un vector de inicialización (IV) y un contador de transmisión. 
+
+\begin{lstlisting}[language=C, caption=Operación de cifrado de datos, label=lst:encrypt_data]
+crypto_worker_aes_ctr_xcrypt(
+    s->aes_key,
+    iv,
+    &packet[PQC_HEADER_LEN],
+    sizeof(payload)
+);
+
+\end{lstlisting}
+
+La clave AES se deriva del secreto compartido, como se menciono anteriormente, mediante 
+HQC utilizando la función SHAKE256, que permite generar una clave de 256 bits a partir del secreto compartido. 
+
+\begin{lstlisting}[language=C, caption=Derivación de la clave AES, label=lst:derive_aes_key]
+
+void crypto_worker_derive_aes_key(const uint8_t *ss, uint8_t *aes_key)
+{
+    if(ss == NULL || aes_key == NULL) {
+        return;
+    }
+
+    shake256(aes_key, CW_AES_KEY_LEN, ss, CW_HQC_SHARED_LEN);
+}
+
+\end{lstlisting}
+
+SHAKE256 es una función criptográfica de salida extensible (XOF) de la familia SHA-3, que a diferencia de una función de hash con salida fija, 
+permite generar salidas de longitud variable. De esta función se deriva la clave AES de 256 bits, que se utiliza para cifrar los datos
+obtenidos. 
+
+El emisor a partir del SS deriva la clave AES usando la función SHAKE256, cada sesión mantiene un contador que se incrementa al encolar 
+los mensajes correctamente cifrados, a partir de este contador y el SS se genera un vector de inicialización (IV) único para cada mensaje,
+aplicando SHAKE256 sobre la concatenación del SS y el contador. El IV proporciona el valor inicial del contador interno de AES-CTR,
+AES cifra los sucesivos bloques del contador utilizando la clave derivada y los bloques generados por AES constituyen el flujo de clave (Keystream), 
+este flujo se combina mediante la operación XOR con el texto plano \(P_i\).
+
+\begin{equation}
+    C_i  = P_i \oplus AES_{K}(CTR_i) 
+\end{equation}
+ 
+En el receptor se realiza un procedimiento equivalente para recuperar el mensaje original, a partir del SS  se obtiene la clave AES derivada usando la 
+función SHAKE256, obteniendo la misma clave que el emisor. Se genera el IV a partir del SS y un contador esperado de recepción. Para descifrar el mensaje, 
+se aplica la operación XOR entre el texto cifrado \(C_i\) y el flujo de clave generado por AES, obteniendo el mensaje original \(P_i\).
+
+\begin{equation}
+    P_i  = C_i \oplus AES_{K}(CTR_i) 
+\end{equation}
+
+Para garantizar la coincidencia de los contadores, se comprueba que el contador esperado coincide con el contador
+recibido, si es correcto se procesa el mensaje, en caso contrario se prueban hasta 16 valores consecutivos del contador, 
+para recuperar la sincronización. 
+
 
 
 \section{Sistema de adquisición de métricas}
 
 
-
 \section{Corrección del subsistema de comunicaciones}
   \subsection{Sintomas iniciales}
-  
-  \subsection{Proceso de diagnostico}
 
   \subsection{Modificacion del driver}
-
-  \subsection{impacto sobre el trabajo}
 
 \section{Diseño experimental}
   \subsection{Escenarios y topologías}
