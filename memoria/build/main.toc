@@ -26,18 +26,16 @@
 \contentsline {section}{\numberline {3.5}Cifrado de datos}{31}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Sistema de adquisición de métricas}{33}{section.3.6}%
 \contentsline {section}{\numberline {3.7}Corrección del subsistema de comunicaciones}{33}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Sintomas iniciales}{33}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Modificacion del driver}{33}{subsection.3.7.2}%
-\contentsline {section}{\numberline {3.8}Diseño experimental}{33}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}Escenarios y topologías}{33}{subsection.3.8.1}%
-\contentsline {subsection}{\numberline {3.8.2}Condiciones experimentales}{33}{subsection.3.8.2}%
-\contentsline {subsection}{\numberline {3.8.3}Métricas evaluadas}{33}{subsection.3.8.3}%
-\contentsline {subsection}{\numberline {3.8.4}Procedimiento experimental}{33}{subsection.3.8.4}%
-\contentsline {chapter}{\numberline {4}Resultados}{35}{chapter.4}%
-\contentsline {section}{\numberline {4.1}P2P}{35}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Estrella}{37}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Línea}{39}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Árbol}{41}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Discusión}{45}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusiones}{47}{chapter.6}%
+\contentsline {subsection}{\numberline {3.7.1}Modificacion del driver}{34}{subsection.3.7.1}%
+\contentsline {section}{\numberline {3.8}Diseño experimental}{35}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Escenarios y topologías}{35}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}Condiciones experimentales}{35}{subsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.8.3}Métricas evaluadas}{35}{subsection.3.8.3}%
+\contentsline {subsection}{\numberline {3.8.4}Procedimiento experimental}{35}{subsection.3.8.4}%
+\contentsline {chapter}{\numberline {4}Resultados}{37}{chapter.4}%
+\contentsline {section}{\numberline {4.1}P2P}{37}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Estrella}{39}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Línea}{41}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Árbol}{43}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Conclusiones}{47}{chapter.5}%
 \contentsline {chapter}{Anexos}{53}{appendix*.32}%

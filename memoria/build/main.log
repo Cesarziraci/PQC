@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.13)  7 NOV 2026 21:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.13)  8 NOV 2026 20:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1079,7 +1079,7 @@ LaTeX Warning: Unused global option(s):
 (c:\Users\cesar\Documents\PQC\PQC\memoria\build\main.aux
 LaTeX Info: Redefining \. on input line 21.
 LaTeX Info: Redefining \% on input line 21.
- (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/chapter1.aux) (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/chapter2.aux) (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/chapter3.aux) (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/chapter4.aux) (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/chapter5.aux) (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/chapter6.aux) (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/x-Anexos.aux))
+ (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/chapter1.aux) (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/chapter2.aux) (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/chapter3.aux) (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/chapter4.aux) (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/chapter5.aux) (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/x-Anexos.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
@@ -1187,7 +1187,7 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count422
 (preliminares/1_cubierta.tex
-<figures/EscudoUPM.png, id=170, 206.57175pt x 224.69948pt>
+<figures/EscudoUPM.png, id=162, 206.57175pt x 224.69948pt>
 File: figures/EscudoUPM.png Graphic file (type png)
 <use figures/EscudoUPM.png>
 Package pdftex.def Info: figures/EscudoUPM.png  used on input line 8.
@@ -1197,7 +1197,7 @@ Package pdftex.def Info: figures/EscudoUPM.png  used on input line 8.
 
 
 {C:/Users/cesar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <./figures/EscudoUPM.png>] (preliminares/2_portada.tex
-<figures/Etsii.png, id=180, 240.39813pt x 124.465pt>
+<figures/Etsii.png, id=172, 240.39813pt x 124.465pt>
 File: figures/Etsii.png Graphic file (type png)
 <use figures/Etsii.png>
 Package pdftex.def Info: figures/Etsii.png  used on input line 4.
@@ -1320,7 +1320,7 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 51
  (C:\Users\cesar\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<figures/Triada_Seguridad.png, id=350, 1027.84pt x 1027.84pt>
+<figures/Triada_Seguridad.png, id=340, 1027.84pt x 1027.84pt>
 File: figures/Triada_Seguridad.png Graphic file (type png)
 <use figures/Triada_Seguridad.png>
 Package pdftex.def Info: figures/Triada_Seguridad.png  used on input line 62.
@@ -1337,7 +1337,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4{C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
-<figures/Simetric.png, id=359, 1327.20844pt x 578.91281pt>
+<figures/Simetric.png, id=349, 1327.20844pt x 578.91281pt>
 File: figures/Simetric.png Graphic file (type png)
 <use figures/Simetric.png>
 Package pdftex.def Info: figures/Simetric.png  used on input line 89.
@@ -1360,7 +1360,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5 <./figures/Triada_Seguridad.png (PNG copy)>]
-<figures/Asimetric.png, id=370, 1311.39937pt x 588.69937pt>
+<figures/Asimetric.png, id=360, 1311.39937pt x 588.69937pt>
 File: figures/Asimetric.png Graphic file (type png)
 <use figures/Asimetric.png>
 Package pdftex.def Info: figures/Asimetric.png  used on input line 102.
@@ -1436,7 +1436,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [11]
-<figures/Pila-osi-es.png, id=427, 560.0925pt x 792.3201pt>
+<figures/Pila-osi-es.png, id=417, 560.0925pt x 792.3201pt>
 File: figures/Pila-osi-es.png Graphic file (type png)
 <use figures/Pila-osi-es.png>
 Package pdftex.def Info: figures/Pila-osi-es.png  used on input line 346.
@@ -1544,12 +1544,12 @@ Cap\'{\i }tulo 3.
 
 Package natbib Warning: Citation `ref:EFR32MG21' on page 21 undefined on input line 19.
 
-<figures/COOKIE.jpeg, id=473, 2007.5pt x 1505.625pt>
+<figures/COOKIE.jpeg, id=463, 2007.5pt x 1505.625pt>
 File: figures/COOKIE.jpeg Graphic file (type jpg)
 <use figures/COOKIE.jpeg>
 Package pdftex.def Info: figures/COOKIE.jpeg  used on input line 26.
 (pdftex.def)             Requested size: 141.61081pt x 106.2086pt.
-<figures/EFR32.png, id=474, 2067.22313pt x 1093.08376pt>
+<figures/EFR32.png, id=464, 2067.22313pt x 1093.08376pt>
 File: figures/EFR32.png Graphic file (type png)
 <use figures/EFR32.png>
 Package pdftex.def Info: figures/EFR32.png  used on input line 34.
@@ -1572,17 +1572,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [22 <./figures/COOKIE.jpeg> <./figures/EFR32.png>]
-<figures/Arquitectura_C_S.png, id=484, 503.8825pt x 62.2325pt>
+<figures/Arquitectura_C_S.png, id=474, 503.8825pt x 62.2325pt>
 File: figures/Arquitectura_C_S.png Graphic file (type png)
 <use figures/Arquitectura_C_S.png>
 Package pdftex.def Info: figures/Arquitectura_C_S.png  used on input line 68.
 (pdftex.def)             Requested size: 377.62642pt x 46.63911pt.
-<figures/Arq_S.png, id=485, 171.64125pt x 370.38374pt>
+<figures/Arq_S.png, id=475, 171.64125pt x 370.38374pt>
 File: figures/Arq_S.png Graphic file (type png)
 <use figures/Arq_S.png>
 Package pdftex.def Info: figures/Arq_S.png  used on input line 83.
 (pdftex.def)             Requested size: 127.44885pt x 275.01784pt.
-<figures/Arq_C.png, id=486, 171.64125pt x 465.23813pt>
+<figures/Arq_C.png, id=476, 171.64125pt x 465.23813pt>
 File: figures/Arq_C.png Graphic file (type png)
 <use figures/Arq_C.png>
 Package pdftex.def Info: figures/Arq_C.png  used on input line 91.
@@ -1601,22 +1601,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [23 <./figures/Arquitectura_C_S.png>]
-<figures/Linea.png, id=493, 731.73375pt x 90.3375pt>
+<figures/Linea.png, id=483, 731.73375pt x 90.3375pt>
 File: figures/Linea.png Graphic file (type png)
 <use figures/Linea.png>
 Package pdftex.def Info: figures/Linea.png  used on input line 120.
 (pdftex.def)             Requested size: 199.66837pt x 24.65059pt.
-<figures/Estrella.png, id=494, 542.025pt x 370.38374pt>
+<figures/Estrella.png, id=484, 542.025pt x 370.38374pt>
 File: figures/Estrella.png Graphic file (type png)
 <use figures/Estrella.png>
 Package pdftex.def Info: figures/Estrella.png  used on input line 127.
 (pdftex.def)             Requested size: 199.66837pt x 136.44077pt.
-<figures/arbol.png, id=495, 424.58624pt x 200.54926pt>
+<figures/arbol.png, id=485, 424.58624pt x 200.54926pt>
 File: figures/arbol.png Graphic file (type png)
 <use figures/arbol.png>
 Package pdftex.def Info: figures/arbol.png  used on input line 136.
 (pdftex.def)             Requested size: 199.66837pt x 94.31017pt.
-<figures/P2P.png, id=496, 352.31625pt x 90.3375pt>
+<figures/P2P.png, id=486, 352.31625pt x 90.3375pt>
 File: figures/P2P.png Graphic file (type png)
 <use figures/P2P.png>
 Package pdftex.def Info: figures/P2P.png  used on input line 142.
@@ -1669,7 +1669,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [26]
-<figures/Diagrama_Frag.jpeg, id=521, 614.295pt x 722.7pt>
+<figures/Diagrama_Frag.jpeg, id=511, 614.295pt x 722.7pt>
 File: figures/Diagrama_Frag.jpeg Graphic file (type jpg)
 <use figures/Diagrama_Frag.jpeg>
 Package pdftex.def Info: figures/Diagrama_Frag.jpeg  used on input line 257.
@@ -1687,7 +1687,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [27
 
  <./figures/Diagrama_Frag.jpeg>]
-<figures/Diagrama_rec_frag.jpeg, id=527, 370.5042pt x 357.2547pt>
+<figures/Diagrama_rec_frag.jpeg, id=517, 370.5042pt x 357.2547pt>
 File: figures/Diagrama_rec_frag.jpeg Graphic file (type jpg)
 <use figures/Diagrama_rec_frag.jpeg>
 Package pdftex.def Info: figures/Diagrama_rec_frag.jpeg  used on input line 274.
@@ -1701,12 +1701,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [28 <./figures/Diagrama_rec_frag.jpeg>]
-<figures/Diagrama_estados.jpeg, id=533, 776.9025pt x 336.0555pt>
+<figures/Diagrama_estados.jpeg, id=523, 776.9025pt x 336.0555pt>
 File: figures/Diagrama_estados.jpeg Graphic file (type jpg)
 <use figures/Diagrama_estados.jpeg>
 Package pdftex.def Info: figures/Diagrama_estados.jpeg  used on input line 290.
 (pdftex.def)             Requested size: 410.66486pt x 177.64194pt.
-<figures/Diagrama_trans.jpeg, id=535, 274.1442pt x 460.8417pt>
+<figures/Diagrama_trans.jpeg, id=525, 274.1442pt x 460.8417pt>
 File: figures/Diagrama_trans.jpeg Graphic file (type jpg)
 <use figures/Diagrama_trans.jpeg>
 Package pdftex.def Info: figures/Diagrama_trans.jpeg  used on input line 304.
@@ -1758,7 +1758,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[32])
+[32]
+LaTeX Info: Redefining \. on input line 456.
+LaTeX Info: Redefining \% on input line 456.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[33])
+Underfull \vbox (badness 1533) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[34]
 LaTeX Info: Redefining \. on input line 103.
 LaTeX Info: Redefining \% on input line 103.
 
@@ -1769,47 +1791,47 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[33]
+[35]
 \openout2 = `cuerpo/chapter4.aux'.
 
- (cuerpo/chapter4.tex [34
+ (cuerpo/chapter4.tex [36
 
 
 
 
 ]
 Cap\'{\i }tulo 4.
-<figures/Imagenes/Graficas_HQC/P2P/P2P_app_bytes_por_condicion.png, id=583, 718.685pt x 416.3555pt>
+<figures/Imagenes/Graficas_HQC/P2P/P2P_app_bytes_por_condicion.png, id=604, 718.685pt x 416.3555pt>
 File: figures/Imagenes/Graficas_HQC/P2P/P2P_app_bytes_por_condicion.png Graphic file (type png)
 <use figures/Imagenes/Graficas_HQC/P2P/P2P_app_bytes_por_condicion.png>
 Package pdftex.def Info: figures/Imagenes/Graficas_HQC/P2P/P2P_app_bytes_por_condicion.png  used on input line 26.
 (pdftex.def)             Requested size: 283.22162pt x 164.0806pt.
-<figures/Imagenes/Graficas_HQC/P2P/P2P_comparacion_app_tx_rx_total.png, id=584, 718.685pt x 409.9315pt>
+<figures/Imagenes/Graficas_HQC/P2P/P2P_comparacion_app_tx_rx_total.png, id=605, 718.685pt x 409.9315pt>
 File: figures/Imagenes/Graficas_HQC/P2P/P2P_comparacion_app_tx_rx_total.png Graphic file (type png)
 <use figures/Imagenes/Graficas_HQC/P2P/P2P_comparacion_app_tx_rx_total.png>
 Package pdftex.def Info: figures/Imagenes/Graficas_HQC/P2P/P2P_comparacion_app_tx_rx_total.png  used on input line 33.
 (pdftex.def)             Requested size: 283.22162pt x 161.54898pt.
-<figures/Imagenes/Graficas_HQC/P2P/P2P_hqc_total_ticks_max_por_condicion.png, id=585, 718.685pt x 413.1435pt>
+<figures/Imagenes/Graficas_HQC/P2P/P2P_hqc_total_ticks_max_por_condicion.png, id=606, 718.685pt x 413.1435pt>
 File: figures/Imagenes/Graficas_HQC/P2P/P2P_hqc_total_ticks_max_por_condicion.png Graphic file (type png)
 <use figures/Imagenes/Graficas_HQC/P2P/P2P_hqc_total_ticks_max_por_condicion.png>
 Package pdftex.def Info: figures/Imagenes/Graficas_HQC/P2P/P2P_hqc_total_ticks_max_por_condicion.png  used on input line 42.
 (pdftex.def)             Requested size: 283.22162pt x 162.81479pt.
-<figures/Imagenes/Graficas_HQC/STAR/STAR_app_bytes_por_condicion.png, id=589, 717.4805pt x 411.939pt>
+<figures/Imagenes/Graficas_HQC/STAR/STAR_app_bytes_por_condicion.png, id=610, 717.4805pt x 411.939pt>
 File: figures/Imagenes/Graficas_HQC/STAR/STAR_app_bytes_por_condicion.png Graphic file (type png)
 <use figures/Imagenes/Graficas_HQC/STAR/STAR_app_bytes_por_condicion.png>
 Package pdftex.def Info: figures/Imagenes/Graficas_HQC/STAR/STAR_app_bytes_por_condicion.png  used on input line 76.
 (pdftex.def)             Requested size: 283.22162pt x 162.6104pt.
-<figures/Imagenes/Graficas_HQC/STAR/STAR_hqc_total_ticks_max_por_condicion.png, id=590, 718.685pt x 414.348pt>
+<figures/Imagenes/Graficas_HQC/STAR/STAR_hqc_total_ticks_max_por_condicion.png, id=611, 718.685pt x 414.348pt>
 File: figures/Imagenes/Graficas_HQC/STAR/STAR_hqc_total_ticks_max_por_condicion.png Graphic file (type png)
 <use figures/Imagenes/Graficas_HQC/STAR/STAR_hqc_total_ticks_max_por_condicion.png>
 Package pdftex.def Info: figures/Imagenes/Graficas_HQC/STAR/STAR_hqc_total_ticks_max_por_condicion.png  used on input line 83.
 (pdftex.def)             Requested size: 283.22162pt x 163.28947pt.
-<figures/Imagenes/Graficas_HQC/STAR/STAR_radio_bytes_por_condicion.png, id=591, 718.685pt x 413.1435pt>
+<figures/Imagenes/Graficas_HQC/STAR/STAR_radio_bytes_por_condicion.png, id=612, 718.685pt x 413.1435pt>
 File: figures/Imagenes/Graficas_HQC/STAR/STAR_radio_bytes_por_condicion.png Graphic file (type png)
 <use figures/Imagenes/Graficas_HQC/STAR/STAR_radio_bytes_por_condicion.png>
 Package pdftex.def Info: figures/Imagenes/Graficas_HQC/STAR/STAR_radio_bytes_por_condicion.png  used on input line 92.
 (pdftex.def)             Requested size: 283.22162pt x 162.81479pt.
-[35]
+[37]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1817,7 +1839,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[36 <./figures/Imagenes/Graficas_HQC/P2P/P2P_app_bytes_por_condicion.png> <./figures/Imagenes/Graficas_HQC/P2P/P2P_comparacion_app_tx_rx_total.png> <./figures/Imagenes/Graficas_HQC/P2P/P2P_hqc_total_ticks_max_por_condicion.png>]
+[38 <./figures/Imagenes/Graficas_HQC/P2P/P2P_app_bytes_por_condicion.png> <./figures/Imagenes/Graficas_HQC/P2P/P2P_comparacion_app_tx_rx_total.png> <./figures/Imagenes/Graficas_HQC/P2P/P2P_hqc_total_ticks_max_por_condicion.png>]
 LaTeX Info: Redefining \. on input line 108.
 LaTeX Info: Redefining \% on input line 108.
 
@@ -1828,8 +1850,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[37 <./figures/Imagenes/Graficas_HQC/STAR/STAR_app_bytes_por_condicion.png> <./figures/Imagenes/Graficas_HQC/STAR/STAR_hqc_total_ticks_max_por_condicion.png> <./figures/Imagenes/Graficas_HQC/STAR/STAR_radio_bytes_por_condicion.png>]
-<figures/Imagenes/Graficas_HQC/STAR/STAR_nack_retransmitted_fragments_C2_menos_C4.png, id=614, 719.0865pt x 413.545pt>
+[39 <./figures/Imagenes/Graficas_HQC/STAR/STAR_app_bytes_por_condicion.png> <./figures/Imagenes/Graficas_HQC/STAR/STAR_hqc_total_ticks_max_por_condicion.png> <./figures/Imagenes/Graficas_HQC/STAR/STAR_radio_bytes_por_condicion.png>]
+<figures/Imagenes/Graficas_HQC/STAR/STAR_nack_retransmitted_fragments_C2_menos_C4.png, id=634, 719.0865pt x 413.545pt>
 File: figures/Imagenes/Graficas_HQC/STAR/STAR_nack_retransmitted_fragments_C2_menos_C4.png Graphic file (type png)
 <use figures/Imagenes/Graficas_HQC/STAR/STAR_nack_retransmitted_fragments_C2_menos_C4.png>
 Package pdftex.def Info: figures/Imagenes/Graficas_HQC/STAR/STAR_nack_retransmitted_fragments_C2_menos_C4.png  used on input line 129.
@@ -1845,7 +1867,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[38]
+[40]
 LaTeX Info: Redefining \. on input line 153.
 LaTeX Info: Redefining \% on input line 153.
 
@@ -1856,18 +1878,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[39 <./figures/Imagenes/Graficas_HQC/STAR/STAR_nack_retransmitted_fragments_C2_menos_C4.png>]
-<figures/Imagenes/Graficas_HQC/LINE/LINE_app_bytes_por_condicion.png, id=627, 719.0865pt x 413.1435pt>
+[41 <./figures/Imagenes/Graficas_HQC/STAR/STAR_nack_retransmitted_fragments_C2_menos_C4.png>]
+<figures/Imagenes/Graficas_HQC/LINE/LINE_app_bytes_por_condicion.png, id=648, 719.0865pt x 413.1435pt>
 File: figures/Imagenes/Graficas_HQC/LINE/LINE_app_bytes_por_condicion.png Graphic file (type png)
 <use figures/Imagenes/Graficas_HQC/LINE/LINE_app_bytes_por_condicion.png>
 Package pdftex.def Info: figures/Imagenes/Graficas_HQC/LINE/LINE_app_bytes_por_condicion.png  used on input line 165.
 (pdftex.def)             Requested size: 236.01561pt x 135.60019pt.
-<figures/Imagenes/Graficas_HQC/LINE/LINE_hqc_total_ticks_max_por_condicion.png, id=628, 718.685pt x 413.1435pt>
+<figures/Imagenes/Graficas_HQC/LINE/LINE_hqc_total_ticks_max_por_condicion.png, id=649, 718.685pt x 413.1435pt>
 File: figures/Imagenes/Graficas_HQC/LINE/LINE_hqc_total_ticks_max_por_condicion.png Graphic file (type png)
 <use figures/Imagenes/Graficas_HQC/LINE/LINE_hqc_total_ticks_max_por_condicion.png>
 Package pdftex.def Info: figures/Imagenes/Graficas_HQC/LINE/LINE_hqc_total_ticks_max_por_condicion.png  used on input line 172.
 (pdftex.def)             Requested size: 236.01561pt x 135.67584pt.
-<figures/Imagenes/Graficas_HQC/LINE/LINE_radio_bytes_por_condicion.png, id=629, 718.685pt x 414.348pt>
+<figures/Imagenes/Graficas_HQC/LINE/LINE_radio_bytes_por_condicion.png, id=650, 718.685pt x 414.348pt>
 File: figures/Imagenes/Graficas_HQC/LINE/LINE_radio_bytes_por_condicion.png Graphic file (type png)
 <use figures/Imagenes/Graficas_HQC/LINE/LINE_radio_bytes_por_condicion.png>
 Package pdftex.def Info: figures/Imagenes/Graficas_HQC/LINE/LINE_radio_bytes_por_condicion.png  used on input line 181.
@@ -1880,8 +1902,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[40 <./figures/Imagenes/Graficas_HQC/LINE/LINE_app_bytes_por_condicion.png> <./figures/Imagenes/Graficas_HQC/LINE/LINE_hqc_total_ticks_max_por_condicion.png> <./figures/Imagenes/Graficas_HQC/LINE/LINE_radio_bytes_por_condicion.png>]
-<figures/Imagenes/Graficas_HQC/LINE/LINE_nack_retransmitted_fragments_C2_menos_C4.png, id=639, 718.685pt x 414.7495pt>
+[42 <./figures/Imagenes/Graficas_HQC/LINE/LINE_app_bytes_por_condicion.png> <./figures/Imagenes/Graficas_HQC/LINE/LINE_hqc_total_ticks_max_por_condicion.png> <./figures/Imagenes/Graficas_HQC/LINE/LINE_radio_bytes_por_condicion.png>]
+<figures/Imagenes/Graficas_HQC/LINE/LINE_nack_retransmitted_fragments_C2_menos_C4.png, id=660, 718.685pt x 414.7495pt>
 File: figures/Imagenes/Graficas_HQC/LINE/LINE_nack_retransmitted_fragments_C2_menos_C4.png Graphic file (type png)
 <use figures/Imagenes/Graficas_HQC/LINE/LINE_nack_retransmitted_fragments_C2_menos_C4.png>
 Package pdftex.def Info: figures/Imagenes/Graficas_HQC/LINE/LINE_nack_retransmitted_fragments_C2_menos_C4.png  used on input line 206.
@@ -1896,18 +1918,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[41 <./figures/Imagenes/Graficas_HQC/LINE/LINE_nack_retransmitted_fragments_C2_menos_C4.png>]
-<figures/Imagenes/Graficas_HQC/TREE/TREE_app_bytes_por_condicion.png, id=649, 718.685pt x 414.348pt>
+[43 <./figures/Imagenes/Graficas_HQC/LINE/LINE_nack_retransmitted_fragments_C2_menos_C4.png>]
+<figures/Imagenes/Graficas_HQC/TREE/TREE_app_bytes_por_condicion.png, id=669, 718.685pt x 414.348pt>
 File: figures/Imagenes/Graficas_HQC/TREE/TREE_app_bytes_por_condicion.png Graphic file (type png)
 <use figures/Imagenes/Graficas_HQC/TREE/TREE_app_bytes_por_condicion.png>
 Package pdftex.def Info: figures/Imagenes/Graficas_HQC/TREE/TREE_app_bytes_por_condicion.png  used on input line 249.
 (pdftex.def)             Requested size: 236.01561pt x 136.0714pt.
-<figures/Imagenes/Graficas_HQC/TREE/TREE_hqc_total_ticks_max_por_condicion.png, id=650, 718.685pt x 415.151pt>
+<figures/Imagenes/Graficas_HQC/TREE/TREE_hqc_total_ticks_max_por_condicion.png, id=670, 718.685pt x 415.151pt>
 File: figures/Imagenes/Graficas_HQC/TREE/TREE_hqc_total_ticks_max_por_condicion.png Graphic file (type png)
 <use figures/Imagenes/Graficas_HQC/TREE/TREE_hqc_total_ticks_max_por_condicion.png>
 Package pdftex.def Info: figures/Imagenes/Graficas_HQC/TREE/TREE_hqc_total_ticks_max_por_condicion.png  used on input line 256.
 (pdftex.def)             Requested size: 236.01561pt x 136.33511pt.
-<figures/Imagenes/Graficas_HQC/TREE/TREE_radio_bytes_por_condicion.png, id=651, 718.685pt x 414.348pt>
+<figures/Imagenes/Graficas_HQC/TREE/TREE_radio_bytes_por_condicion.png, id=671, 718.685pt x 414.348pt>
 File: figures/Imagenes/Graficas_HQC/TREE/TREE_radio_bytes_por_condicion.png Graphic file (type png)
 <use figures/Imagenes/Graficas_HQC/TREE/TREE_radio_bytes_por_condicion.png>
 Package pdftex.def Info: figures/Imagenes/Graficas_HQC/TREE/TREE_radio_bytes_por_condicion.png  used on input line 265.
@@ -1923,8 +1945,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[42]
-<figures/Imagenes/Graficas_HQC/TREE/TREE_nack_retransmitted_fragments_C2_menos_C4.png, id=657, 718.685pt x 412.3405pt>
+[44]
+<figures/Imagenes/Graficas_HQC/TREE/TREE_nack_retransmitted_fragments_C2_menos_C4.png, id=677, 718.685pt x 412.3405pt>
 File: figures/Imagenes/Graficas_HQC/TREE/TREE_nack_retransmitted_fragments_C2_menos_C4.png Graphic file (type png)
 <use figures/Imagenes/Graficas_HQC/TREE/TREE_nack_retransmitted_fragments_C2_menos_C4.png>
 Package pdftex.def Info: figures/Imagenes/Graficas_HQC/TREE/TREE_nack_retransmitted_fragments_C2_menos_C4.png  used on input line 284.
@@ -1942,7 +1964,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[43 <./figures/Imagenes/Graficas_HQC/TREE/TREE_app_bytes_por_condicion.png> <./figures/Imagenes/Graficas_HQC/TREE/TREE_hqc_total_ticks_max_por_condicion.png> <./figures/Imagenes/Graficas_HQC/TREE/TREE_radio_bytes_por_condicion.png>]
+[45 <./figures/Imagenes/Graficas_HQC/TREE/TREE_app_bytes_por_condicion.png> <./figures/Imagenes/Graficas_HQC/TREE/TREE_hqc_total_ticks_max_por_condicion.png> <./figures/Imagenes/Graficas_HQC/TREE/TREE_radio_bytes_por_condicion.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1950,27 +1972,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[44 <./figures/Imagenes/Graficas_HQC/TREE/TREE_nack_retransmitted_fragments_C2_menos_C4.png>]
+[46 <./figures/Imagenes/Graficas_HQC/TREE/TREE_nack_retransmitted_fragments_C2_menos_C4.png>]
 \openout2 = `cuerpo/chapter5.aux'.
 
  (cuerpo/chapter5.tex
 Cap\'{\i }tulo 5.
-) [45
+) [47
 
 
 
 
-]
-\openout2 = `cuerpo/chapter6.aux'.
-
- (cuerpo/chapter6.tex [46
-
-
-
-
-]
-Cap\'{\i }tulo 6.
-) [47] [48
+] [48
 
 
 
@@ -2017,26 +2029,26 @@ Package natbib Warning: There were undefined citations.
 (c:\Users\cesar\Documents\PQC\PQC\memoria\build\main.aux
 LaTeX Info: Redefining \. on input line 21.
 LaTeX Info: Redefining \% on input line 21.
- (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/chapter1.aux) (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/chapter2.aux) (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/chapter3.aux) (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/chapter4.aux) (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/chapter5.aux) (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/chapter6.aux) (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/x-Anexos.aux))
+ (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/chapter1.aux) (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/chapter2.aux) (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/chapter3.aux) (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/chapter4.aux) (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/chapter5.aux) (c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo/x-Anexos.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AD0EF70663CBD7BDE79BFDF6DD90CA28;7168.
+(rerunfilecheck)             Checksum: 086BE6953C84C6C62AF7D9D4527092CD;6921.
  ) 
 Here is how much of TeX's memory you used:
- 39975 strings out of 474486
- 777572 string characters out of 5743754
+ 39991 strings out of 474486
+ 777158 string characters out of 5743754
  1990542 words of memory out of 5000000
- 61070 multiletter control sequences out of 15000+600000
- 643271 words of font info for 206 fonts, out of 8000000 for 9000
+ 61067 multiletter control sequences out of 15000+600000
+ 643528 words of font info for 209 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,13n,120p,2551b,1298s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/cesar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on c:\Users\cesar\Documents\PQC\PQC\memoria\build\main.pdf (67 pages, 5240737 bytes).
+Output written on c:\Users\cesar\Documents\PQC\PQC\memoria\build\main.pdf (67 pages, 5251095 bytes).
 PDF statistics:
- 868 PDF objects out of 1000 (max. 8388607)
- 217 named destinations out of 1000 (max. 500000)
- 46591 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 883 PDF objects out of 1000 (max. 8388607)
+ 237 named destinations out of 1000 (max. 500000)
+ 46575 words of extra memory for PDF output out of 51595 (max. 10000000)
 

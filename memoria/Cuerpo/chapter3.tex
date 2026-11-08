@@ -422,12 +422,73 @@ para recuperar la sincronización.
 
 \section{Sistema de adquisición de métricas}
 
-
-
 \section{Corrección del subsistema de comunicaciones}
-  \subsection{Sintomas iniciales}
+  Una parte muy importante del proyecto fue empleada en la corrección del código de la radio 
+  de la EFR32. Durante las campañas de experimentos se detectaron reinicios inesperados en los nodos, 
+  especialmente aquellos que desempeñaban funciones de enrutamiento, comprometiendo la estabilidad de las
+  topologías dificultando la ejecución de las campañas. 
+
+  Los reinicios por watchdogs sucedían en momentos especificos de las pruebas, cuando los nodos recibian cargas importantes 
+  de paquetes, para entender el problema, se propuso un experimento simple, dos nodos en línea con el servido. 
+  Se compilo un codigo de ejemplo sin carga criptográfica en el nodo intermedio, tanto en el nodo externo como en 
+  el servidor se compilo el código de HQC. 
+
+  Al iniciar el intercambio de claves entre el nodo exterior y el servidor, rapidamente se reinicio el nodo intermedio, 
+  descartando así la autoría de los reinicios a la carga crriptografica de HQC. Para poder diagnosticar correctamente el 
+  incidente, fue necesario analizar el código del driver de la radio del microcontrolador. Dentro del código, salta a la vista 
+  la función \textit{move\_to\_rx\_buffer()}, en ella se toman los paquetes recibidos por el hardware de radio RAIL, lo valida 
+  y luego los copia a la cola de recepción del driver, finalmente libera el paquete interno de RAIL. 
+
+  Existe una condición de carrera en el momento que la función \textit{move\_to\_rx\_buffer()}, ejecutandose desde el callback de RAIL,
+  intenta reservar ó publicar un buffer, mientras que el proceso principal de contiki-ng consulta, extrae o libera esos mismos buffers,
+  el driver intenta hacer: 
+
+  \begin{lstlisting}[language=C, caption = {Sección crítica original para comprobar la disponibilidad de un buffer RX y actualizar el índice de escritura.}]
+    if(rx_buf[nw = next_write].len == 0) {
+      next_write = (next_write + 1) % RX_BUF_COUNT;
+      return &rx_buf[nw];
+    }
+  \end{lstlisting}
+
+  Esta operación contiene varios pasos:
+  
+  \begin{enumerate}
+    \item Leer next\_write
+    \item Calcular rx\_buffer[next\_write]
+    \item Lees len
+    \item Comprorbar si len = 0
+    \item Calcular el nuevo índice
+    \item Escrribir next\_write
+    \item Devolver el puntero
+\end{enumerate}
+
+  Contiki puede comenzar a liberar o consultar un buffer, luego una interrupción de radio suspende a contiki en mitad de esta operación, modifica la cola en 
+  ese estado intermedio, termina la interrupción y contiki continúa desde donde fue interrumpido, usando la información que puede haber quedado desactualizada. 
+  La consecuencia inmediata no tiene por qué ser corrupción de memoria, también puede pasar por pérdidas de paquetes, lecturas incorrectas de los buffers, 
+  desincronización de los índices, y estas inconsistencias provocan una copia con longitud incorrecta, o un bloqueo produciendo un Watchdog reset. 
 
   \subsection{Modificacion del driver}
+
+  La solución propuesta pasa por proteger las operaciones, duranet la sección mencionada, el callback y el proceso principal 
+  no pueden intercalarse a mitad de una operación. Para ello se protegen con las macros $CORE\_DECLARE\_IRQ\_STATE$, $CORE\_ENTER\_CRITICAL()$ y $CORE\_EXIT\_CRITICAL()$,
+  aplicandose a las consultas de paquetes, extracciones, reservas y liberación de buffers. 
+
+  \begin{lstlisting}[language=C, caption = {Protección atómica de la reserva de un buffer RX mediante una sección crítica.}]
+    CORE_DECLARE_IRQ_STATE;
+    CORE_ENTER_CRITICAL();
+
+    if(rx_buf[nw = next_write].len == 0) {
+      next_write = (next_write + 1) % RX_BUF_COUNT;
+      result = &rx_buf[nw];
+    }
+
+    CORE_EXIT_CRITICAL();
+  \end{lstlisting}
+
+  $CORE\_ENTER\_CRITICAL()$ deshabilita temporalmente las interrupciones y guarda su estado anterior, de esta manera toda la secuencia
+  se ejecuta como una sola operación. Después $CORE\_EXIT\_CRITICAL()$ restaura el estado anterior de las interrupciones, esto impide
+  que el callback de RAIL interrumpa el proceso, mientras existan modificaciones en cola. Así, ningun contexto puede ver $next\_write$
+  antes de que termine la reserva lógica del buffer. 
 
 \section{Diseño experimental}
   \subsection{Escenarios y topologías}

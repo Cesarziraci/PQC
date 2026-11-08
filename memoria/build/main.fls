@@ -411,9 +411,6 @@ INPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo\chapter4.aux
 INPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo\chapter5.aux
 INPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo\chapter5.aux
 INPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo\chapter5.aux
-INPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo\chapter6.aux
-INPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo\chapter6.aux
-INPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo\chapter6.aux
 INPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo\x-Anexos.aux
 INPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo\x-Anexos.aux
 INPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo\x-Anexos.aux
@@ -830,12 +827,6 @@ OUTPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo\chapter5.aux
 INPUT .\cuerpo\chapter5.tex
 INPUT .\cuerpo\chapter5.tex
 INPUT cuerpo\chapter5.tex
-INPUT .\cuerpo\chapter6.tex
-INPUT .\cuerpo\chapter6.tex
-OUTPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo\chapter6.aux
-INPUT .\cuerpo\chapter6.tex
-INPUT .\cuerpo\chapter6.tex
-INPUT cuerpo\chapter6.tex
 INPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\main.bbl
 INPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\main.bbl
 INPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\main.bbl
@@ -861,9 +852,6 @@ INPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo\chapter4.aux
 INPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo\chapter5.aux
 INPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo\chapter5.aux
 INPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo\chapter5.aux
-INPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo\chapter6.aux
-INPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo\chapter6.aux
-INPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo\chapter6.aux
 INPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo\x-Anexos.aux
 INPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo\x-Anexos.aux
 INPUT c:\Users\cesar\Documents\PQC\PQC\memoria\build\cuerpo\x-Anexos.aux

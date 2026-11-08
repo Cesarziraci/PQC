@@ -11,8 +11,6 @@ Reallocating 'name_of_file' (item size: 1) to 20 items.
 A level-1 auxiliary file: cuerpo/chapter4.aux
 Reallocating 'name_of_file' (item size: 1) to 20 items.
 A level-1 auxiliary file: cuerpo/chapter5.aux
-Reallocating 'name_of_file' (item size: 1) to 20 items.
-A level-1 auxiliary file: cuerpo/chapter6.aux
 Reallocating 'name_of_file' (item size: 1) to 7 items.
 The style file: ieeetr.bst
 Reallocating 'name_of_file' (item size: 1) to 4 items.
@@ -100,7 +98,7 @@ Warning--empty journal in hernandez-ramos_security_2021
 Warning--empty year in hernandez-ramos_security_2021
 You've used 46 entries,
             1876 wiz_defined-function locations,
-            695 strings with 12210 characters,
+            694 strings with 12191 characters,
 and the built_in function-call counts, 11602 in all, are:
 = -- 1002
 > -- 532
