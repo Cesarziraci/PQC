@@ -56,7 +56,7 @@ máxiama de $\pm 3 \% RH$ para humedad relativa y $\pm 0,4 ªC$ para temperatura
 En la plataforma experimental, las medidas obtenidas por el sensor Si7021 se utilizan para genera un trafico de datos periodicos en la red empleada en el experimento.
 De esta forma, el envio de temperatura y humedad constituye un flujo de datos que permite evaluar el rendimiento de la red. 
 
-\section{Arquitectura del sistema} % Integracion de HQC en la plataforma Y Topologias de red 
+\section{Arquitectura del sistema} 
 
 Una vez presentada la plataforma experimental, se describe la arquitectura general del sistema. Esta se compone por dos tipos de nodos: cliente y servidor. Los nodos clientes 
 se encargan de adquirir los datos ambientales y transmitirlos al servidor. Por otro lado, el nodo servidor se encarga de recibir y almacenar la información, asi como de 
@@ -96,7 +96,7 @@ y el servidor queda a la espera de la llegada de los datos cifrados del cliente.
     \vspace{0.3cm}
     % Título principal de la figura completa
     \caption{Arquitectura del sistema.}
-    \label{fig:componentes_hardware}
+    \label{fig:componentes_arq}
 \end{figure}
 
 Por el lado del cliente, como se muestra en la Figura 3.3b, el flujo de HQC comienza con el envío del mensaje \textit{GETPK} al servidor.
@@ -155,11 +155,96 @@ comunicaciones directas con el servidor, mientras que las topologías en línea 
 Estas diferencias permiten estudiar posteriormente cómo la estructura de la red condiciona el transporte de los mensajes asociados 
 al establecimiento de sesiones mediante HQC, especialmente aquellos de mayor tamaño, como la clave pública y el \(CT\).
 
+La estructura basica de los mensajes es: 
+
+\begin{figure}[htbp]
+  \centering
+  \begin{bytefield}[bitwidth=0.45\textwidth]{2} % 2 columnas lógicas principales
+    
+    % Fila de títulos
+    \bitbox{1}{\bfseries Cabecera del protocolo} &
+    \bitbox{1}{\bfseries Carga útil} \\
+    
+    % Fila de tamaños/bytes
+    \bitbox{1}{10 bytes} &
+    \bitbox{1}{0–64 bytes}
+    
+  \end{bytefield}
+\end{figure}
+
+El tamaño maximo de un mensaje fragmentado de la aplicación es de 74 bytes, sin contar con las
+cabeceras de UDP ni IPv6. El tamaño de la carga útil depende del tipo de mensaje, por ejemplo, 
+para el GETPK, que no necesita transportar información adicional, la carga sera minima, pero 
+PK y CT, contienen fragmentos de las estructuras de HQC.
+
+La cabecera de los mensajes del protocolo contiene información necesaria como versión, tipo de mensaje,
+identificador del nodo asociado al mensaje, como se muestra en la Tabla~\ref{tab:campos_cabecera}.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Campos y funciones de la cabecera del protocolo.}
+  \label{tab:campos_cabecera}
+  % \textwidth obliga a la tabla a ocupar exactamente el ancho de la hoja
+  \begin{tabularx}{\textwidth}{l r X}
+    \toprule
+    \textbf{Campo} & \textbf{Tamaño} & \textbf{Función} \\
+    \midrule
+    \texttt{version}     & 1 byte   & Identifica la versión del protocolo. \\
+    \texttt{msg\_type}    & 1 byte   & Indica el tipo de mensaje transmitido. \\
+    \texttt{node\_id}     & 2 bytes  & Identifica al cliente asociado al mensaje. \\
+    \texttt{msg\_id}      & 1 byte   & Identifica el mensaje dentro de la comunicación. \\
+    \texttt{frag\_idx}    & 1 byte   & Indica la posición del fragmento. \\
+    \texttt{total\_frags} & 1 byte   & Número total de fragmentos del mensaje. \\
+    \texttt{payload\_len} & 1 byte   & Longitud de los datos contenidos en el fragmento. \\
+    \texttt{flags}        & 1 byte   & Información adicional de control. \\
+    \texttt{reserved}     & 1 byte   & Campo reservado. \\
+    \midrule
+  \end{tabularx}
+\end{table}
+
+Se pueden clasificar los tipos de mensajes en tres categorías, mensajes de establecimiento de la sesión (GETPK, PK, CT, ACK),
+mensajes de control y recuperación (NACK) y mensajes de aplicación e intrumentación (TEMP, METRICS), como se muestra en la Tabla~\ref{tab:tipos_mensajes}
+
+\begin{table}[htbp]
+  \centering
+  \caption{Tipos de mensajes, identificadores y funciones en el protocolo.}
+  \label{tab:tipos_mensajes}
+  \begin{tabularx}{\textwidth}{l r l X}
+    \toprule
+    \textbf{Tipo} & \textbf{Identificador} & \textbf{Dirección habitual} & \textbf{Función} \\
+    \midrule
+    \texttt{PK}      & 1 & Servidor $\rightarrow$ Cliente & Transportar la clave pública HQC. \\
+    \texttt{CT}      & 2 & Cliente $\rightarrow$ Servidor & Transportar el texto cifrado HQC. \\
+    \texttt{ACK}     & 3 & Servidor $\rightarrow$ Cliente & Confirmar el procesamiento del CT. \\
+    \texttt{TEMP}    & 4 & Cliente $\rightarrow$ Servidor & Transportar medidas ambientales cifradas. \\
+    \texttt{METRICS} & 5 & Cliente $\rightarrow$ Servidor & Enviar información de instrumentación. \\
+    \texttt{GETPK}   & 6 & Cliente $\rightarrow$ Servidor & Solicitar la clave pública. \\
+    \texttt{NACK}    & 7 & Bidireccional                 & Solicitar fragmentos ausentes. \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+Existe un caso especial en los mensajes de TEMP, debido a que se deben añadir en la carga úttil, los datos
+de temperatura, humedad y contador, ocupando unos 12 bytes de carga útil. 
+
+\begin{figure}[htbp]
+  \centering
+  \small
+  \begin{tabular}{|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1.8cm}|}
+    \hline
+    Cabecera del protocolo & \multicolumn{3}{c|}{Carga útil cifrada} \\ \hline
+    % multirow hereda el centrado vertical automáticamente
+    \multirow{3}{2.5cm}{\centering 10 bytes} & \multicolumn{3}{c|}{12 bytes} \\ \cline{2-4}
+             & counter & humedad & temp \\ \cline{2-4}
+             & 4       & 4       & 4    \\ \hline
+  \end{tabular}
+\end{figure}
+\clearpage
 \section{Protocolo de intercambio y transporte de HQC}
 
 Como se ha tratado en la sección anterior, el intercambio de HQC se realiza mediante un protocolo de comunicación basadi en mensajes UDP,
 en el existe un nodo COOKIE que actúa como servidor para resivir todas las peticiones, datos y manejar cada una de las sesiones con los clientes. 
-En la Figura~\ref{fig:componentes_hardware} se muestra un diagrama de alto nivel del protocolo, en el que se puede observar el flujo de mensajes.
+En la Figura~\ref{fig:componentes_arq} se muestra un diagrama de alto nivel del protocolo, en el que se puede observar el flujo de mensajes.
 
 Por otro lado, se implementó un mencanismo de fragmentación en ambos lados de la comunicación, tanto en servidor como en cliente, 
 para fragmentar las claves públicas y textos cifrados, respondiendo a la necesidad de transportar mensajes de mayor tamaño que la 
@@ -169,7 +254,7 @@ identificación del mensaje, el nodo, la posición del fragmento y otra informac
 
 \begin{figure}[H] 
     \centering
-    \includegraphics[width=0.85\linewidth]{figures/Diagrama_Frag.jpeg} 
+    \includegraphics[width=0.75\linewidth]{figures/Diagrama_Frag.jpeg} 
   
     \caption{Arquitectura de fragmentación.} 
     \label{fig:diagrama_frag} 
@@ -198,9 +283,9 @@ se puede observar que el receptor mantiene un buffer de fragmentos, en el que se
 y se genera un mensaje NACK en el que se identifican los faltantes. El emisor recibe este mensaje NACK 
 y reintenta el envío de los fragmentos faltantes. Este proceso se repite hasta que todos los fragmentos
 son recibidos correctamente.
+\clearpage
 
-
-\begin{figure}[h] 
+\begin{figure}[!htbp] 
     \centering
     \includegraphics[width=0.87\linewidth]{figures/Diagrama_estados.jpeg} 
   
@@ -214,12 +299,11 @@ El servidor se mantiene en estado de espera hasta recibir el mensaje GETPK, mome
 generada al inicio del servidor. Al completar el envío se queda a la espera de recibir el CT, y una vez recibido envia una 
 confirmación al cliente, y se queda en el estado de espera de los datos cifrados. 
 
-
-\begin{figure}[H] 
+\begin{figure}[!htbp] 
     \centering
-    \includegraphics[width=0.5\linewidth]{figures/Diagrama_trans.jpeg} 
+    \includegraphics[width=0.7\linewidth]{figures/Diagrama_trans.jpeg} 
   
-    \caption{Arquitectura de transferencia.} 
+    \caption{Arquitectura de transferencia de mensajes.} 
     \label{fig:diagrama_trans} 
 
 \end{figure}
@@ -231,8 +315,48 @@ se debe implementar un mecanismo de prioridades de envío de mensajes. Como se m
 el servidor mantiene una cola de mensajes, en la que se clasifica el tipo de mensaje a enviar, 
 y se prioriza el envío de los mensajes NACK, ACK y GETPK. 
 
+\clearpage
 
 \section{Sesiones}
+
+Para poder establecer una topología de red con varios nodos activos, es necesario implementar un mecanismo de control de sesiones, 
+con el objetivo de establecer de forma independiente la comunicación entre cada cliente y el sevidor. 
+Cada sesión esta asociada a un cliente mediante su identificador de nodo (node\_id), almacenando los estados de cada sesión, las claves derivadas, contadores e información necesaria para establecer la comunicación. 
+
+\begin{table}[htbp]
+  \centering
+  \caption{Sesiones}
+  \label{tab:tab_sesiones}
+  \begin{tabularx}{\textwidth}{l l X}
+    \hline
+    Categoría & Información almacenada & Función \\
+    \hline
+    Identificación & node\_id, peer\_addr & Identificar al cliente y su dirección IPv6. \\
+    Control & role, state, established & Determinar el papel del dispositivo y el estado de la sesión. \\
+    Criptografía & ss, aes\_key & Mantener el material criptográfico. \\
+    Contadores & tx\_counter, rx\_counter & Gestionar el cifrado y descifrado de datos. \\
+    Recuperación & retry\_count, retry\_deadline & Gestionar los reintentos y sus temporizadores. \\
+    Actividad & last\_activity & Registrar el instante de la última actividad \\
+    Métricas & metrics & Almacenar información experimental. \\
+    \hline
+  \end{tabularx}
+\end{table}
+
+En el caso del cliente, dispone de una sesión local que almacena toda la información necesaria
+para establecer la comunicación con el servidor. En el caso del servidor, mantiene una lista de sesiones registradas, 
+con un máximo de 10 sesiones. Cuando el sevidor recibe la GETPK busca la existencia de una sesión asociada a ese identificador. 
+Durante el intercambio, la información almacenada va cambiando, después de recibir el GETPK, el servidor transmite el PK y espera el CT,
+cuando el cliente encapsula almacena el secreto compartido, y seguidamente la clave derivada. En el servidor sucede un proceso similar. 
+
+Después de establecer la sesión, cada vez que el cliente desee enviar un dato, recupera la clave AES almacenada en su sesión, y se inicia el proceso de 
+cifrado, luego encola el mensaje cifrado y lo envia, incrementando el contador de transmisión (tx\_counter) cuando el mensaje se ha encolado correctamente. El sevidor recibe el mensaje TEMP, 
+identifica la sesión asociada al nodo emisor, recupera el SS y la clave AES de esa sesión, completa el proceso de descifrado, e incrementa el contador de 
+recepción de mensaje (rx\_counter). La sesión pasa a un estado \textit{FAILED} cuando el establecimiento no puede completarse, por ejemplo, al agotar los reintentos
+permitidos. Se puede reiniciar la sesión, conservando los datos de identificación del nodo. 
+
+Este mecanismo permite gestionar simultáneamente múltiples clientes, manteniendo el estado del protocolo de forma indepentiente, y el material criptográfico
+de cada uno. 
+
 
 
 \section{Cifrado de datos}
@@ -296,9 +420,8 @@ Para garantizar la coincidencia de los contadores, se comprueba que el contador 
 recibido, si es correcto se procesa el mensaje, en caso contrario se prueban hasta 16 valores consecutivos del contador, 
 para recuperar la sincronización. 
 
-
-
 \section{Sistema de adquisición de métricas}
+
 
 
 \section{Corrección del subsistema de comunicaciones}

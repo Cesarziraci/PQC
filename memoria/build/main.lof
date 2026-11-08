@@ -11,18 +11,18 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Arquitectura general del sistema.}}{23}{figure.caption.12}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Arquitectura del sistema.}}{24}{figure.caption.13}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Topologías implementadas.}}{25}{figure.caption.14}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Arquitectura de fragmentación.}}{26}{figure.caption.15}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Arquitectura de reensamblado de fragmentos.}}{27}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Arquitectura de estados.}}{28}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Arquitectura de transferencia.}}{28}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Arquitectura de fragmentación.}}{27}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Arquitectura de reensamblado de fragmentos.}}{28}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Arquitectura de estados.}}{29}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Arquitectura de transferencia de mensajes.}}{30}{figure.caption.22}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Análisis global del tráfico generado en escenarios P2P}}{32}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Análisis global del tráfico generado en escenarios estrella}}{33}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Fragmentos recuperados NACK}}{35}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Análisis global del tráfico generado en escenarios linea}}{36}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Fragmentos recuperados NACK}}{37}{figure.caption.23}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Análisis global del tráfico generado en escenarios linea}}{39}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Fragmentos recuperados NACK}}{40}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Análisis global del tráfico generado en escenarios P2P}}{36}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Análisis global del tráfico generado en escenarios estrella}}{37}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Fragmentos recuperados NACK}}{39}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Análisis global del tráfico generado en escenarios linea}}{40}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Fragmentos recuperados NACK}}{41}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Análisis global del tráfico generado en escenarios linea}}{43}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Fragmentos recuperados NACK}}{44}{figure.caption.30}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
