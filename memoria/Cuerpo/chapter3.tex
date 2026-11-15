@@ -57,7 +57,7 @@ En la plataforma experimental, las medidas obtenidas por el sensor Si7021 se uti
 De esta forma, el envio de temperatura y humedad constituye un flujo de datos que permite evaluar el rendimiento de la red. 
 
 \section{Arquitectura del sistema} 
-
+\label{sec::3.2}
 Una vez presentada la plataforma experimental, se describe la arquitectura general del sistema. Esta se compone por dos tipos de nodos: cliente y servidor. Los nodos clientes 
 se encargan de adquirir los datos ambientales y transmitirlos al servidor. Por otro lado, el nodo servidor se encarga de recibir y almacenar la información, asi como de 
 gestionar las sesiones asociadas a cada nodo, coordinar el inicio y finalización de las pruebas y enviar instrucciones necesarias a los clientes. 
@@ -355,7 +355,7 @@ recepción de mensaje (rx\_counter). La sesión pasa a un estado \textit{FAILED}
 permitidos. Se puede reiniciar la sesión, conservando los datos de identificación del nodo. 
 
 Este mecanismo permite gestionar simultáneamente múltiples clientes, manteniendo el estado del protocolo de forma indepentiente, y el material criptográfico
-de cada uno. 
+de cada uno
 
 \section{Cifrado de datos}
 
@@ -442,6 +442,34 @@ responder diferentes preguntas.
     \end{tabularx}
 \end{table}
 
+Es por ello, que se implemento un mecanismo para la obtención de los datos de cada nodo, este mecanismo se basa en el envío de 
+comandos o macros desde el servidor, asi cada nodo se sincroniza para iniciar las medidas.  
+
+\begin{table}[htbp]
+    \centering
+    \caption{Macros de la ventana de medición}
+    \label{tab:window_med}
+    \begin{tabularx}{\textwidth}{l X}
+        \toprule
+        \textbf{Macro} & \textbf{Descripción} \\
+        \midrule
+        \texttt{measure\_arm}    & Instante de preparación de una medición. \\
+        \addlinespace
+        \texttt{measure\_start}  & Inicio del intervalo de toma de medidas. \\
+        \addlinespace
+        \texttt{measure\_stop}   & Parada del intervalo de toma de medidas. \\
+        \addlinespace
+        \texttt{measure\_report} & Comunicación de los resultados al servidor. \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+Las macros de la tabla~\ref{tab:window_med}, se determinan los momentos de toma de medidas, y cuando se envian los reportes al servidor. El proceso 
+comienza cuando desde el servidor se envía la macro \textit{measure\_arm} y se indica que condición se medira y sobre que nodo,
+asi cada nodo se prepara para la medición, al marcar \textit{measure\_start} inicia las mediciones individuales de los nodos, 
+y cuando se marca \textit{measure\_stop} se detiene la medición. Cuando se quiere recuperar estos datos se envía \textit{measure\_report}
+desde el servidor, y los nodos comienzan el proceso de envío de los datos obtenidos durante la medición. 
+
 La instrumentación se apoya en la estructura \textit{pqc\_metrics\_snapshot\_t}, esta agrupa los valores
 locales de cada dispositivo. En la Figura~\ref{fig:diagrama_metrics} el proceso de transporte de estás 
 métricas. 
@@ -449,14 +477,13 @@ métricas.
 \begin{figure}[!htbp] 
     \centering
     \includegraphics[width=0.25\linewidth]{figures/Diagrama_metrics.jpeg} 
-  
     \caption{Arquitectura de metricas.} 
     \label{fig:diagrama_metrics} 
 
 \end{figure}
 
-Cada cliente, mantiene sus propio conjunto de métricas locales, siendo enviadas al sevidor en el momento 
-de acabar el experimento. El servidor mantiene registro de las métricas, asociadas a las sesiones de los clientes. 
+Existen dos funciones experimentales, el control experimental, que delimita cuando se contabilizan las medidas de las condiciones experimentales, 
+y la instrumentación del protocolo, que mantiene las métricas asociadas a las sesiones HQC y permite comunicarlas al servidor.
 
 Esta arquitectura, permite obtener las diferentes perspectivas del mismo intercambio. Desde el punto de vista del cliente
 cuánto se tarda en recibir el PK, encapsular HQC y preparar el envío de CT. Y desde el servidor, cuánto se tarda
@@ -468,6 +495,30 @@ consiste en registrar $t_{\text{inicio}}$ y $t_{\text{fin}}$ y calcular los \tex
 \begin{equation}
   \Delta t_{\text{ticks}} = t_{\text{fin}} - t_{\text{inicio}}
 \end{equation}
+
+Las operaciones de HQC se miden con las métricas de la tabla~\ref{tab:operaciones_kem}, es importante distinguir 
+las operaciones de transporte, del tiempo requerido en generar las claves, hacer encapsulación y desencapsulación de
+el tiempo requerido para transportar las claves. 
+
+\begin{table}[!htbp]
+    \centering
+    \caption{Operaciones criptográficas del esquema}
+    \label{tab:operaciones_kem}
+    \begin{tabularx}{\textwidth}{l l X}
+        \toprule
+        \textbf{Operación} & \textbf{Dispositivo} & \textbf{Qué representa} \\
+        \midrule
+        \texttt{KeyGen} & Servidor & Generación del par de claves pública y privada \\
+        \addlinespace
+        \texttt{Encaps} & Cliente & Encapsulación para obtener CT y secreto compartido \\
+        \addlinespace
+        \texttt{Decaps} & Servidor & Recuperación del secreto compartido a partir de CT \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+Todas las medidas temporales del protocolo y las operaciónes criptograficas se obtienen mediante la función \textit{clock\_time()} de 
+Contiki-NG, expresándose en Ticks del sistema.
 
 Los bytes por condición buscan cuantificar el volumen de datos intercambiador por la aplicación durante la condición 
 experimental dada, es decir, cuantos datos fueron enviados y recibidos durante C0, C2, C3 y C4. Este sistema mide principalmente 
@@ -489,11 +540,98 @@ Si la variable graficada representa la suma de ambos:
   B_{\mathrm{app,total}} = B_{\mathrm{app,TX}} + B_{\mathrm{app,RX}}
 \end{equation}
 
-Donde L representa la carga útil. Puede ser el mensaje de la aplicación con cabeceras o
-datagramas UDP. Esta métrica permite identificar el coste del intercambio HQC sin mezclarlo 
+Donde L representa la carga útil (mensaje de la aplicación con cabeceras). Esta métrica permite identificar el coste del intercambio HQC sin mezclarlo 
 con el tráfico de red introducido en capas inferiores. 
 
+El nivel de transporte estudia la necesidad de dividir las claves y los textos cifrados en numerosos mensajes pequeños, como se ha mencionado
+anteriormente en la sección~\ref{sec::3.2}. Los contadores asociados a cada sesión son los siguientes:
 
+\begin{table}[!htbp]
+    \centering
+    \caption{Campos de métricas a nivel de transporte}
+    \label{tab:campos_transporte}
+    \begin{tabularx}{\textwidth}{l X}
+        \toprule
+        \textbf{Campo} & \textbf{Qué contabiliza} \\
+        \midrule
+        \texttt{fragments\_tx} & Fragmentos originales contabilizados durante el envío de PK o CT \\
+        \addlinespace
+        \texttt{fragments\_rx} & Fragmentos aceptados por el receptor \\
+        \addlinespace
+        \texttt{nack\_tx} & Mensajes NACK generados \\
+        \addlinespace
+        \texttt{nack\_rx} & Mensajes NACK recibidos \\
+        \addlinespace
+        \texttt{nack\_rounds} & Rondas de petición NACK \\
+        \addlinespace
+        \texttt{nack\_recovered\_fragments} & Fragmentos reenviados en respuesta a NACK \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+Hay que diferenciar los reintentos MAC de los reintentos de NACK, un mensaje puede retransmitirse en la capa MAC sin 
+generar un NACK del protocolo HQC. 
+
+Durante el establecimiento del Handshake  se utilizan tres métricas.
+
+\begin{itemize}
+  \item pqc\_metrics\_handshake\_start() para guardar el instante inicial.
+  \item pqc\_metrics\_handshake\_success() para calcular la duración final.
+  \item pqc\_metrics\_handshake\_failure() para registrar un intento fallido y su duración.
+\end{itemize}
+
+\[
+T_{\mathrm{HS}}=t_{\mathrm{sesión\ establecida}}-t_{\mathrm{inicio}}
+\]
+
+\begin{table}[htbp]
+    \centering
+    \caption{Tiempos parciales registrados}
+    \label{tab:tiempos_parciales}
+    \begin{tabularx}{\textwidth}{l X}
+        \toprule
+        \textbf{Métrica} & \textbf{Obtención en el código} \\
+        \midrule
+        \texttt{pk\_tx\_ticks\_last} & Tiempo de preparación y encolado de los fragmentos PK en el servidor \\
+        \addlinespace
+        \texttt{pk\_rx\_ticks\_last} & Tiempo desde el inicio del handshake del cliente hasta completar la recepción de PK \\
+        \addlinespace
+        \texttt{ct\_tx\_ticks\_last} & Tiempo de preparación y encolado del CT en el cliente \\
+        \addlinespace
+        \texttt{ct\_rx\_ticks\_last} & Desde la recepción del primer CT hasta completar su reconstrucción en el servidor \\
+        \addlinespace
+        \texttt{ack\_wait\_ticks\_last} & Desde el inicio del envío de CT hasta recibir el ACK en el cliente \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+ack\_wait\_ticks\_last comienza durante el envío de CT, y termina al recibir el ACK. Por tanto, se puede incluir parte del 
+intervalo ct\_tx\_ticks\_last. 
+
+
+Para poder observar los paqutes, intentos de transmisión, reenvíos y fallos, se implemento un contador de red y MAC, cuyo objetivo es 
+estimar cuántos intentos adicionales ha requerido la transmisión MAC respecto al número de paquetes contabilizados. 
+
+\[
+N_{\mathrm{extra,MAC}}=
+N_{\mathrm{intentos,MAC}}-N_{\mathrm{paquetes,MAC}}
+\]
+
+Esta ecuación representa intentos adicionales de transmisión, no paquetes diferentes transmitidos. Además, se utiliza el 
+indicador de presión de retransmisión que combina:
+
+\[
+\begin{aligned}
+P_{\mathrm{retx}}={}&N_{\mathrm{retries}}+
+N_{\mathrm{NACK,retrans}}\\
+&+N_{\mathrm{extra,MAC}}+
+N_{\mathrm{ACK,timeout}}\\
+&+N_{\mathrm{RAIL,ACK,timeout}}
+\end{aligned}
+\]
+
+Esta formula combina eventos de diferentes capas, por lo que no constituye un recuento de las transmisiónes físicas. Su objetivo
+es estudiar la presión adicional que soporta la comunicación. 
 
 \section{Corrección del subsistema de comunicaciones}
   Una parte muy importante del proyecto fue empleada en la corrección del código de la radio 
