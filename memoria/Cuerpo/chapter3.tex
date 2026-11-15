@@ -357,8 +357,6 @@ permitidos. Se puede reiniciar la sesión, conservando los datos de identificaci
 Este mecanismo permite gestionar simultáneamente múltiples clientes, manteniendo el estado del protocolo de forma indepentiente, y el material criptográfico
 de cada uno. 
 
-
-
 \section{Cifrado de datos}
 
 Una vez establecida la sesión entre cliente y servidor, ambos nodos comparte el secreto compartido \textit{Secret Shared} \(SS\), que cunstituye 
@@ -421,6 +419,81 @@ recibido, si es correcto se procesa el mensaje, en caso contrario se prueban has
 para recuperar la sincronización. 
 
 \section{Sistema de adquisición de métricas}
+
+El sistema de adquisición de métricas se planteo para tener diferentes niveles de instrumencación, para 
+responder diferentes preguntas. 
+
+\begin{table}[htbp]
+    \centering
+    \caption{Métricas de evaluación por nivel del sistema}
+    \label{tab:metricas_hqc}
+    \begin{tabularx}{\textwidth}{l X X}
+        \toprule
+        \textbf{Nivel} & \textbf{Qué mide} & \textbf{Qué permite estudiar} \\
+        \midrule
+        Criptografía & Duración de generación de claves, encapsulación y desencapsulación & Coste computacional de HQC \\
+        \addlinespace
+        Protocolo & Handshake, PK, CT y ACK & Coste del establecimiento de sesión \\
+        \addlinespace
+        Transporte & Fragmentos, NACK y reintentos & Sobrecoste de transportar HQC \\
+        \addlinespace
+        Red y radio & Bytes, paquetes, retransmisiones y tiempos & Impacto sobre las comunicaciones \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+La instrumentación se apoya en la estructura \textit{pqc\_metrics\_snapshot\_t}, esta agrupa los valores
+locales de cada dispositivo. En la Figura~\ref{fig:diagrama_metrics} el proceso de transporte de estás 
+métricas. 
+
+\begin{figure}[!htbp] 
+    \centering
+    \includegraphics[width=0.25\linewidth]{figures/Diagrama_metrics.jpeg} 
+  
+    \caption{Arquitectura de metricas.} 
+    \label{fig:diagrama_metrics} 
+
+\end{figure}
+
+Cada cliente, mantiene sus propio conjunto de métricas locales, siendo enviadas al sevidor en el momento 
+de acabar el experimento. El servidor mantiene registro de las métricas, asociadas a las sesiones de los clientes. 
+
+Esta arquitectura, permite obtener las diferentes perspectivas del mismo intercambio. Desde el punto de vista del cliente
+cuánto se tarda en recibir el PK, encapsular HQC y preparar el envío de CT. Y desde el servidor, cuánto se tarda
+en preparar PK, recibir CT, desencapsular y establecer la sesión. 
+
+La mayoría de las medidas temporales utilizan la función \textit{clock\_time()} de Contiki-NG. El proceso
+consiste en registrar $t_{\text{inicio}}$ y $t_{\text{fin}}$ y calcular los \textit{ticks}.
+
+\begin{equation}
+  \Delta t_{\text{ticks}} = t_{\text{fin}} - t_{\text{inicio}}
+\end{equation}
+
+Los bytes por condición buscan cuantificar el volumen de datos intercambiador por la aplicación durante la condición 
+experimental dada, es decir, cuantos datos fueron enviados y recibidos durante C0, C2, C3 y C4. Este sistema mide principalmente 
+los mensajes de control del protocolo HQC, la PK y CT, y los datos cifrados enviados por los sensores.
+
+La PK y CT son especialmente sensibles, debido a su considerable tamaño, superior al de los mensajes habituales de temperatura y humedad. 
+
+\begin{equation}
+  B_{\mathrm{app,TX}} = \sum_{i} L_{\mathrm{TX},i}
+\end{equation}
+
+\begin{equation}
+  B_{\mathrm{app,RX}} = \sum_{j} L_{\mathrm{RX},j}
+\end{equation}
+
+Si la variable graficada representa la suma de ambos:
+
+\begin{equation}
+  B_{\mathrm{app,total}} = B_{\mathrm{app,TX}} + B_{\mathrm{app,RX}}
+\end{equation}
+
+Donde L representa la carga útil. Puede ser el mensaje de la aplicación con cabeceras o
+datagramas UDP. Esta métrica permite identificar el coste del intercambio HQC sin mezclarlo 
+con el tráfico de red introducido en capas inferiores. 
+
+
 
 \section{Corrección del subsistema de comunicaciones}
   Una parte muy importante del proyecto fue empleada en la corrección del código de la radio 
