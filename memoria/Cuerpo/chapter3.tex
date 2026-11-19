@@ -683,7 +683,7 @@ es estudiar la presión adicional que soporta la comunicación.
   La solución propuesta pasa por proteger las operaciones, duranet la sección mencionada, el callback y el proceso principal 
   no pueden intercalarse a mitad de una operación. Para ello se protegen con las macros $CORE\_DECLARE\_IRQ\_STATE$, $CORE\_ENTER\_CRITICAL()$ y $CORE\_EXIT\_CRITICAL()$,
   aplicandose a las consultas de paquetes, extracciones, reservas y liberación de buffers. 
-
+\clearpage
   \begin{lstlisting}[language=C, caption = {Protección atómica de la reserva de un buffer RX mediante una sección crítica.}]
     CORE_DECLARE_IRQ_STATE;
     CORE_ENTER_CRITICAL();
@@ -702,10 +702,44 @@ es estudiar la presión adicional que soporta la comunicación.
   antes de que termine la reserva lógica del buffer. 
 
 \section{Diseño experimental}
+  En esta sección, se tratará la metodologia a seguir para evualuar la implementación de HQC sobre sistemas embebidos para IoT, 
+  se profundizará en los escenarios y topologías a implementar, cuáles son las condiciones de las campañas experimentales, qué 
+  metricas seran evaludadas y cuál es el procedimiento a seguir. 
+
   \subsection{Escenarios y topologías}
+
+  
 
   \subsection{Condiciones experimentales}
 
-  \subsection{Métricas evaluadas}
+  Existen cuatro condiciones experimentales para llevar a cabo los experimentos, C0, C2, C3 y C4, cada condición busca
+  responder una pregunta especifica sobre la red. 
 
-  \subsection{Procedimiento experimental}
+\begin{table}[!htbp]
+    \centering
+    \caption{Tabla de condiciones}
+    \label{tab:cond}
+    \begin{tabular}{l p{10cm}}
+        \hline
+        \textbf{Condición} & \textbf{Descripción} \\
+        \hline
+        C0 & Establece el comportamiento base de la red sin que intervenga HQC. \\
+        C2 & Mide el coste asociado al transporte del material criptográfico. \\
+        C3 & Evalúa el impacto de unión de un nuevo nodo sobre la red con intercambio de datos seguros. \\
+        C4 & Evalúa el funcionamiento de la red con sesiones de HQC ya establecidas. \\
+        \hline
+    \end{tabular}
+\end{table}
+
+La condición 0 muestra que tan caro es mantener una red base, sin intercambios criptograficos, está condición 
+trata de establecer una base para comparar con el resto de condiciones. 
+
+C2 evalúa el coste de transportar las claves de HQC sobre una red en la que no se han establecido comunicaciones seguras sobre otros nodos, en ella solo intervienen
+las funciones necesarias para enviar las claves PK y CT, para encapsular y desencapsular. C3 a diferencia de C2, busca 
+medir el comportamiento de una red en la que otros nodos ya han establecido sus sesiones seguras, al incorporar un nodo nuevo, busca responder 
+que es lo que pasa con la red cuando transportan claves tan pesadas. Y por último, C4 evalúa una red en la que todos los nodos ya han establecido su sesion segura, se busca conocer cuánto le cuesta a la red
+mover los datos cifrados. 
+
+
+
+  \subsection{Métricas evaluadas}
